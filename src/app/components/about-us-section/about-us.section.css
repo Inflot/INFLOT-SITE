@@ -1,0 +1,4 @@
+.background-ship {
+  background-image: linear-gradient(#b5c5cfc5,
+      #151f25bb), url('/images/about/ships.png');
+}

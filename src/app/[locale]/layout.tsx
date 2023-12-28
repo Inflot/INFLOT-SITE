@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en' className='scroll-smooth'>
+    <html lang='ru' className='scroll-smooth'>
       <head>
         {/* <Script
           async
@@ -30,10 +30,6 @@ export default function RootLayout({
           gtag('config', 'null');
         `}
         </Script> */}
-        <link
-          rel='stylesheet'
-          href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css'
-        />
         {/* <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Inflot"/> */}
         {/* Twitter */}
         <meta name='twitter:card' content='summary_large_image'></meta>

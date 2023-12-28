@@ -29,7 +29,7 @@ export default function Header() {
           <Image
             width='80'
             height='80'
-            className='pointer-events-none select-none block h-20 w-auto'
+            className='logo--shadow pointer-events-none select-none block h-24 w-auto'
             src='/logo.png'
             alt='Logo'
           />

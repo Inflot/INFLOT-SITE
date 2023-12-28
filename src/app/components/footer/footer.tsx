@@ -17,17 +17,13 @@ export default function Footer() {
       title: t('about'),
       link: '/#about',
     },
-    {
-      title: t('contacts'),
-      link: '/#contacts',
-    },
   ];
 
   return (
-    <footer className='bg-[#355060] text-white'>
+    <footer id='contacts' className='bg-[#355060] text-white'>
       <div className='p-4'>
         <div className='max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4 items-start'>
-          <div className='border border-solid border-0 border-r-2 border-white border-r-0 border-b-2 md:border-b-0 md:border-r-2'>
+          <div className='border border-solid border-0 border-b-2 border-r-0 md:border-b-0 md:border-r-2 border-white'>
             <div className='px-4'>
               <h3 className='text-lg md:text-xl px-4 tracking-widest uppercase'>
                 {t('ourAddress')}
@@ -80,7 +76,7 @@ export default function Footer() {
           </div>
           <div className='px-4 flex flex-col justify-start mt-2 md:mt-0 h-full'>
             <h3 className='text-lg md:text-xl tracking-widest uppercase'>
-            {t('links')}
+              {t('links')}
             </h3>
             {links.map(({ link, title }) => (
               <Link

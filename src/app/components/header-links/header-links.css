@@ -1,0 +1,14 @@
+.header-link {
+  font-size: clamp(14px, 2vw, 1.25rem);
+  position: relative;
+}
+
+.header-link:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 2px;
+  background-color: white;
+}

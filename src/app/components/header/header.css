@@ -1,0 +1,37 @@
+.header {
+  z-index: 1000;
+}
+
+.heder-icon:hover {
+  transform: scale(1.5);
+}
+
+.image-wrapper {
+  overflow: hidden;
+  height: 600px;
+  min-height: 600px;
+  z-index: 1;
+}
+
+/* .image-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #355060;
+  mix-blend-mode: multiply;
+  opacity: 0.3;
+  z-index: 1;
+} */
+
+.image__main {
+  display: block;
+  position: relative !important;
+  height: 600px;
+  min-height: 600px;
+  width: fit-content;
+  inset: 0px;
+  object-fit: cover;
+}

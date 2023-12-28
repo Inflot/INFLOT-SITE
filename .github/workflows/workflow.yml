@@ -76,7 +76,7 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           name: node-app
-          path: './next.zip'
+          path: ./.next
 
   # Deployment job
   deploy:

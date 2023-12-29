@@ -8,6 +8,12 @@
     "ourAddress": "Vår adresse",
     "links": "Linker"
   },
+  "lang": {
+    "russian": "Russisk",
+    "english": "Engelsk",
+    "german": "Tysk",
+    "norwegian": "Norsk"
+  },
   "name": "Inflot",
   "about": "Om oss",
   "aboutDescription": "har vært ledende innen global fraktfrakt siden 2000. Vår omfattende flåte og erfarne mannskap sikrer sikker, rettidig og effektiv transport av varer over verdenshavene. Vi forstår viktigheten av pålitelighet i maritim logistikk, og vi streber etter å tilby våre kunder med service av høyeste kvalitet. Enten det er standardlast eller spesialfrakt, håndterer vi hver forsendelse med den største forsiktighet og presisjon.",

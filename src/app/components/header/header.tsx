@@ -4,10 +4,20 @@ import Link from 'next/link';
 import './header.css';
 
 import HeaderLinks from '../header-links/header-links';
-import LangSwitcher from '../lang-switcher/lang-switcher';
 import WelcomeSection from '../welcome-section/welcome-section';
+import { useTranslations } from 'next-intl';
+import LangSwitcher from '../lang-switcher/lang-switcher';
 
 export default function Header() {
+  const t = useTranslations('lang');
+
+  const langs = {
+    RU: t('russian'),
+    US: t('english'),
+    DE: t('german'),
+    NO: t('norwegian'),
+  };
+
   return (
     <>
       <div className='image-wrapper z-0'>
@@ -29,14 +39,14 @@ export default function Header() {
           <Image
             width='80'
             height='80'
-            className='logo--shadow pointer-events-none select-none block h-24 w-auto'
+            className='spin logo--shadow pointer-events-none select-none block h-24 w-auto'
             src='/logo.png'
             alt='Logo'
           />
         </Link>
 
         <nav className='z-50 flex justify-between items-center h-24'>
-          <LangSwitcher />
+          <LangSwitcher langs={langs} />
           <HeaderLinks />
         </nav>
       </header>

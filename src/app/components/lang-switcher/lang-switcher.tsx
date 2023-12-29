@@ -7,10 +7,15 @@ import { useLocale } from 'next-intl';
 import ReactFlagsSelect from 'react-flags-select';
 
 import './lang-switcher.css';
-import '/node_modules/flag-icons/css/flag-icons.min.css';
 
-export default function LangSwitcher() {
-  const [isPending, startTransition] = useTransition();
+export type TFunction = (key: string, values?: any, formats?: any) => string;
+
+type LangSwitcherProps = {
+  langs: Record<string, string>;
+};
+
+export default function LangSwitcher({ langs }: LangSwitcherProps) {
+  const [_, startTransition] = useTransition();
   const pathname = usePathname();
   const locale = useLocale();
   const router = useRouter();
@@ -25,8 +30,11 @@ export default function LangSwitcher() {
 
   return (
     <ReactFlagsSelect
-      countries={['RU', 'US', 'DE', 'NO']}
+      countries={Object.keys(langs)}
       placeholder=' '
+      customLabels={{
+        ...langs,
+      }}
       selected={locale === 'en' ? 'US' : locale.toUpperCase()}
       onSelect={(code) => handleChange(code)}
       showSelectedLabel={false}

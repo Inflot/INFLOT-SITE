@@ -25,16 +25,19 @@ export default function AboutSection() {
         ></div>
       </div>
 
-      <div
-        data-aos='fade-zoom-in'
-        data-aos-delay='100'
-        data-aos-duration='1000'
-        className='text-[#1f3542] font-semibold relative z-10 w-1/2 my-auto'
-      >
-        <h2 className='font-["PlayBold"] text-2xl md:text-6xl tracking-wider font-bold mb-4'>
+      <div className='text-[#1f3542] font-semibold relative z-10 w-1/2 my-auto'>
+        <h2
+          data-aos='fade-down'
+          data-aos-duration='1000'
+          className='font-["PlayBold"] text-2xl md:text-6xl tracking-wider font-bold mb-4'
+        >
           {t('about')}
         </h2>
-        <p className='text-2xl md:text-4xl'>
+        <p
+          data-aos='fade-up'
+          data-aos-duration='1000'
+          className='text-2xl md:text-4xl'
+        >
           <span className="font-['PlayBold'] tracking-widest rounded-md">
             {t('name')}{' '}
           </span>{' '}

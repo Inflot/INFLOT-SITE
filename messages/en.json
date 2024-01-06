@@ -14,6 +14,11 @@
     "german": "German",
     "norwegian": "Norwegian"
   },
+  "meta": {
+    "lang": "en-us",
+    "title": "LLC Maritime Agency «Inflot»",
+    "description": "Inflot specializes in ship agency and maritime logistics. We offer port agency services, cargo operations, and customized solutions in the field of maritime transportation."
+  },
   "name": "Inflot",
   "about": "About Us",
   "aboutDescription": "founded in 1934, has been specializing in ship agency services. Our mission is to ensure reliability and efficiency in maritime logistics. We offer a wide range of services including port agency, cargo operations, and consultancy services. Our experts have deep knowledge in maritime transportation and are always ready to provide tailored solutions for each client. We take pride in being a dependable partner to many companies in the maritime logistics world for decades.",

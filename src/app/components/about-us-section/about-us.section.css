@@ -1,4 +1,32 @@
-.background-ship {
-  background-image: linear-gradient(#b5c5cfc5,
-      #151f25bb), url('/images/about/ships.png');
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  animation: changeBackground 10s linear infinite;
+  opacity: 0;
+}
+
+.background-image:first-child {
+  animation-delay: -5s;
+  opacity: 1;
+}
+
+@keyframes changeBackground {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  33.33% {
+    opacity: 0;
+  }
+
+  66.66% {
+    opacity: 1;
+  }
 }

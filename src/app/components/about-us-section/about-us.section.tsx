@@ -8,11 +8,27 @@ export default function AboutSection() {
       id='about'
       className='py-60 bg-[#AABCC5] relative text-white container justify-center max-w-[100%] flex w-full py-60 flex-row px-8'
     >
-      <div className='absolute background-ship inset-0 bg-cover bg-center opacity-50'></div>
+      <div className='absolute inset-0 bg-cover bg-center opacity-75'>
+        <div
+          className='background-image'
+          style={{
+            backgroundImage:
+              "linear-gradient(#b5c5cfc5 ,#151f25bb), url('/images/about/ships.png')",
+          }}
+        ></div>
+        <div
+          className='background-image'
+          style={{
+            backgroundImage:
+              "linear-gradient(#b5c5cfc5 ,#151f25bb), url('/images/about/ships2.png')",
+          }}
+        ></div>
+      </div>
+
       <div
         data-aos='fade-zoom-in'
         data-aos-delay='100'
-        data-aos-duration="1000"
+        data-aos-duration='1000'
         className='text-[#1f3542] font-semibold relative z-10 w-1/2 my-auto'
       >
         <h2 className='font-["PlayBold"] text-2xl md:text-6xl tracking-wider font-bold mb-4'>

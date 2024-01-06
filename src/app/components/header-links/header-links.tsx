@@ -1,18 +1,23 @@
 import './header-links.css';
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import Link from 'next/link';
 
 export default function HeaderLinks() {
   const t = useTranslations();
+  const locale = useLocale();
+
+  const getLocalePath = () => {
+    return locale === 'US' ? 'en' : locale.toLocaleLowerCase();
+  };
 
   const links = [
     {
       title: t('about'),
-      link: '/#about',
+      link: `${getLocalePath()}/#about`,
     },
     {
       title: t('contacts'),
-      link: '/#contacts',
+      link: `${getLocalePath()}/#contacts`,
     },
   ];
 

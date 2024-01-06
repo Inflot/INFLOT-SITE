@@ -18,5 +18,5 @@
 }
 
 .stormy-ocean-effect {
-  filter: brightness(78%) contrast(100%) hue-rotate(-10deg) saturate(70%);
+  filter: brightness(100%) contrast(80%) hue-rotate(5deg) saturate(90%)
 }

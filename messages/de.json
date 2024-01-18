@@ -6,7 +6,12 @@
     "company": "LLC Maritime Agency «Inflot»",
     "ourContacts": "Unsere Kontakte",
     "ourAddress": "Unsere Adresse",
-    "links": "Links"
+    "links": "Links",
+    "mobile": "Mobil",
+    "whatsapp": "Whatsapp",
+    "telephone": "Telefon",
+    "fax": "Fax",
+    "mail": "Mail"
   },
   "lang": {
     "russian": "Russisch",

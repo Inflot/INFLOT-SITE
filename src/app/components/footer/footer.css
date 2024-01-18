@@ -1,5 +1,6 @@
 
-.footer-icon:hover {
-  transform: scale(1.5);
-  /* color: #22333d; */
+.footer-icon {
+  border: 1px solid white;
+  border-radius: 100%;
+  padding: 10px;
 }

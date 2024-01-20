@@ -11,41 +11,53 @@ export default function Footer() {
   const year = new Date().getFullYear();
   const iconSize = '50px';
 
+  const getAddressLink = () =>
+    tMeta('lang') === 'ru'
+      ? 'https://yandex.ru/maps/-/CDuW4JJs'
+      : 'https://maps.app.goo.gl/nifSUWdpAUu6iRRNA';
+
   const contactDetails = [
     {
       href: 'tel:+79217253181',
       icon: <ImMobile size={iconSize} className='m-3' />,
       text: '+7 921 725 3181',
       title: t('mobile'),
+      target: '_self',
     },
     {
       href: 'https://wa.me/+79210414135',
       icon: <FaWhatsapp size={iconSize} className='m-3' />,
       text: '+7 921 041 4135',
       title: t('whatsapp'),
+      target: '_blank',
     },
     {
       href: 'tel:+78152474405',
       icon: <FaPhone size={iconSize} className='m-3' />,
       text: '+7 8152 474405/424663',
       title: t('telephone'),
+      target: '_self',
     },
     {
       href: 'tel:+78152474381/423862',
       icon: <FaFax size={iconSize} className='m-3' />,
       text: '+7 8152 474381/423862',
       title: t('fax'),
+      target: '_self',
     },
     {
       href: 'mailto:agency@inflot.com',
       icon: <FaEnvelope size={iconSize} className='m-3' />,
       text: 'agency@inflot.com',
       title: t('mail'),
+      target: '_self',
     },
     {
+      href: getAddressLink(),
       icon: <ImLocation2 size={iconSize} className='m-3' />,
       text: t('address'),
       title: t('ourAddress'),
+      target: '_blank',
     },
   ];
 
@@ -72,7 +84,7 @@ export default function Footer() {
           <div className='w-full p-4'>
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3'>
               {contactDetails.map((details, index) => (
-                <ContactItem key={index} details={details} index={index}/>
+                <ContactItem key={index} details={details} index={index} />
               ))}
             </div>
           </div>

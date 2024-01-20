@@ -24,7 +24,7 @@ export default function Header() {
         <Image
           className='image__main z-0 stormy-ocean-effect'
           src='/images/header/background.png'
-          layout='fill'
+          fill
           objectFit='cover'
           quality={100}
           alt='Maritime Scene'

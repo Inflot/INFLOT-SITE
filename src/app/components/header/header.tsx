@@ -15,37 +15,38 @@ export default function Header() {
     RU: t('russian'),
     US: t('english'),
     DE: t('german'),
+    FR: t('french'),
     NO: t('norwegian'),
   };
 
   return (
     <>
-      <div className='image-wrapper z-0'>
+      <div className='image-wrapper h-[700px] md:h-[100vh]'>
         <Image
-          className='image__main z-0 stormy-ocean-effect'
+          className='image__main background-filter'
           src='/images/header/background.png'
           fill
-          objectFit='cover'
           quality={100}
           alt='Maritime Scene'
         />
         <WelcomeSection />
       </div>
-      <header className='absolute w-full top-5 header flex justify-around'>
+      <header className='absolute w-full top-0 flex justify-center md:justify-between h-[60px] md:h-[150px] content-center items-center'>
+        <div className='absolute header-gradient'></div>
         <Link
           href='/'
-          className='z-50 hidden md:flex flex items-center justify-center w-full md:w-auto'
+          className='hidden md:flex flex items-center justify-center w-full md:w-auto'
         >
           <Image
             width='80'
             height='80'
-            className='spin logo--shadow pointer-events-none select-none block h-24 w-auto'
+            className='ml-20 z-50 spin logo--shadow pointer-events-none select-none block h-24 w-auto mx-5'
             src='/logo.png'
             alt='Logo'
           />
         </Link>
 
-        <nav className='z-50 flex justify-between items-center h-24'>
+        <nav className='z-50 flex justify-between items-center h-24 mx-5'>
           <LangSwitcher langs={langs} />
           <HeaderLinks />
         </nav>

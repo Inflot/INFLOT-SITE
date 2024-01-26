@@ -2,6 +2,7 @@
   "header": {
     "address": "183038, Murmansk, st. Karl Liebknechta, 34 år",
     "about": "Om oss",
+    "mission": "Vårt oppdrag",
     "contacts": "Kontakter",
     "company": "LLC Maritime Agency «Inflot»",
     "ourContacts": "Våre kontakter",
@@ -14,9 +15,10 @@
     "mail": "E-post"
   },
   "lang": {
-    "russian": "Russisk",
-    "english": "Engelsk",
-    "german": "Tysk",
+    "russian": "Русский",
+    "english": "English",
+    "german": "Deutsch",
+    "french": "Français",
     "norwegian": "Norsk"
   },
   "meta": {
@@ -24,10 +26,39 @@
     "title": "LLC Maritime Agency «Inflot»",
     "description": "Inflot spesialiserer seg på skipsagentur og maritim logistikk. Vi tilbyr havneagenttjenester, lasteoperasjoner og skreddersydde løsninger innen sjøtransport."
   },
+  "mainInfo": {
+    "1_title": "Forbedring av Servicekvaliteten for Fartøy i Havn",
+    "1_description": "Vårt oppdrag er å stadig øke og forbedre servicekvaliteten for fartøy i havn, med hovedmålet om at et skip skal ankomme og forlate havnen raskere. Vi jobber med å redusere nedetid og starte behandling av fartøy så tidlig som mulig, noe som reduserer økonomiske kostnader for våre partnere.",
+    "1_imgTitle": "Optimalisering av Havneoperasjoner",
+    "1_imgSubTitle": "Redusere Nedetid, Maksimere Effektivitet",
+    "2_title": "Omfattende Fartøyshåndtering",
+    "2_description": "Vi holder alle interesserte parter kontinuerlig informert om fremdriften i bevegelsen og behandlingen av fartøyet i havnen, fra det øyeblikket en agent mottar en nominasjon til fartøyet forlater havnen. Vi kontrollerer nøye tidsplanen for lasteoperasjoner og overvåker dens gjennomføring.",
+    "2_imgTitle": "Integrert Støtte for Fartøy",
+    "2_imgSubTitle": "Fra Ankomst til Avreise",
+    "3_title": "Omfattende Agenttjenester",
+    "3_description": "Våre tjenester inkluderer kontroll av lasteoperasjoner, organisering og koordinering av bunkersoperasjoner, samt forsyning av fartøy med tekniske og matforsyninger. Vi organiserer også grense- og tollkontroll for fartøy som anløper havnen.",
+    "3_imgTitle": "Utover Grunnleggende Agentfunksjoner",
+    "3_imgSubTitle": "Helhetlig Omsorg for Fartøy og Mannskap",
+    "4_title": "Erfaring og Profesjonalitet",
+    "4_description": "Selskapet har nesten et århundres erfaring med å jobbe på nesten alle terminaler i vannområdet i Murmansk havn. Vår profesjonalitet er diktert av de høyeste kvalifikasjonene av våre ansatte, basert på kunnskap akkumulert gjennom flere tiår.",
+    "4_imgTitle": "Et Århundre med Maritim Ekspertise",
+    "4_imgSubTitle": "Kompetanse og Pålitelighet i Hver Operasjon"
+  },
+  "services": {
+    "1_l": "Bunkersinspeksjon",
+    "2_l": "Inspeksjon ved leie (utleie)",
+    "3_l": "Ultralydinspeksjon av lukedeksler",
+    "4_l": "Inspeksjon av ballasttanker",
+    "5_l": "Prosjektevaluering",
+    "1_r": "Skadeinspeksjon",
+    "2_r": "Dypgangsundersøkelse",
+    "3_r": "Inspeksjon av lasteromstilstand",
+    "4_r": "Inspeksjon av lastesikring",
+    "5_r": "Forhåndsinspeksjon"
+  },
   "name": "Inflot",
   "about": "Om oss",
-  "aboutDescription": "grunnlagt i 1934, har spesialisert seg på skipsagenturtjenester. Vår oppgave er å sikre pålitelighet og effektivitet i maritim logistikk. Vi tilbyr et bredt spekter av tjenester, inkludert havneagentur, lasteoperasjoner og konsulenttjenester. Våre eksperter har dyp kunnskap i maritim transport og er alltid klare til å tilby skreddersydde løsninger for hver kunde. Vi er stolte av å ha vært en pålitelig partner for mange selskaper i den maritime logistikkverdenen i flere tiår.",
-  "contacts": "Kontakter",
-  "title": "Navigerer suksess over havene",
-  "subtitle": "Inflot har drevet med skipsagenturtjenester siden 1934. Vi forstår hvor viktig pålitelighet er i maritim logistikk, og streber etter å tilby våre kunder tjenester av høyeste kvalitet."
+  "aboutDescription": "Det maritime byrået «Inflot» ble dannet den 17. oktober 1934 under rederier i havner etter ordre av USSR-regjeringen for å betjene anløp av utenlandske fartøyer til havnene til USSR. Det maritime byrået «Inflot» har levert agenttjenester og omfattende støtte til fartøyer i Murmansk havn i mer enn 80 år blant annet i samarbeid med Murmansk rederi (Murmansk Shipping Company).",
+  "title": "Maritim Skipsagentur",
+  "subtitle": "Dette tillit som er basert på erfaring, kompetanse og profesjonalitet"
 }

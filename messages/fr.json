@@ -1,0 +1,64 @@
+{
+  "header": {
+    "address": "K. Liebknecht str. 34a, Murmansk, 183038, Russie",
+    "about": "À Propos",
+    "mission": "Notre mission",
+    "contacts": "Contacts",
+    "company": "Agence maritime «Inflot» SARL",
+    "ourContacts": "Nos Contacts",
+    "ourAddress": "Notre Adresse",
+    "links": "Liens",
+    "mobile": "Mobile",
+    "whatsapp": "Whatsapp",
+    "telephone": "Téléphone",
+    "fax": "Fax",
+    "mail": "Courriel"
+  },
+  "lang": {
+    "russian": "Русский",
+    "english": "English",
+    "german": "Deutsch",
+    "french": "Français",
+    "norwegian": "Norsk"
+  },
+  "meta": {
+    "lang": "fr",
+    "title": "SARL Agence Maritime « Inflot »",
+    "description": "Inflot est spécialisé dans l'agence maritime et la logistique maritime. Nous proposons des services d'agence portuaire, des opérations de fret et des solutions personnalisées dans le domaine du transport maritime."
+  },
+  "mainInfo": {
+    "1_title": "Amélioration de l'efficacité du service des navires",
+    "1_description": "Notre mission : augmenter et améliorer constamment le niveau de qualité de service des navires dans le port, en veillant à ce que le navire arrive et reparte plus rapidement. Nous travaillons à réduire les temps d'arrêt et à commencer l’arrangement du navire le plus rapidement possible, réduisant ainsi les coûts financiers de nos partenaires.",
+    "1_imgTitle": "Optimisation des Opérations Portuaires",
+    "1_imgSubTitle": "Réduire les temps d'arrêt, Maximiser l'efficacité",
+    "2_title": "Gestion Complète des Navires",
+    "2_description": "Nous informons constamment toutes les parties intéressées de l'avancement du mouvement et du traitement du navire dans le port. Nous contrôlons soigneusement le calendrier des opérations de fret et surveillons sa mise en œuvre, assurant les services de pilotage, d'amarrage et de remorquage, ainsi que le paiement des droits portuaires.",
+    "2_imgTitle": "Support Intégré des Navires",
+    "2_imgSubTitle": "De l'Arrivée au Départ",
+    "3_title": "Services Étendus d'Agence",
+    "3_description": "Nos services incluent le contrôle des opérations de fret, l'organisation et la coordination des opérations de ravitaillement, l'approvisionnement des navires en fournitures techniques et alimentaires, ainsi que la gestion des contrôles frontaliers et douaniers pour les navires entrants.",
+    "3_imgTitle": "Au-delà des Fonctions Basiques d'Agence",
+    "3_imgSubTitle": "Soin Complet des Navires et des Équipages",
+    "4_title": "Expérience et Professionnalisme",
+    "4_description": "Notre agence possède près d'un siècle d'expérience dans presque tous les terminaux de la zone maritime du port de Mourmansk, sachant travailler avec tous les types de marchandises. Notre professionnalisme est fondé sur les qualifications élevées de nos employés et sur les connaissances accumulées au fil des décennies.",
+    "4_imgTitle": "Un Siècle d'Expertise Maritime",
+    "4_imgSubTitle": "Compétence et Fiabilité dans Chaque Opération"
+  },
+  "services": {
+    "1_l": "Inspection de la soute",
+    "2_l": "Inspection pour location (entrée/sortie)",
+    "3_l": "Inspection ultrasonique des couvercles de cale",
+    "4_l": "Inspection des réservoirs de ballast",
+    "5_l": "Expertise de projet",
+    "1_r": "Jaugeage de tirant d'eau",
+    "2_r": "Inspection des dommages",
+    "3_r": "Inspection de l'arrimage de la cargaison générale",
+    "4_r": "Inspection de l'état de la cale",
+    "5_r": "Inspection préalable"
+  },
+  "name": "Inflot",
+  "about": "À Propos",
+  "aboutDescription": "L'agence maritime 'Inflot' a été créée le 17 octobre 1934 par ordre du gouvernement de l'URSS auprès des compagnies maritimes des ports maritimes de l'URSS pour conduite les entrées des navires étrangers dans les ports de l'URSS. L'agence maritime 'Inflot', y compris celles affiliées à la Murmansk Shipping Company, fait depuis plus de 80 ans des services d'agence et rend un soutien complet aux navires dans le port de Mourmansk.",
+  "title": "Agence Maritime de Navires",
+  "subtitle": "C’est la confiance basée sur l'expérience, la compétence et le professionnalisme"
+}

@@ -5,3 +5,11 @@
 .lang-switcher ul {
   width: fit-content;
 }
+
+.lang-switcher button::after {
+  border-top: 5px solid white;
+}
+
+.lang-switcher button[aria-expanded="true"]::after {
+  border-bottom: 5px solid white;
+}

@@ -39,6 +39,8 @@ export default function RootLayout({
         <meta name='twitter:title' content={t('title')}></meta>
         <meta name='twitter:description' content={t('description')}></meta>
         <meta name='twitter:image' content='https://inflot.ru/card.jpg'></meta>
+        {/* <meta http-equiv='x-ua-compatible' content='ie=edge' />
+        <meta name='viewport' content='width=device-width, initial-scale=1' /> */}
 
         {/* OG */}
         <meta property='og:type' content='website'></meta>

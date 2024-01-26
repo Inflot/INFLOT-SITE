@@ -1,22 +1,3 @@
-.header {
-  z-index: 1000;
-}
-
 .heder-icon:hover {
   transform: scale(1.5);
-}
-
-.image-wrapper {
-  overflow: hidden;
-  height: 600px;
-  min-height: 600px;
-}
-
-.image--main {
-  height: 600px;
-  min-height: 600px;
-}
-
-.stormy-ocean-effect {
-  filter: brightness(100%) contrast(80%) hue-rotate(5deg) saturate(90%)
 }

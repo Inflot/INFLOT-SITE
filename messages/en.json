@@ -2,6 +2,7 @@
   "header": {
     "address": "K. Liebknecht str. 34a, Murmansk, 183038, Russia",
     "about": "About Us",
+    "mission": "Our Mission",
     "contacts": "Contacts",
     "company": "Maritime agency «Inflot» Ltd.",
     "ourContacts": "Our Contacts",
@@ -14,20 +15,50 @@
     "mail": "Mail"
   },
   "lang": {
-    "russian": "Russian",
+    "russian": "Русский",
     "english": "English",
-    "german": "German",
-    "norwegian": "Norwegian"
+    "german": "Deutsch",
+    "french": "Français",
+    "norwegian": "Norsk"
   },
   "meta": {
     "lang": "en-us",
     "title": "LLC Maritime Agency «Inflot»",
     "description": "Inflot specializes in ship agency and maritime logistics. We offer port agency services, cargo operations, and customized solutions in the field of maritime transportation."
   },
+  "mainInfo": {
+    "1_title": "Enhancing Vessel Service Efficiency",
+    "1_description": "Our mission is to constantly enhance and improve the quality of service of vessels in ports, ensuring a vessel must quickly call in and out. We focus on reducing idle time and commencing handling of the vessel as soon as possible, which cuts down the financial costs of our partners. We ensure protection of rights and interests of charterers, ship-owners, shippers, and consignees, preparing and completing transport documentation, bills of landing, cargo manifests, and statements of facts professionally.",
+    "1_imgTitle": "Streamlining Port Operations",
+    "1_imgSubTitle": "Minimizing Idle Time, Maximizing Efficiency",
+    "2_title": "Comprehensive Vessel Management",
+    "2_description": "We keep all parties well informed about the progress of works on the vessel in port, from the receipt of the agent’s nomination till the vessel leaves the port. Our control over the schedule of cargo operations and its implementation is meticulous. We ensure the order of pilotage, mooring, and towage services, handle payment of established port dues, and oversee the implementation of a proforma disbursement account and the billing of a final disbursement account.",
+    "2_imgTitle": "Integrated Vessel Support",
+    "2_imgSubTitle": "From Arrival to Departure",
+    "3_title": "Extensive Agent Services",
+    "3_description": "Our services extend to controlling cargo operations, arranging and coordinating bunkering, and providing vessels with technical and food supplies, including various navigation charts and sailing guidebooks. We also manage border and customs control for inbound vessels, make thorough prearrangements of the vessel’s call, and coordinate berthing with relevant authorities. Additionally, we arrange medical treatment for crews, manage crew changes in ports, and facilitate leisure time for crew members.",
+    "3_imgTitle": "Beyond Basic Agency Functions",
+    "3_imgSubTitle": "Comprehensive Care for Vessels and Crew",
+    "4_title": "Experience and Professionalism",
+    "4_description": "With about a hundred years of experience at nearly all terminals in the Murmansk port area and skills to work with all types of cargos, INFLOT stands as a leader in the field. Our professionalism stems from highly qualified employees, with knowledge passed down through generations. Our team, proficient in marine terminology and English, is led by professional seafarers with legal education. We guarantee efficiency and results, overcoming regular challenges at sea with our unique skills and experience.",
+    "4_imgTitle": "A Century of Maritime Expertise",
+    "4_imgSubTitle": "Proficiency and Reliability in Every Operation"
+  },
+  "services": {
+    "1_l": "Bunker Survey",
+    "2_l": "On-hire (Off-hire)",
+    "3_l": "U-sonic Inspection of Hatch Covers",
+    "4_l": "Ballast Tanks Inspection",
+    "5_l": "Project Expertise",
+    "1_r": "Draft Survey",
+    "2_r": "Damage Survey",
+    "3_r": "General Cargo Lashing Inspection",
+    "4_r": "Hold Condition Inspection",
+    "5_r": "Pre-entry Survey"
+  },  
   "name": "Inflot",
   "about": "About Us",
-  "aboutDescription": "founded in 1934, has been specializing in ship agency services. Our mission is to ensure reliability and efficiency in maritime logistics. We offer a wide range of services including port agency, cargo operations, and consultancy services. Our experts have deep knowledge in maritime transportation and are always ready to provide tailored solutions for each client. We take pride in being a dependable partner to many companies in the maritime logistics world for decades.",
-  "contacts": "Contacts",
-  "title": "Navigating Success Across the Seas",
-  "subtitle": "Inflot has been engaged in ship agency services since 1934. We understand how important reliability is in maritime logistics, and strive to provide our clients with the highest quality service."
+  "aboutDescription": "The marine agency INFLOT was founded on 17 October 1934 by the Order of the Government of the USSR within shipping lines in sea ports of the USSR to service calls in ports of USSR by foreign vessels. The marine agency INFLOT within Murmansk Shipping Company have provide agent’s and convoying services for vessels in port of Murmansk.",
+  "title": "Maritime Vessel Agency",
+  "subtitle": "The trust based on experience, competence and professionalism"
 }

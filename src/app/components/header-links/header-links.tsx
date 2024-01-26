@@ -3,7 +3,7 @@ import { useLocale, useTranslations } from 'next-intl';
 import Link from 'next/link';
 
 export default function HeaderLinks() {
-  const t = useTranslations();
+  const t = useTranslations('header');
   const locale = useLocale();
 
   const getLocalePath = () => {
@@ -12,8 +12,8 @@ export default function HeaderLinks() {
 
   const links = [
     {
-      title: t('about'),
-      link: `${getLocalePath()}/#about`,
+      title: t('mission'),
+      link: `${getLocalePath()}/#mission`,
     },
     {
       title: t('contacts'),
@@ -27,7 +27,7 @@ export default function HeaderLinks() {
         <Link
           key={link}
           href={link}
-          className="header-link font-['PlayBold'] tracking-widest uppercase text-white mx-3 no-underline lg:mx-6 rounded-md font-semibold"
+          className="header-link font-['PlayBold'] text-center tracking-widest cursor-pointer uppercase text-white mx-3 no-underline lg:mx-6 rounded-md font-semibold"
         >
           {title}
         </Link>

@@ -2,6 +2,7 @@
   "header": {
     "address": "K.-Liebknecht-Str. 34a, Murmansk, 183038, Russland",
     "about": "Über uns",
+    "mission": "Unsere Aufgabe",
     "contacts": "Kontakt",
     "company": "LLC Maritime Agency «Inflot»",
     "ourContacts": "Unsere Kontakte",
@@ -14,20 +15,50 @@
     "mail": "Mail"
   },
   "lang": {
-    "russian": "Russisch",
-    "english": "Englisch",
+    "russian": "Русский",
+    "english": "English",
     "german": "Deutsch",
-    "norwegian": "Norwegisch"
+    "french": "Français",
+    "norwegian": "Norsk"
   },
   "meta": {
     "lang": "de",
     "title": "LLC Maritime Agency «Inflot»",
     "description": "Inflot ist auf Schiffsagentur und maritime Logistik spezialisiert. Wir bieten Hafenagenturdienste, Frachtoperationen und individuelle Lösungen im Bereich der Seetransporte an."
   },
+  "mainInfo": {
+    "1_title": "Steigerung der Effizienz des Schiffsdienstes",
+    "1_description": "Unsere Mission ist es, die Qualität des Schiffsservices im Hafen ständig zu erhöhen und zu verbessern, wobei das Hauptpostulat unseres Erachtens darin besteht, dass das Schiff schneller im Hafen ankommt und ihn schneller verlässt. Wir arbeiten daran, Ausfallzeiten zu reduzieren und so schnell wie möglich mit der Abfertigung des Schiffes zu beginnen, was die finanziellen Kosten unserer Partner senkt.",
+    "1_imgTitle": "Optimierung der Hafenoperationen",
+    "1_imgSubTitle": "Minimierung der Ausfallzeiten, Maximierung der Effizienz",
+    "2_title": "Umfassendes Schiffsmanagement",
+    "2_description": "Wir informieren ständig alle interessierten Parteien über den Fortgang der Bewegung und Bearbeitung des Schiffes im Hafen. Wir kontrollieren sorgfältig den Zeitplan des Frachtbetriebs und überwachen seine Umsetzung; übernehmen die Bestellung von Lotsen-, Festmacher- und Abschleppdiensten und die Zahlung der festgelegten Hafengebühren.",
+    "2_imgTitle": "Integrierte Schiffsunterstützung",
+    "2_imgSubTitle": "Von der Ankunft bis zur Abfahrt",
+    "3_title": "Umfangreiche Agenturdienstleistungen",
+    "3_description": "Unsere Dienstleistungen umfassen die Kontrolle des Ladungsbetriebs, die Organisation und Koordination des Bunkerbetriebs, die Versorgung von Schiffen mit technischen und Lebensmittelvorräten sowie bei Bedarf mit verschiedenen Navigationskarten und Navigationshilfen. Wir organisieren die Grenz- und Zollkontrolle der in den Hafen einlaufenden Schiffe.",
+    "3_imgTitle": "Über die Grundfunktionen eines Agenten hinaus",
+    "3_imgSubTitle": "Umfassende Betreuung von Schiffen und Besatzungen",
+    "4_title": "Erfahrung und Professionalität",
+    "4_description": "Das Unternehmen verfügt über fast ein Jahrhundert Erfahrung in der Arbeit an fast allen Terminals im Wassergebiet des Hafens von Murmansk. Unsere Professionalität wird durch die höchste Qualifikation unserer Mitarbeiter bestimmt, basierend auf dem über Jahrzehnte gesammelten Wissen als Schiffsmakler.",
+    "4_imgTitle": "Ein Jahrhundert maritimer Expertise",
+    "4_imgSubTitle": "Kompetenz und Zuverlässigkeit in jeder Operation"
+  },
+  "services": {
+    "1_l": "Bunker-Inspektion",
+    "2_l": "Ultraschall-Inspektion der Lukendeckel",
+    "3_l": "An- und Abmietungs-Inspektion",
+    "4_l": "Inspektion der Ballasttanks",
+    "5_l": "Projektbegutachtung",
+    "1_r": "Tiefgangsvermessung",
+    "2_r": "Schadensuntersuchung",
+    "3_r": "Inspektion der Ladungssicherung",
+    "4_r": "Inspektion des Laderaumzustands",
+    "5_r": "Vorab-Inspektion"
+  },
   "name": "Inflot",
   "about": "Über uns",
-  "aboutDescription": "gegründet im Jahr 1934, ist auf Schiffsagenturdienste spezialisiert. Unsere Mission ist es, Zuverlässigkeit und Effizienz in der maritimen Logistik zu gewährleisten. Wir bieten ein breites Spektrum an Dienstleistungen, einschließlich Hafenagentur, Frachtabwicklung und Beratungsdienste. Unsere Experten verfügen über tiefgehende Kenntnisse im Bereich der maritimen Transporte und sind stets bereit, maßgeschneiderte Lösungen für jeden Kunden anzubieten. Wir sind stolz darauf, seit Jahrzehnten ein verlässlicher Partner für viele Unternehmen im Bereich der maritimen Logistik zu sein.",
-  "contacts": "Kontakt",
-  "title": "Erfolg über die Meere navigieren",
-  "subtitle": "Inflot ist seit 1934 im Bereich der Schiffsagenturdienste tätig. Wir verstehen, wie wichtig Zuverlässigkeit in der maritimen Logistik ist, und bemühen uns, unseren Kunden einen Service höchster Qualität zu bieten."
+  "aboutDescription": "Die Schifffahrtsagentur „Inflot“ wurde am 17. Oktober 1934 im Auftrag der Regierung der UdSSR bei Reedereien in den Seehäfen der UdSSR gegründet, um Anläufe ausländischer Schiffe in den Häfen der UdSSR zu bedienen. Die Seeagentur “Inflot”, einschließlich der mit der Murmansk Shipping Company verbundenen Unternehmen, bietet seit mehr als 80 Jahren Agenturdienstleistungen und umfassende Unterstützung für Schiffe im Hafen von Murmansk an.",
+  "title": "Seeschifffahrtsagentur",
+  "subtitle": "Das Vertrauen basierend auf Erfahrung, Kompetenz und Professionalität"
 }

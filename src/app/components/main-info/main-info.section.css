@@ -1,0 +1,12 @@
+.custom-grayscale > img {
+  -webkit-filter: grayscale(1);
+  -moz-filter: grayscale(1);
+  filter: grayscale(1);
+  transition: all 1s ease-in-out;
+}
+
+.custom-grayscale:hover > img {
+  -webkit-filter: grayscale(0);
+  -moz-filter: grayscale(0);
+  filter: grayscale(0);
+}

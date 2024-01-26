@@ -4,6 +4,8 @@
 
 .lang-switcher ul {
   width: fit-content;
+  overflow: hidden;
+  padding: 5px;
 }
 
 .lang-switcher button::after {

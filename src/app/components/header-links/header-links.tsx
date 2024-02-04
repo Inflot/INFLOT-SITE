@@ -1,22 +1,40 @@
 import './header-links.css';
 import { useLocale, useTranslations } from 'next-intl';
 import Link from 'next/link';
+import { InflotLinks } from '../../types/types';
 
-export default function HeaderLinks() {
-  const t = useTranslations('header');
+type HeaderLinksProps = {
+  links: InflotLinks;
+};
+
+export default function HeaderLinks({
+  links: { contacts, about, staff, services, surveys },
+}: HeaderLinksProps) {
   const locale = useLocale();
 
   const getLocalePath = () => {
-    return locale === 'US' ? 'en' : locale.toLocaleLowerCase();
+    return locale === 'GB' ? 'en' : locale.toLocaleLowerCase();
   };
 
   const links = [
     {
-      title: t('mission'),
-      link: `${getLocalePath()}/#mission`,
+      title: about,
+      link: `${getLocalePath()}/#about`,
     },
     {
-      title: t('contacts'),
+      title: staff,
+      link: `${getLocalePath()}/#staff`,
+    },
+    {
+      title: services,
+      link: `${getLocalePath()}/#services`,
+    },
+    {
+      title: surveys,
+      link: `${getLocalePath()}/#surveys`,
+    },
+    {
+      title: contacts,
       link: `${getLocalePath()}/#contacts`,
     },
   ];

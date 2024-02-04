@@ -19,16 +19,16 @@ export default function WelcomeSection() {
       <p
         data-aos='fade-down'
         data-aos-duration='700'
-        className='text-white text-center uppercase pointer-events-none select-none text-sm md:text-base'
+        className='text-white text-center uppercase pointer-events-none select-none text-sm md:text-2xl'
       >
         {t('title')}
       </p>
       <div className='text-white flex flex-col justify-center items-center'>
-        <div className='flex flex-col md:flex-row items-center'>
+        <div className='w-fit flex flex-col md:flex-row items-center'>
           <ul
             data-aos='fade-right'
             data-aos-duration='700'
-            className='list-none text-center md:text-right lg:text-right pl-0 pr-0 md:pr-2 md:w-[400px] w-full leading-5 md:leading-6 pointer-events-none select-none text-sm md:text-base'
+            className='w-auto list-none text-center md:text-right lg:text-right pl-0 pr-0 md:pr-2 md:w-[500px] w-full leading-5 md:leading-6 pointer-events-none select-none text-sm md:text-base'
           >
             <li className='pr-0'>{ts('1_l')}</li>
             <li className='md:pr-2 pr-0'>{ts('2_l')}</li>
@@ -48,7 +48,7 @@ export default function WelcomeSection() {
           <ul
             data-aos='fade-left'
             data-aos-duration='700'
-            className='list-none text-center md:text-left lg:text-left pl-0 md:pl-2 md:w-[400px] w-full leading-5 md:leading-6 pointer-events-none select-none text-sm md:text-base'
+            className='w-auto list-none text-center md:text-left lg:text-left pl-0 md:pl-2 md:w-[500px] w-full leading-5 md:leading-6 pointer-events-none select-none text-sm md:text-base'
           >
             <li className='pl-0'>{ts('1_r')}</li>
             <li className='pr-0 md:pl-2'>{ts('2_r')}</li>

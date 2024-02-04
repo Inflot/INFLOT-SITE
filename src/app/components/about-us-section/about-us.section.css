@@ -10,23 +10,26 @@
   opacity: 0;
 }
 
-.background-image:first-child {
-  animation-delay: -5s;
+.background-image:nth-child(1) {
+  animation-delay: 5s;
   opacity: 1;
 }
 
 @keyframes changeBackground {
-
   0%,
   100% {
-    opacity: 1;
+    opacity: 0.0;
   }
 
-  33.33% {
-    opacity: 0;
+  10% {
+    opacity: 1.0;
   }
 
-  66.66% {
-    opacity: 1;
+  50% {
+    opacity: 1.0;
+  }
+
+  60% {
+    opacity: 0.0;
   }
 }

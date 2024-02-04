@@ -23,7 +23,7 @@ export default function LangSwitcher({ langs }: LangSwitcherProps) {
   const handleChange = (code: string) => {
     startTransition(() =>
       router.replace(pathname, {
-        locale: code === 'US' ? 'en' : code.toLocaleLowerCase(),
+        locale: code === 'GB' ? 'en' : code.toLocaleLowerCase(),
       } as NavigateOptions)
     );
   };
@@ -35,7 +35,7 @@ export default function LangSwitcher({ langs }: LangSwitcherProps) {
       customLabels={{
         ...langs,
       }}
-      selected={locale === 'en' ? 'US' : locale.toUpperCase()}
+      selected={locale === 'en' ? 'GB' : locale.toUpperCase()}
       onSelect={(code) => handleChange(code)}
       showSelectedLabel={false}
       selectedSize={20}

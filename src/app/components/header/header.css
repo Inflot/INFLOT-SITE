@@ -2,6 +2,10 @@
   transform: scale(1.5);
 }
 
+.header-background {
+  background: rgb(68, 103, 124);
+}
+
 .header-gradient {
   height: 150px;
   width: 100%;

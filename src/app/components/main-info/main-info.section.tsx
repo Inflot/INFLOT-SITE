@@ -28,23 +28,24 @@ export default function MainInformationSection() {
         id='mission'
         className='flex flex-row h-full w-full place-items-center'
       >
-        <div className='relative flex w-full max-w-full flex-row bg-white bg-clip-border text-gray-700'>
-          <figure className='relative w-2/5 m-0 overflow-hidden text-gray-700 bg-white shrink-0 bg-clip-border custom-grayscale'>
+        <div className='relative flex w-full max-w-full flex-col lg:flex-row bg-white bg-clip-border text-gray-700'>
+          <figure className='relative m-0 overflow-hidden text-gray-700 bg-white shrink-0 bg-clip-border 
+            custom-grayscale w-full lg:w-2/5 min-h-[500px]'>
             <Image
-              src='/images/photos/4.jpg'
+              src='/images/photos/6.jpg'
               alt='image'
               fill
               className='object-cover w-full h-full'
             />
-            <figcaption className='absolute inset-0 flex items-start text-white px-12 w-full'>
+            <figcaption className='absolute inset-0 flex items-start text-white px-12 top-20 w-full'>
               <h2
                 data-aos='zoom-in-left'
                 data-aos-duration='700'
-                className='font-["PlayBold"] text-4xl font-bold text-left px-4 py-2 bg-[#22333d91] w-full'
+                className='font-["PlayBold"] text-2xl lg:text-4xl font-bold text-left px-4 py-0 bg-[#22333d91] w-full'
               >
                 {t('2_imgTitle')}
                 <br />
-                <p className='mt-2 text-3xl font-sans font-normal'>
+                <p className='mt-2 text-xl lg:text-3xl font-sans font-normal'>
                   {t('2_imgSubTitle')}
                 </p>
               </h2>
@@ -53,15 +54,17 @@ export default function MainInformationSection() {
           <div
             data-aos='fade-left'
             data-aos-duration='1000'
-            className='px-24 py-5 my-20'
+            className='px-16 lg:px-24 my-10'
           >
-            <h4 className='mt-0 text-[#1f3542] block mb-2 antialiased font-semibold leading-snug tracking-normal font-["PlayBold"] text-3xl md:text-6xl tracking-wider mb-4 text-center md:text-left'>
+            <h3 className='mt-0 text-[#1f3542] block antialiased font-semibold leading-snug tracking-normal font-["PlayBold"] 
+            tracking-wider mb-2 text-2xl lg:text-3xl lg:text-6xl text-center md:text-left'>
               {t('2_title')}
-            </h4>
-            {staffItems.map((item) => (
+            </h3>
+            {staffItems.map((item, i) => (
               <p
                 key={item.id}
-                className='text-[#1f3542] block mb-8 antialiased font-normal leading-relaxed text-blue-gray-700 text-2xl'
+                data-aos-delay={200 * i}
+                className='text-[#1f3542] block antialiased font-normal text-blue-gray-700 text-xl lg:text-2xl text-justify'
               >
                 {item.text}
               </p>
@@ -76,26 +79,30 @@ export default function MainInformationSection() {
         className='flex flex-row h-full w-full place-items-center bg-[#AABCC5]'
         id='services'
       >
-        <div className='relative flex w-full max-w-full flex-row bg-clip-border text-gray-700'>
+        <div className='relative flex w-full max-w-full flex-col-reverse lg:flex-row bg-clip-border text-gray-700'>
           <div
             data-aos='fade-right'
             data-aos-duration='1000'
-            className='px-24 py-5 my-20'
+            className='px-16 lg:px-24 py-4 lg:py-10'
           >
-            <h4 className='mt-0 text-[#1f3542] block mb-2 antialiased font-semibold leading-snug tracking-normal font-["PlayBold"] text-3xl md:text-6xl tracking-wider mb-4 text-center md:text-right'>
+            <h3 className='mt-0 text-[#1f3542] block mb-2 antialiased font-semibold leading-snug tracking-normal 
+            font-["PlayBold"] tracking-wider mb-4 text-2xl lg:text-3xl lg:text-6xl text-center lg:text-right'>
               {t('servicesTitle')}
-            </h4>
+            </h3>
             <div className='text-[#1f3542] block mb-8 antialiased font-normal leading-relaxed text-2xl '>
-              <ul className='space-y-1 list-inside text-xl md:text-2xl'>
-                {servicesItems.map((item) => (
+              <ul className='pl-0 space-y-1 list-inside text-xl md:text-2xl'>
+                {servicesItems.map((item, i) => (
                   <li
+                    data-aos='fade-right'
+                    data-aos-duration='500'
+                    data-aos-delay={200 * i}
                     key={item.id}
                     className='flex items-center space-x-2 py-2'
                   >
                     <div className='flex justify-center items-center w-10 h-10'>
                       <SlAnchor className='mr-[10px]' size='40px' />
                     </div>
-                    <span className='inline-block text-left pr-2'>
+                    <span className='inline-block text-justify lg:text-left pr-2'>
                       {item.text}
                     </span>
                   </li>
@@ -104,9 +111,9 @@ export default function MainInformationSection() {
             </div>
           </div>
 
-          <figure className='relative w-1/2 m-0 overflow-hidden text-gray-700 shrink-0 bg-clip-border custom-grayscale'>
+          <figure className='relative w-full lg:w-2/5 min-h-[500px] m-0 overflow-hidden text-gray-700 shrink-0 bg-clip-border custom-grayscale'>
             <Image
-              src='/images/photos/2.jpg'
+              src='/images/photos/7.jpg'
               alt='image'
               fill
               className='object-cover w-full h-full'
@@ -115,11 +122,11 @@ export default function MainInformationSection() {
               <h2
                 data-aos='zoom-in-right'
                 data-aos-duration='700'
-                className='font-["PlayBold"] text-4xl font-bold text-left px-4 py-2 bg-[#22333d91] w-full'
+                className='font-["PlayBold"] text-2xl lg:text-4xl font-bold text-left px-4 py-2 bg-[#22333d91] w-full'
               >
                 {t('3_imgTitle')}
                 <br />
-                <p className='mt-2 text-3xl font-sans font-normal'>
+                <p className='mt-2 text-xl lg:text-3xl font-sans font-normal'>
                   {t('3_imgSubTitle')}
                 </p>
               </h2>
@@ -134,10 +141,10 @@ export default function MainInformationSection() {
         className='flex flex-row h-full w-full place-items-center bg-white'
         id='surveys'
       >
-        <div className='relative flex w-full max-w-full flex-row bg-clip-border'>
-          <figure className='relative w-2/5 m-0 overflow-hidden shrink-0 bg-clip-border custom-grayscale'>
+        <div className='relative flex w-full max-w-full flex-col lg:flex-row bg-clip-border'>
+          <figure className='relative w-full lg:w-2/5 min-h-[500px] m-0 overflow-hidden shrink-0 bg-clip-border custom-grayscale'>
             <Image
-              src='/images/photos/3.jpg'
+              src='/images/photos/8.jpg'
               alt='image'
               fill
               className='object-cover w-full h-full'
@@ -146,11 +153,11 @@ export default function MainInformationSection() {
               <h2
                 data-aos='zoom-in-left'
                 data-aos-duration='700'
-                className='font-["PlayBold"] text-4xl font-bold text-left px-4 py-2 bg-[#22333d91] w-full'
+                className='font-["PlayBold"] text-2xl lg:text-4xl font-bold text-left px-4 py-2 bg-[#22333d91] w-full'
               >
                 {t('4_imgTitle')}
                 <br />
-                <p className='mt-2 text-3xl font-sans font-normal'>
+                <p className='mt-2 text-xl lg:text-3xl font-sans font-normal'>
                   {t('4_imgSubTitle')}
                 </p>
               </h2>
@@ -159,15 +166,19 @@ export default function MainInformationSection() {
           <div
             data-aos='fade-left'
             data-aos-duration='1000'
-            className='px-24 py-5 my-20'
+            className='px-16 lg:px-24 py-4 lg:py-10'
           >
-            <h4 className='mt-0 text-[#1f3542] block mb-2 antialiased font-semibold leading-snug tracking-normal font-["PlayBold"] text-3xl md:text-6xl tracking-wider mb-4 text-center md:text-left'>
+            <h3 className='mt-0 text-[#1f3542] block mb-2 antialiased font-semibold leading-snug tracking-normal font-["PlayBold"] 
+              tracking-wider mb-4 text-2xl lg:text-3xl lg:text-6xl text-center lg:text-left'>
               {t('surveyTitle')}
-            </h4>
+            </h3>
             <div className='text-[#1f3542] block mb-8 antialiased font-normal leading-relaxed text-2xl '>
-              <ul className='space-y-1 list-inside text-xl md:text-2xl'>
-                {surveyItems.map((item) => (
+              <ul className='space-y-1 list-inside text-xl md:text-2xl pl-0'>
+                {surveyItems.map((item, i) => (
                   <li
+                    data-aos='fade-left'
+                    data-aos-duration='500'
+                    data-aos-delay={200 * i}
                     key={item.id}
                     className='flex items-center space-x-2 py-2'
                   >

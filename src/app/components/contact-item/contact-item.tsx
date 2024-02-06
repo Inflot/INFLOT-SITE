@@ -23,8 +23,8 @@ const ContactItem = ({
     href={href}
     target={target}
   >
-    <div className='flex flex-col items-center justify-center text-center w-full h-full m-2 group-hover:text-gray-300'>
-      <div className='footer-icon'> {icon}</div>
+    <div className='flex flex-col items-center justify-start text-center w-full h-full m-2 group-hover:text-gray-300'>
+      <div className='footer-icon'>{icon}</div>
       <div className='flex flex-col items-center justify-center text-center no-underline flex items-center text-white'>
         <p className='text-base md:text-lg lg:text-xl font-semibold uppercase mt-4 mb-2 group-hover:text-gray-300'>
           {title}

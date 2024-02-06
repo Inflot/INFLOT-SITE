@@ -2,6 +2,8 @@ import { FaPhone, FaWhatsapp, FaEnvelope, FaFax } from 'react-icons/fa';
 import { ImMobile, ImLocation2 } from 'react-icons/im';
 import { useTranslations } from 'next-intl';
 import ContactItem from '../contact-item/contact-item';
+import Link from 'next/link';
+import Image from 'next/image';
 import './footer.css';
 
 export default function Footer() {
@@ -81,8 +83,8 @@ export default function Footer() {
               ></iframe>
             )}
           </div>
-          <div className='w-full p-4'>
-            <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3'>
+          <div className='w-full p-4 m-auto'>
+            <div className='grid grid-cols-2 md:grid-cols-3'>
               {contactDetails.map((details, index) => (
                 <ContactItem key={index} details={details} index={index} />
               ))}
@@ -90,8 +92,22 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className='bg-[#22333d] py-2'>
-        <p className='text-center text-md sm:text-lg md:text-xl px-2 py-3'>
+      <div className='flex flex-col lg:flex-row justify-center bg-[#22333d] py-8'>
+        <Link
+          href='/'
+          className='flex items-center justify-center w-full lg:w-auto'
+        >
+          <Image
+            width='80'
+            height='80'
+            className='spin h-18
+            mx-0 lg:ml-20 lg:mr-5 z-50 logo--shadow pointer-events-none select-none block w-auto
+            transition-all duration-500'
+            src='/logo.png'
+            alt='Logo'
+          />
+        </Link>
+        <p className='font-["PlayBold"] text-center tracking-widest uppercase text-md sm:text-lg md:text-xl px-2 py-3'>
           {t('company')}, {year}
         </p>
       </div>

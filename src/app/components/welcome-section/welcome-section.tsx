@@ -8,32 +8,26 @@ export default function WelcomeSection() {
   const ts = useTranslations('services');
 
   return (
-    <div className='w-full z-40 absolute bg-cover bg-center mt-16 md:mt-24 lg:mt-[20vh] top-3 welcome-section'>
-      <Image
-        width='80'
-        height='80'
-        className='z-50 spin logo--shadow pointer-events-none select-none block h-24 w-auto m-auto sm:hidden'
-        src='/logo.png'
-        alt='Logo'
-      />
+    <div className='w-full z-40 absolute bg-cover bg-center mt-32 lg:mt-[20vh] top-3 welcome-section'>
       <p
         data-aos='fade-down'
         data-aos-duration='700'
-        className='text-white text-center uppercase pointer-events-none select-none text-sm md:text-2xl'
+        className='my-0 lg:my-2 text-white text-center uppercase pointer-events-none select-none text-xl md:text-2xl'
       >
         {t('title')}
       </p>
       <div className='text-white flex flex-col justify-center items-center'>
-        <div className='w-fit flex flex-col md:flex-row items-center'>
+        <div className='w-fit flex flex-col lg:flex-row items-center'>
           <ul
             data-aos='fade-right'
             data-aos-duration='700'
-            className='w-auto list-none text-center md:text-right lg:text-right pl-0 pr-0 md:pr-2 md:w-[500px] w-full leading-5 md:leading-6 pointer-events-none select-none text-sm md:text-base'
+            className='w-auto list-none text-center lg:text-right lg:text-right 
+              pl-0 pr-0 md:pr-2 md:w-[500px] w-full leading-5 md:leading-6 pointer-events-none select-none text-sm md:text-base'
           >
             <li className='pr-0'>{ts('1_l')}</li>
-            <li className='md:pr-2 pr-0'>{ts('2_l')}</li>
-            <li className='md:pr-4 pr-0'>{ts('3_l')}</li>
-            <li className='md:pr-2 pr-0'>{ts('4_l')}</li>
+            <li className='lg:pr-2 pr-0'>{ts('2_l')}</li>
+            <li className='lg:pr-4 pr-0'>{ts('3_l')}</li>
+            <li className='lg:pr-2 pr-0'>{ts('4_l')}</li>
             <li className='pr-0'>{ts('5_l')}</li>
           </ul>
           <Image
@@ -41,19 +35,19 @@ export default function WelcomeSection() {
             data-aos-duration='700'
             src='/images/header/compass.svg'
             alt='Compass'
-            className='m-auto pointer-events-none select-none w-32 h-32 md:w-64 md:h-64'
+            className='m-auto pointer-events-none select-none w-32 h-32 md:w-48 md:h-48 lg:w-64 lg:h-64'
             width={250}
             height={250}
           ></Image>
           <ul
             data-aos='fade-left'
             data-aos-duration='700'
-            className='w-auto list-none text-center md:text-left lg:text-left pl-0 md:pl-2 md:w-[500px] w-full leading-5 md:leading-6 pointer-events-none select-none text-sm md:text-base'
+            className='w-auto list-none text-center lg:text-left lg:text-left pl-0 md:pl-2 lg:w-[500px] w-full leading-5 md:leading-6 pointer-events-none select-none text-sm md:text-base'
           >
             <li className='pl-0'>{ts('1_r')}</li>
-            <li className='pr-0 md:pl-2'>{ts('2_r')}</li>
-            <li className='pr-0 md:pl-4'>{ts('3_r')}</li>
-            <li className='pr-0 md:pl-2'>{ts('4_r')}</li>
+            <li className='pr-0 lg:pl-2'>{ts('2_r')}</li>
+            <li className='pr-0 lg:pl-4'>{ts('3_r')}</li>
+            <li className='pr-0 lg:pl-2'>{ts('4_r')}</li>
             <li className='pl-0'>{ts('5_r')}</li>
           </ul>
         </div>
@@ -61,7 +55,8 @@ export default function WelcomeSection() {
         <h1
           data-aos='zoom-in'
           data-aos-duration='700'
-          className='font-["PlayBold"] tracking-wider uppercase text-2xl md:text-4xl lg:text-6xl select-none pointer-events-none my-1 md:my-8'
+          className='font-["PlayBold"] my-1 tracking-wider uppercase text-2xl md:text-4xl lg:text-6xl 
+            select-none pointer-events-none my-1 lg:my-8'
         >
           {t('name')}
         </h1>
@@ -76,7 +71,9 @@ export default function WelcomeSection() {
           data-aos='zoom-in'
           data-aos-duration='700'
           href='#about'
-          className='mt-8 md:mt-12 no-underline text-white ring-2 ring-white focus:bg-[#ffffff70] hover:bg-[#ffffff30] rounded-lg px-5 py-2.5 select-none focus:outline-none text-lg md:text-2xl lg:text-3xl'
+          className='mt-8 md:mt-6 lg:mt-12 no-underline text-white ring-2 ring-white 
+            focus:bg-[#ffffff70] hover:bg-[#ffffff30] rounded-lg px-5 py-1 lg:py-2.5 select-none 
+            focus:outline-none text-lg md:text-2xl lg:text-3xl'
         >
           {t('about')}
         </a>

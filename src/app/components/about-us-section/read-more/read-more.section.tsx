@@ -50,7 +50,7 @@ export default function ReadMore({ listItems, title }: ReadMoreProps) {
       <div className='content' ref={myElementRef}>
         <ul className='space-y-1 list-inside text-xl md:text-2xl'>
           {listItems.map((item) => (
-            <li key={item.id} className='flex items-center space-x-2 py-2'>
+            <li key={item.id} className='flex items-center space-x-2 py-2 text-xl lg:text-2xl'>
               <div className='flex justify-center items-center w-10 h-10'>
                 <SlAnchor className='mr-[10px]' size='40px' />
               </div>

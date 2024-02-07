@@ -8,7 +8,7 @@ export default function WelcomeSection() {
   const ts = useTranslations('services');
 
   return (
-    <div className='w-full z-40 absolute bg-cover bg-center mt-32 lg:mt-[20vh] top-3 welcome-section'>
+    <div className='w-screen z-40 absolute bg-cover bg-center mt-32 lg:mt-[20vh] top-3 welcome-section'>
       <p
         data-aos='fade-down'
         data-aos-duration='700'
@@ -17,7 +17,7 @@ export default function WelcomeSection() {
         {t('title')}
       </p>
       <div className='text-white flex flex-col justify-center items-center'>
-        <div className='w-fit flex flex-col lg:flex-row items-center'>
+        <div className='w-full flex flex-col lg:flex-row items-center justify-center'>
           <ul
             data-aos='fade-right'
             data-aos-duration='700'
@@ -35,7 +35,7 @@ export default function WelcomeSection() {
             data-aos-duration='700'
             src='/images/header/compass.svg'
             alt='Compass'
-            className='m-auto pointer-events-none select-none w-32 h-32 md:w-48 md:h-48 lg:w-64 lg:h-64'
+            className='m-0 pointer-events-none select-none w-32 h-32 md:w-48 md:h-48 lg:w-64 lg:h-64'
             width={250}
             height={250}
           ></Image>

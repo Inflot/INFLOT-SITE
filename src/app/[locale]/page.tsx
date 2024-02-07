@@ -19,7 +19,7 @@ export default function Page() {
           fill
           quality={100}
           alt='Maritime Scene'
-        />s
+        />
         <WelcomeSection />
       </div>
       <main className='main'>

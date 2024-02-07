@@ -8,6 +8,8 @@ export default function LibsLoader() {
     import('aos').then((AOS) => {
       AOS.init({
         once: true,
+        initClassName: 'aos-init',
+        animatedClassName: 'aos-animate'
       });
     });
   }, []);

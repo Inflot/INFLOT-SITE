@@ -47,6 +47,8 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	text-rendering: optimizeLegibility;
+	overflow-x: hidden !important;  
+	width: 100%;
 }
 
 .logo {
@@ -65,4 +67,8 @@ body {
 
 .text-disabled {
 	color: var(--textColorSecondary) !important;
+}
+
+.aos-init:not(.aos-animate):after {
+	position: fixed;
 }

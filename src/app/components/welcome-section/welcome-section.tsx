@@ -17,7 +17,7 @@ export default function WelcomeSection() {
         {t('title')}
       </p>
       <div className='text-white flex flex-col justify-center items-center'>
-        <div className='w-full flex flex-col lg:flex-row items-center justify-center'>
+        <div className='overflow-hidden w-full flex flex-col lg:flex-row items-center justify-center'>
           <ul
             data-aos='fade-right'
             data-aos-duration='700'

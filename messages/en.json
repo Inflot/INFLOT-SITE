@@ -7,7 +7,7 @@
     "surveys": "Surveys",
     "mission": "Our Mission",
     "contacts": "Contacts",
-    "company": "Maritime agency «Inflot» Ltd.",
+    "company": "Maritime agency «Inflot»",
     "ourContacts": "Our Contacts",
     "ourAddress": "Our Address",
     "links": "Links",
@@ -26,7 +26,7 @@
   },
   "meta": {
     "lang": "en-us",
-    "title": "LLC Maritime Agency «Inflot»",
+    "title": "Maritime Agency «Inflot»",
     "description": "Inflot specializes in ship agency and maritime logistics. We offer port agency services, cargo operations, and customized solutions in the field of maritime transportation."
   },
   "mainInfo": {
@@ -62,7 +62,7 @@
     "surveysList8": "Pre-entry survey",
     "surveysList9": "Cargo survey",
     "surveysList10": "General cargo lashing inspection",
-    "servicesTitle": "We are pleased to offer you a wide range of services, such as:",
+    "servicesTitle": "We are pleased to offer you a wide range of services",
     "servicesList0": "delivery of foodstuffs on board vessels anchored in port of Murmansk, Kandalaksha, Vitino;",
     "servicesList1": "order and delivery of vessel supplies (working clothes, deck equipment, materials and tools), spare parts, etc.), consumables;",
     "servicesList2": "supply and check of survival and emergency as well as conventional equipment of all types;",
@@ -76,16 +76,14 @@
     "servicesList10": "own park of vehicles consisting of passenger and cars and trucks, storage area of 150 m2."
   },
   "services": {
-    "1_l": "Bunker Survey",
-    "2_l": "On-hire (off-hire) survey",
-    "3_l": "U-sonic inspection of hatch covers",
-    "4_l": "Ballast tanks inspection",
-    "5_l": "Hatch sealing",
-    "1_r": "Draft survey",
-    "2_r": "Damage survey",
-    "3_r": "Cargo survey and General cargo lashing inspection",
-    "4_r": "Hold Condition Inspection",
-    "5_r": "Pre-entry survey"
+    "1_l": "Ship agency services",
+    "2_l": "All types of ship supply and repair",
+    "3_l": "Conducting analyses of samples of fresh water, fuel, and cargo",
+    "4_l": "All types of surveyor services",
+    "1_r": "Forwarding services",
+    "2_r": "Arrangement of entry/exit transit visas",
+    "3_r": "Organization of underwater inspections of ships",
+    "4_r": "Transportation services"
   },
   "name": "Inflot",
   "about": "About Us",

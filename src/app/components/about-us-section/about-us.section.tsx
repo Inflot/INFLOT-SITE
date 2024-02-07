@@ -26,7 +26,7 @@ export default function AboutSection() {
             <h3 className='text-[#1f3542] block mb-2 antialiased font-semibold leading-snug font-["PlayBold"] text-2xl lg:text-3xl lg:text-6xl tracking-wider mb-4 mt-0 text-center lg:text-right'>
               {t('about')}
             </h3>
-            <div className='text-[#1f3542] block mb-8 antialiased font-normal leading-relaxed text-blue-gray-700 text-xl lg:text-2xl text-justify lg:text-right'>
+            <div className='text-[#1f3542] block mb-8 antialiased font-normal leading-relaxed text-blue-gray-700 text-l md:text-xl lg:text-2xl text-justify lg:text-right'>
               <div className='text-[#1f3542] relative'>
                 <p
                   data-aos='fade-up'
@@ -62,11 +62,11 @@ export default function AboutSection() {
                 }}
               ></div>
             </div>
-            <figcaption className='absolute inset-0 flex items-end text-white px-4 md:px-12 w-full'>
+            <figcaption className='absolute inset-0 flex items-end text-white px-4 md:px-12 w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] '>
               <h2
                 data-aos='zoom-in-right'
                 data-aos-duration='700'
-                className='font-["PlayBold"] text-2xl lg:text-4xl font-bold text-left px-4 py-2 bg-[#22333d91] w-full'
+                className='font-["PlayBold"] text-2xl lg:text-4xl font-bold text-center px-4 py-2 w-full'
               >
                 {h('1_imgTitle')}
                 <br />
@@ -80,7 +80,8 @@ export default function AboutSection() {
       </section>
       <section
         id='mission'
-        className='flex flex-col h-full w-full place-items-center bg-[#355060] text-slate-300 py-4 lg:py-10 px-16 lg:px-24'
+        className='flex flex-col h-full w-full place-items-center text-slate-200 bg-[#355060] py-4 lg:py-10 px-16 lg:px-24
+        bg-[url("/images/about/map.jpg")] bg-clip-border bg-cover bg-center'
       >
         <h3
           data-aos='fade-up'
@@ -90,7 +91,7 @@ export default function AboutSection() {
           {t('aboutListTitle')}
         </h3>
 
-        <ul className='px-0 space-y-1 list-inside text-xl lg:text-2xl'>
+        <ul className='px-0 space-y-1 list-inside text-l md:text-xl lg:text-2xl'>
           {listItems.map((item, i) => (
             <li
               data-aos='fade-up'
@@ -102,7 +103,7 @@ export default function AboutSection() {
               <div className='flex justify-center items-center w-10 h-10'>
                 <SlAnchor className='mr-[10px]' size='40px' />
               </div>
-              <span className='inline-block pr-2 text-xl lg:text-2xl text-justify'>
+              <span className='inline-block pr-2 leading-relaxed text-l md:text-xl lg:text-2xl text-justify'>
                 {item.text}
               </span>
             </li>

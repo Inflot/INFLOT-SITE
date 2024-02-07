@@ -29,19 +29,30 @@ export default function MainInformationSection() {
         className='flex flex-row h-full w-full place-items-center'
       >
         <div className='relative flex w-full max-w-full flex-col lg:flex-row bg-white bg-clip-border text-gray-700'>
-          <figure className='relative m-0 overflow-hidden text-gray-700 bg-white shrink-0 bg-clip-border 
-            custom-grayscale w-full lg:w-2/5 min-h-[500px]'>
-            <Image
-              src='/images/photos/6.jpg'
-              alt='image'
-              fill
-              className='object-cover w-full h-full'
-            />
-            <figcaption className='absolute inset-0 flex items-start text-white px-12 top-20 w-full'>
+          <figure
+            className='relative m-0 overflow-hidden text-gray-700 bg-white shrink-0 bg-clip-border 
+            custom-grayscale w-full lg:w-2/5 min-h-[500px]'
+          >
+            <div className='inset-0 bg-cover bg-center opacity-85'>
+              <div
+                className='background-image'
+                style={{
+                  backgroundImage: "url('/images/photos/6.jpg')",
+                }}
+              ></div>
+              <div
+                className='background-image'
+                style={{
+                  backgroundImage: "url('/images/photos/5.jpg')",
+                }}
+              ></div>
+            </div>
+            <figcaption className='absolute inset-0 flex items-end text-white px-12 top-20 w-full'>
               <h2
                 data-aos='zoom-in-left'
                 data-aos-duration='700'
-                className='font-["PlayBold"] text-2xl lg:text-4xl font-bold text-left px-4 py-0 bg-[#22333d91] w-full'
+                className='font-["PlayBold"] text-2xl lg:text-4xl font-bold text-center px-4 py-0 w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] '
+                style={{ whiteSpace: 'pre-line' }}
               >
                 {t('2_imgTitle')}
                 <br />
@@ -56,15 +67,17 @@ export default function MainInformationSection() {
             data-aos-duration='1000'
             className='px-16 lg:px-24 my-10'
           >
-            <h3 className='mt-0 text-[#1f3542] block antialiased font-semibold leading-snug tracking-normal font-["PlayBold"] 
-            tracking-wider mb-2 text-2xl lg:text-3xl lg:text-6xl text-center md:text-left'>
+            <h3
+              className='mt-0 text-[#1f3542] block antialiased font-semibold leading-snug tracking-normal font-["PlayBold"] 
+            tracking-wider mb-2 text-2xl lg:text-3xl lg:text-6xl text-center md:text-left'
+            >
               {t('2_title')}
             </h3>
             {staffItems.map((item, i) => (
               <p
                 key={item.id}
                 data-aos-delay={200 * i}
-                className='text-[#1f3542] block antialiased font-normal text-blue-gray-700 text-xl lg:text-2xl text-justify'
+                className='text-[#1f3542] block antialiased font-normal text-blue-gray-700 leading-relaxed text-l md:text-xl lg:text-2xl text-justify'
               >
                 {item.text}
               </p>
@@ -85,12 +98,14 @@ export default function MainInformationSection() {
             data-aos-duration='1000'
             className='px-16 lg:px-24 py-4 lg:py-10'
           >
-            <h3 className='mt-0 text-[#1f3542] block mb-2 antialiased font-semibold leading-snug tracking-normal 
-            font-["PlayBold"] tracking-wider mb-4 text-2xl lg:text-3xl lg:text-6xl text-center lg:text-right'>
+            <h3
+              className='mt-0 text-[#1f3542] block mb-2 antialiased font-semibold leading-snug tracking-normal 
+            font-["PlayBold"] tracking-wider mb-4 text-2xl lg:text-3xl lg:text-6xl text-center lg:text-right'
+            >
               {t('servicesTitle')}
             </h3>
-            <div className='text-[#1f3542] block mb-8 antialiased font-normal leading-relaxed text-2xl '>
-              <ul className='pl-0 space-y-1 list-inside text-xl md:text-2xl'>
+            <div className='text-[#1f3542] block mb-8 antialiased font-normal leading-relaxed'>
+              <ul className='pl-0 space-y-1 list-inside text-l md:text-xl lg:text-2xl'>
                 {servicesItems.map((item, i) => (
                   <li
                     data-aos='fade-right'
@@ -112,17 +127,25 @@ export default function MainInformationSection() {
           </div>
 
           <figure className='relative w-full lg:w-2/5 min-h-[500px] m-0 overflow-hidden text-gray-700 shrink-0 bg-clip-border custom-grayscale'>
-            <Image
-              src='/images/photos/7.jpg'
-              alt='image'
-              fill
-              className='object-cover w-full h-full'
-            />
+            <div className='inset-0 bg-cover bg-center opacity-85'>
+              <div
+                className='background-image'
+                style={{
+                  backgroundImage: "url('/images/photos/2.jpg')",
+                }}
+              ></div>
+              <div
+                className='background-image'
+                style={{
+                  backgroundImage: "url('/images/photos/7.jpg')",
+                }}
+              ></div>
+            </div>
             <figcaption className='absolute inset-0 flex items-end text-white px-12 w-full'>
               <h2
                 data-aos='zoom-in-right'
                 data-aos-duration='700'
-                className='font-["PlayBold"] text-2xl lg:text-4xl font-bold text-left px-4 py-2 bg-[#22333d91] w-full'
+                className='font-["PlayBold"] text-2xl lg:text-4xl font-bold text-center px-4 py-2 w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] '
               >
                 {t('3_imgTitle')}
                 <br />
@@ -143,17 +166,25 @@ export default function MainInformationSection() {
       >
         <div className='relative flex w-full max-w-full flex-col lg:flex-row bg-clip-border'>
           <figure className='relative w-full lg:w-2/5 min-h-[500px] m-0 overflow-hidden shrink-0 bg-clip-border custom-grayscale'>
-            <Image
-              src='/images/photos/8.jpg'
-              alt='image'
-              fill
-              className='object-cover w-full h-full'
-            />
-            <figcaption className='absolute inset-0 flex items-end text-white px-12 w-full'>
+            <div className='inset-0 bg-cover bg-center opacity-85'>
+              <div
+                className='background-image'
+                style={{
+                  backgroundImage: "url('/images/photos/8.jpg')",
+                }}
+              ></div>
+              <div
+                className='background-image'
+                style={{
+                  backgroundImage: "url('/images/photos/4.jpg')",
+                }}
+              ></div>
+            </div>
+            <figcaption className='absolute inset-0 flex items-end text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] px-12 w-full'>
               <h2
                 data-aos='zoom-in-left'
                 data-aos-duration='700'
-                className='font-["PlayBold"] text-2xl lg:text-4xl font-bold text-left px-4 py-2 bg-[#22333d91] w-full'
+                className='font-["PlayBold"] text-2xl lg:text-4xl font-bold text-center px-4 py-2 w-full'
               >
                 {t('4_imgTitle')}
                 <br />
@@ -168,12 +199,14 @@ export default function MainInformationSection() {
             data-aos-duration='1000'
             className='px-16 lg:px-24 py-4 lg:py-10'
           >
-            <h3 className='mt-0 text-[#1f3542] block mb-2 antialiased font-semibold leading-snug tracking-normal font-["PlayBold"] 
-              tracking-wider mb-4 text-2xl lg:text-3xl lg:text-6xl text-center lg:text-left'>
+            <h3
+              className='mt-0 text-[#1f3542] block mb-2 antialiased font-semibold leading-snug tracking-normal font-["PlayBold"] 
+              tracking-wider mb-4 text-2xl lg:text-3xl lg:text-6xl text-center lg:text-left'
+            >
               {t('surveyTitle')}
             </h3>
-            <div className='text-[#1f3542] block mb-8 antialiased font-normal leading-relaxed text-2xl '>
-              <ul className='space-y-1 list-inside text-xl md:text-2xl pl-0'>
+            <div className='text-[#1f3542] block mb-8 antialiased font-normal leading-relaxed'>
+              <ul className='space-y-1 list-inside pl-0 text-l md:text-xl lg:text-2xl'>
                 {surveyItems.map((item, i) => (
                   <li
                     data-aos='fade-left'

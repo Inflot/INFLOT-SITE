@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 
 import '../ui/globals.css';
 import { useTranslations } from 'next-intl';
+import Script from 'next/script';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -21,18 +22,18 @@ export default function RootLayout({
   return (
     <html lang={t('lang')} className='scroll-smooth'>
       <head>
-        {/* <Script
+        <Script
           async
-          src='https://www.googletagmanager.com/gtag/js?id=null'
+          src='https://www.googletagmanager.com/gtag/js?id=G-F8X0TZPMRL'
         ></Script>
         <Script id='google-analytics'>
           {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'null');
+          gtag('config', 'G-F8X0TZPMRL');
         `}
-        </Script> */}
+        </Script>
         {/* <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Inflot"/> */}
         {/* Twitter */}
         <meta name='twitter:card' content='summary_large_image'></meta>

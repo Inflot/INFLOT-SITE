@@ -22,13 +22,12 @@ export default function WelcomeSection() {
             data-aos='fade-right'
             data-aos-duration='700'
             className='w-auto list-none text-center lg:text-right lg:text-right 
-              pl-0 pr-0 md:pr-2 md:w-[500px] w-full leading-5 md:leading-6 pointer-events-none select-none text-sm md:text-base'
+              pl-0 pr-0 md:pr-2 md:w-[500px] w-full leading-6 md:leading-7 pointer-events-none select-none text-sm md:text-base'
           >
             <li className='pr-0'>{ts('1_l')}</li>
             <li className='lg:pr-2 pr-0'>{ts('2_l')}</li>
             <li className='lg:pr-4 pr-0'>{ts('3_l')}</li>
             <li className='lg:pr-2 pr-0'>{ts('4_l')}</li>
-            <li className='pr-0'>{ts('5_l')}</li>
           </ul>
           <Image
             data-aos='flip-left'
@@ -42,13 +41,12 @@ export default function WelcomeSection() {
           <ul
             data-aos='fade-left'
             data-aos-duration='700'
-            className='w-auto list-none text-center lg:text-left lg:text-left pl-0 md:pl-2 lg:w-[500px] w-full leading-5 md:leading-6 pointer-events-none select-none text-sm md:text-base'
+            className='w-auto list-none text-center lg:text-left lg:text-left pl-0 md:pl-2 lg:w-[500px] w-full leading-6 md:leading-7 pointer-events-none select-none text-sm md:text-base'
           >
             <li className='pl-0'>{ts('1_r')}</li>
             <li className='pr-0 lg:pl-2'>{ts('2_r')}</li>
             <li className='pr-0 lg:pl-4'>{ts('3_r')}</li>
             <li className='pr-0 lg:pl-2'>{ts('4_r')}</li>
-            <li className='pl-0'>{ts('5_r')}</li>
           </ul>
         </div>
 

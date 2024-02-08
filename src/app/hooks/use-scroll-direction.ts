@@ -1,10 +1,12 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 type ScrollDirection = 'down' | 'up' | null;
 
 function useScrollDirection() {
   const [scrollDirection, setScrollDirection] = useState<ScrollDirection>(null);
-  const [isPageOnTop, setIsPageOnTop] = useState<boolean>(true);
+  const [isPageOnTop, setIsPageOnTop] = useState<boolean>(false);
+  const firstRender = useRef(true);
+
   const HEIGHT = 250;
 
   useEffect(() => {
@@ -24,6 +26,12 @@ function useScrollDirection() {
       lastScrollY = scrollY > 0 ? scrollY : 0;
     };
 
+    if (firstRender.current) {
+      firstRender.current = false;
+      updateScrollDirection();
+    }
+
+
     window.addEventListener('scroll', updateScrollDirection);
 
     return () => {
@@ -31,7 +39,7 @@ function useScrollDirection() {
     }
   }, [scrollDirection, isPageOnTop]);
 
-  return {scrollDirection, isPageOnTop};
+  return { scrollDirection, isPageOnTop };
 };
 
 export { useScrollDirection };

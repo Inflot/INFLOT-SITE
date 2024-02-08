@@ -2,7 +2,6 @@
 
 import { usePathname, useRouter } from '../navigation';
 import { useTransition } from 'react';
-import { NavigateOptions } from 'next/dist/shared/lib/app-router-context.shared-runtime';
 import { useLocale } from 'next-intl';
 import ReactFlagsSelect from 'react-flags-select';
 
@@ -24,7 +23,7 @@ export default function LangSwitcher({ langs }: LangSwitcherProps) {
     startTransition(() =>
       router.replace(pathname, {
         locale: code === 'GB' ? 'en' : code.toLocaleLowerCase(),
-      } as NavigateOptions)
+      })
     );
   };
 

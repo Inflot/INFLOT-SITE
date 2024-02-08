@@ -4,19 +4,19 @@
 
 @font-face {
 	font-family: KdamThmorPro;
-	src: url(../../../public/fonts/KdamThmorPro-Regular.ttf);
+	src: url(/fonts/KdamThmorPro-Regular.ttf);
 	weight: 400
 }
 
 @font-face {
 	font-family: PlayBold;
-	src: url(../../../public/fonts/Play-Bold.ttf);
+	src: url(/fonts/Play-Bold.ttf);
 	weight: 700
 }
 
 @font-face {
 	font-family: PlayRegular;
-	src: url(../../../public/fonts/Play-Regular.ttf);
+	src: url(/fonts/Play-Regular.ttf);
 	weight: 400
 }
 

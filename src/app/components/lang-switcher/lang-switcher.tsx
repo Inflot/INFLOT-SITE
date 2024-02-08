@@ -23,6 +23,7 @@ export default function LangSwitcher({ langs }: LangSwitcherProps) {
     startTransition(() =>
       router.replace(pathname, {
         locale: code === 'GB' ? 'en' : code.toLocaleLowerCase(),
+        scroll: false
       })
     );
   };

@@ -80,7 +80,7 @@ export default function AboutSection() {
       </section>
       <section
         id='mission'
-        className='flex flex-col h-full w-full place-items-center text-slate-200 bg-[#355060] py-4 lg:py-10 px-16 lg:px-24
+        className='flex flex-col h-full w-full place-items-center text-white bg-[#355060] py-4 lg:py-10 px-16 lg:px-24
         bg-[url("/images/about/map.jpg")] bg-clip-border bg-cover bg-center'
       >
         <h3

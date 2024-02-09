@@ -4,13 +4,22 @@ import { Inter } from 'next/font/google';
 import '../ui/globals.css';
 import { useTranslations } from 'next-intl';
 import Script from 'next/script';
+import { getTranslations } from 'next-intl/server';
 
 const inter = Inter({ subsets: ['latin'] });
 
-export const metadata: Metadata = {
-  title: 'Maritime agency «Inflot»',
-  description: `Maritime agency «Inflot»`,
-};
+type Props = {
+  params: { id: string }
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const t = await getTranslations('meta');
+
+  return {
+    title: t('title'),
+    description: t('description'),
+  }
+}
 
 export default function RootLayout({
   children,

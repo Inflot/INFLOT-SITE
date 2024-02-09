@@ -52,13 +52,13 @@ export default function AboutSection() {
               <div
                 className='background-image'
                 style={{
-                  backgroundImage: "url('/images/about/ships.png')",
+                  backgroundImage: "url('/images/about/ships.webp')",
                 }}
               ></div>
               <div
                 className='background-image'
                 style={{
-                  backgroundImage: "url('/images/about/ships2.png')",
+                  backgroundImage: "url('/images/about/ships2.webp')",
                 }}
               ></div>
             </div>
@@ -81,7 +81,7 @@ export default function AboutSection() {
       <section
         id='mission'
         className='flex flex-col h-full w-full place-items-center text-white bg-[#355060] py-4 lg:py-10 px-16 lg:px-24
-        bg-[url("/images/about/map.jpg")] bg-clip-border bg-cover bg-center'
+        bg-[url("/images/about/map.webp")] bg-clip-border bg-cover bg-center'
       >
         <h3
           data-aos='fade-up'

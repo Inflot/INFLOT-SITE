@@ -37,13 +37,13 @@ export default function MainInformationSection() {
               <div
                 className='background-image'
                 style={{
-                  backgroundImage: "url('/images/photos/6.jpg')",
+                  backgroundImage: "url('/images/photos/6.webp')",
                 }}
               ></div>
               <div
                 className='background-image'
                 style={{
-                  backgroundImage: "url('/images/photos/5.jpg')",
+                  backgroundImage: "url('/images/photos/5.webp')",
                 }}
               ></div>
             </div>
@@ -131,13 +131,13 @@ export default function MainInformationSection() {
               <div
                 className='background-image'
                 style={{
-                  backgroundImage: "url('/images/photos/2.jpg')",
+                  backgroundImage: "url('/images/photos/2.webp')",
                 }}
               ></div>
               <div
                 className='background-image'
                 style={{
-                  backgroundImage: "url('/images/photos/7.jpg')",
+                  backgroundImage: "url('/images/photos/7.webp')",
                 }}
               ></div>
             </div>
@@ -170,13 +170,13 @@ export default function MainInformationSection() {
               <div
                 className='background-image'
                 style={{
-                  backgroundImage: "url('/images/photos/8.jpg')",
+                  backgroundImage: "url('/images/photos/8.webp')",
                 }}
               ></div>
               <div
                 className='background-image'
                 style={{
-                  backgroundImage: "url('/images/photos/4.jpg')",
+                  backgroundImage: "url('/images/photos/4.webp')",
                 }}
               ></div>
             </div>

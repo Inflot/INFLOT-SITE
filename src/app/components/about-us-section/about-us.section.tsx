@@ -23,7 +23,7 @@ export default function AboutSection() {
             data-aos-duration='1000'
             className='lg:w-1/2 px-16 lg:px-24 my-10 lg:my-20'
           >
-            <h3 className='text-[#1f3542] block mb-2 antialiased font-semibold leading-snug font-["PlayBold"] text-2xl lg:text-3xl lg:text-6xl tracking-wider mb-4 mt-0 text-center lg:text-right'>
+            <h3 className='select-none text-[#1f3542] block mb-2 antialiased font-semibold leading-snug font-["PlayBold"] text-2xl lg:text-3xl lg:text-6xl tracking-wider mb-4 mt-0 text-center lg:text-right'>
               {t('about')}
             </h3>
             <div className='text-[#1f3542] block mb-8 antialiased font-normal leading-relaxed text-blue-gray-700 text-l md:text-xl lg:text-2xl text-justify lg:text-right'>
@@ -31,7 +31,7 @@ export default function AboutSection() {
                 <p
                   data-aos='fade-up'
                   data-aos-duration='1000'
-                  className='text-[#1f3542] block antialiased font-normal leading-relaxed text-blue-gray-700'
+                  className='text-[#1f3542] block antialiased font-normal leading-relaxed text-blue-gray-700 select-none'
                 >
                   {t('aboutDescription1')}
                 </p>
@@ -39,7 +39,7 @@ export default function AboutSection() {
                 <p
                   data-aos='fade-up'
                   data-aos-duration='1000'
-                  className='text-[#1f3542] block antialiased font-normal leading-relaxed text-blue-gray-700'
+                  className='select-none text-[#1f3542] block antialiased font-normal leading-relaxed text-blue-gray-700'
                 >
                   {t('aboutDescription2')}
                 </p>
@@ -62,7 +62,7 @@ export default function AboutSection() {
                 }}
               ></div>
             </div>
-            <figcaption className='absolute inset-0 flex items-end text-white px-4 md:px-12 w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] '>
+            <figcaption className='select-none absolute inset-0 flex items-end text-white px-4 md:px-12 w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] '>
               <h2
                 data-aos='zoom-in-right'
                 data-aos-duration='700'
@@ -81,17 +81,18 @@ export default function AboutSection() {
       <section
         id='mission'
         className='flex flex-col h-full w-full place-items-center text-white bg-[#355060] py-4 lg:py-10 px-16 lg:px-24
-        bg-[url("/images/about/map.webp")] bg-clip-border bg-cover bg-center'
+        sm:bg-[url("/images/about/map.webp")]
+        bg-clip-border bg-cover bg-center'
       >
         <h3
           data-aos='fade-up'
           data-aos-duration='1000'
-          className='block mb-2 antialiased font-semibold leading-snug font-["PlayBold"] text-2xl lg:text-3xl lg:text-6xl tracking-wider my-4 text-center md:text-right'
+          className='select-none block mb-2 antialiased font-semibold leading-snug font-["PlayBold"] text-2xl lg:text-3xl lg:text-6xl tracking-wider my-4 text-center md:text-right'
         >
           {t('aboutListTitle')}
         </h3>
 
-        <ul className='px-0 space-y-1 list-inside text-l md:text-xl lg:text-2xl'>
+        <ul className='select-none px-0 space-y-1 list-inside text-l md:text-xl lg:text-2xl'>
           {listItems.map((item, i) => (
             <li
               data-aos='fade-up'
@@ -103,7 +104,7 @@ export default function AboutSection() {
               <div className='flex justify-center items-center w-10 h-10'>
                 <SlAnchor className='mr-[10px]' size='40px' />
               </div>
-              <span className='inline-block pr-2 leading-relaxed text-l md:text-xl lg:text-2xl text-justify'>
+              <span className='inline-block pr-2 leading-relaxed text-l md:text-xl lg:text-2xl hyphens-auto sm:hyphens-manual text-justify'>
                 {item.text}
               </span>
             </li>

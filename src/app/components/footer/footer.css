@@ -1,5 +1,11 @@
 
 .footer-icon {
+  border: 1px solid #d1d5db;
+  border-radius: 100%;
+  padding: 10px;
+}
+
+.footer-icon:hover {
   border: 1px solid white;
   border-radius: 100%;
   padding: 10px;

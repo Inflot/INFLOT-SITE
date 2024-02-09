@@ -22,7 +22,7 @@ export default function MainInformationSection() {
   }));
 
   return (
-    <div className='bg-white' id='staff'>
+    <div className='bg-white select-none' id='staff'>
       {/* 1 */}
       <section
         id='mission'
@@ -77,7 +77,7 @@ export default function MainInformationSection() {
               <p
                 key={item.id}
                 data-aos-delay={200 * i}
-                className='text-[#1f3542] block antialiased font-normal text-blue-gray-700 leading-relaxed text-l md:text-xl lg:text-2xl text-justify'
+                className='text-[#1f3542] block antialiased font-normal text-blue-gray-700 leading-relaxed text-l md:text-xl lg:text-2xl hyphens-auto sm:hyphens-manual text-justify'
               >
                 {item.text}
               </p>
@@ -117,7 +117,7 @@ export default function MainInformationSection() {
                     <div className='flex justify-center items-center w-10 h-10'>
                       <SlAnchor className='mr-[10px]' size='40px' />
                     </div>
-                    <span className='inline-block text-justify lg:text-left pr-2'>
+                    <span className='inline-block hyphens-auto sm:hyphens-manual text-justify lg:text-left pr-2'>
                       {item.text}
                     </span>
                   </li>

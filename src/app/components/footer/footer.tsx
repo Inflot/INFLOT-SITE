@@ -107,7 +107,7 @@ export default function Footer() {
             alt='Logo'
           />
         </Link>
-        <p className='font-["PlayBold"] text-center tracking-widest uppercase text-md sm:text-lg md:text-xl px-2 py-3'>
+        <p className='select-none font-["PlayBold"] text-center tracking-widest uppercase text-md sm:text-lg md:text-xl px-2 py-3'>
           {t('company')}, {year}
         </p>
       </div>

@@ -1,5 +1,6 @@
 import AboutSection from '../components/about-us-section/about-us.section';
 import Footer from '../components/footer/footer';
+import GoBack from '../components/go-back-btn/go-back-btn';
 import HeaderSection from '../components/header-section/header-section';
 // import InformationSection from '../components/information-section/information-section';
 import LibsLoader from '../components/libs-loader/libs-loader';
@@ -26,6 +27,7 @@ export default function Page() {
         {/* <InformationSection /> */}
         <AboutSection />
         <MainInformationSection />
+        <GoBack/>
       </main>
       <Footer />
     </>

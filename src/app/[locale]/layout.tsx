@@ -57,7 +57,7 @@ export default function RootLayout({
         <meta name='twitter:card' content='summary_large_image' />
         <meta name='twitter:title' content={t('title')} />
         <meta name='twitter:description' content={t('description')} />
-        <meta name='twitter:image' content='https://inflot.com/logo.png' />
+        <meta name='twitter:image' content='https://inflot.com/og.png' />
         <meta httpEquiv='x-ua-compatible' content='ie=edge' />
         <meta
           name='viewport'
@@ -68,7 +68,7 @@ export default function RootLayout({
         <meta property='og:title' content={t('title')} />
         <meta property='og:description' content={t('description')} />
         <meta property='og:url' content='https://inflot.com' />
-        <meta property='og:image' content='https://inflot.com/logo.png' />
+        <meta property='og:image' content='https://inflot.com/og.png' />
         <meta property='og:image:alt' content={t('description')} />
         <meta property='og:locale' content={t('lang')} />
         <meta property='og:site_name' content={t('title')} />

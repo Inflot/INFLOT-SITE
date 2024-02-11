@@ -18,13 +18,13 @@ export default function WelcomeSection() {
         loading={'eager'}
       />
       <div className='w-screen z-40 absolute bg-cover bg-center mt-32 lg:mt-[20vh] top-3 welcome-section'>
-        <p
+        <h2
           data-aos='fade-down'
           data-aos-duration='700'
-          className='my-0 lg:my-2 text-white text-center uppercase pointer-events-none select-none text-xl md:text-2xl'
+          className='font-["PlayBold"] tracking-wider my-0 lg:my-2 text-white text-center uppercase pointer-events-none select-none text-xl md:text-2xl'
         >
           {t('title')}
-        </p>
+        </h2>
         <div className='text-white flex flex-col justify-center items-center'>
           <div className='overflow-hidden w-full flex flex-col lg:flex-row items-center justify-center'>
             <ul

@@ -98,12 +98,12 @@ export default function Footer() {
           className='flex items-center justify-center w-full lg:w-auto'
         >
           <Image
-            width='80'
-            height='80'
-            className='spin h-18
+            width='220'
+            height='100'
+            className='spin h-24
             mx-0 lg:ml-20 lg:mr-5 z-50 logo--shadow pointer-events-none select-none block w-auto
             transition-all duration-500'
-            src='/logo.png'
+            src='/logo.webp'
             alt='Logo'
           />
         </Link>

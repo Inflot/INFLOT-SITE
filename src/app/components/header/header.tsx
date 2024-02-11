@@ -90,14 +90,14 @@ export default function Header({
         className='absolute lg:relative flex items-center justify-center w-full lg:w-auto'
       >
         <Image
-          width='80'
-          height='80'
+          width='220'
+          height='100'
           className={`
-            ${isPageOnTop ? 'spin h-24' : 'h-10 hidden'}
-            mx-0 lg:ml-20 lg:mr-5 z-50 logo--shadow pointer-events-none select-none block w-auto
+            ${isPageOnTop ? 'spin h-28' : 'h-10 hidden'}
+            mx-0 lg:ml-20 lg:mr-5 z-50 mb-4 md:mb-0 logo--shadow pointer-events-none select-none block w-auto
             transition-all duration-500
           `}
-          src='/logo.png'
+          src='/logo.webp'
           alt='Logo'
         />
       </Link>

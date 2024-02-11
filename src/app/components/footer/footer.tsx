@@ -7,7 +7,7 @@ import Image from 'next/image';
 import './footer.css';
 
 export default function Footer() {
-  const t = useTranslations('header');
+  const t = useTranslations('navigation');
   const tMeta = useTranslations('meta');
 
   const year = new Date().getFullYear();

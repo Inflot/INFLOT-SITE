@@ -24,15 +24,15 @@ export default function Header({
   const { scrollDirection, isPageOnTop } = useScrollDirection();
 
   const locale = useLocale();
-  const hamburgerRef = useRef<HTMLInputElement>(null);
+  const burgerRef = useRef<HTMLInputElement>(null);
 
-  const check = () => hamburgerRef.current?.click();
+  const check = () => burgerRef.current?.click();
 
   const getLocalePath = () =>
     locale === 'GB' ? 'en' : locale.toLocaleLowerCase();
 
   const handleBurgerMenu = () => {
-    const button = hamburgerRef.current;
+    const button = burgerRef.current;
 
     if (button && button.checked) {
       button.click();
@@ -102,25 +102,25 @@ export default function Header({
         />
       </Link>
 
-      <nav className='hamburger-content lg:hidden'>
-        <span className='hamburger-lang-switcher'>
-          <LangSwitcher langs={langs} />
-        </span>
-        <input type='checkbox' id='hamburger' className='hamburger-input' ref={hamburgerRef}/>
+      <nav className='burger-content lg:hidden'>
+        <div className='burger-lang-switcher'>
+          <LangSwitcher langs={langs} id='burger-flags-select' rfsKey='burger-flags-select' />
+        </div>
+        <input type='checkbox' id='burger' className='burger-input' ref={burgerRef}/>
         <label
-          htmlFor='hamburger'
-          className='hamburger-label'
+          htmlFor='burger'
+          className='burger-label'
         ></label>
-        <ul className='hamburger-content-links'>
+        <ul className='burger-content-links'>
           {headerLinks.map(({ link, title }) => (
             <li
               key={link}
-              className='hamburger-content-link text-xl lg:text-2xl'
+              className='burger-content-link text-xl lg:text-2xl'
             >
               <Link
                 href={link}
                 onClick={check}
-                className='hamburger-content-ref'
+                className='burger-content-ref'
               >
                 {title}
               </Link>
@@ -130,7 +130,7 @@ export default function Header({
       </nav>
 
       <nav className='hidden lg:flex z-50 justify-between items-center h-24 mx-5'>
-        <LangSwitcher langs={langs} />
+        <LangSwitcher langs={langs} id='flags-select' rfsKey='flags-select'/>
         <HeaderLinks links={headerLinks} />
       </nav>
     </header>

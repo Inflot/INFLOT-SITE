@@ -11,9 +11,11 @@ export type TFunction = (key: string, values?: any, formats?: any) => string;
 
 type LangSwitcherProps = {
   langs: Record<string, string>;
+  id: string;
+  rfsKey: string;
 };
 
-export default function LangSwitcher({ langs }: LangSwitcherProps) {
+export default function LangSwitcher({ langs, id, rfsKey }: LangSwitcherProps) {
   const [_, startTransition] = useTransition();
   const pathname = usePathname();
   const locale = useLocale();
@@ -30,6 +32,8 @@ export default function LangSwitcher({ langs }: LangSwitcherProps) {
 
   return (
     <ReactFlagsSelect
+      id={id}
+      rfsKey={rfsKey}
       countries={Object.keys(langs)}
       placeholder=' '
       customLabels={{

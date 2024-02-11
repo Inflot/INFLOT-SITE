@@ -9,8 +9,8 @@ import { getTranslations } from 'next-intl/server';
 const inter = Inter({ subsets: ['latin'] });
 
 type Props = {
-  params: { id: string }
-}
+  params: { id: string };
+};
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const t = await getTranslations('meta');
@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: t('title'),
     description: t('description'),
-  }
+  };
 }
 
 export default function RootLayout({
@@ -43,27 +43,36 @@ export default function RootLayout({
           gtag('config', 'G-F8X0TZPMRL');
         `}
         </Script>
-        {/* <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Inflot"/> */}
+        <link
+          rel='search'
+          type='application/opensearchdescription+xml'
+          href={`/opensearch_${t('lang')}.xml`}
+          title={t('title')}
+        />
         {/* Twitter */}
-        <meta name='twitter:card' content='summary_large_image'></meta>
-        <meta name='twitter:title' content={t('title')}></meta>
-        <meta name='twitter:description' content={t('description')}></meta>
-        <meta name='twitter:image' content='https://inflot.ru/logo.png'></meta>
-        {/* <meta http-equiv='x-ua-compatible' content='ie=edge' />
-        <meta name='viewport' content='width=device-width, initial-scale=1' /> */}
-
+        <meta name='twitter:card' content='summary_large_image' />
+        <meta name='twitter:title' content={t('title')} />
+        <meta name='twitter:description' content={t('description')} />
+        <meta name='twitter:image' content='https://inflot.com/logo.png' />
+        <meta httpEquiv='x-ua-compatible' content='ie=edge' />
+        <meta
+          name='viewport'
+          content='width=device-width, initial-scale=1.0, maximum-scale=1.0,user-scalable=0'
+        />
         {/* OG */}
-        <meta property='og:type' content='website'></meta>
-        <meta property='og:title' content={t('title')}></meta>
-        <meta property='og:description' content={t('description')}></meta>
-        <meta property='og:url' content='https://inflot.ru'></meta>
-        <meta property='og:image' content='https://inflot.ru/logo.png'></meta>
-        <meta property='og:image:alt' content={t('description')}></meta>
-        <meta property='og:locale' content={t('lang')}></meta>
-        <meta property='og:site_name' content={t('title')}></meta>
+        <meta property='og:type' content='website' />
+        <meta property='og:title' content={t('title')} />
+        <meta property='og:description' content={t('description')} />
+        <meta property='og:url' content='https://inflot.com' />
+        <meta property='og:image' content='https://inflot.com/logo.png' />
+        <meta property='og:image:alt' content={t('description')} />
+        <meta property='og:locale' content={t('lang')} />
+        <meta property='og:site_name' content={t('title')} />
       </head>
 
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className} suppressHydrationWarning={true}>
+        {children}
+      </body>
     </html>
   );
 }

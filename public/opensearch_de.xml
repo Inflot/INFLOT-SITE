@@ -1,0 +1,11 @@
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+  xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>Inflot</ShortName>
+  <Description>Inflot ist auf Schiffsagentur und maritime Logistik spezialisiert. Wir bieten Hafenagenturdienste, Frachtoperationen und individuelle Lösungen im Bereich der Seetransporte an.</Description>
+  <Url type="text/html" template="https://inflot.com/de" method="GET"/>
+  <Image height="16" width="16" type="image/x-icon">https://inflot.com/favicon.ico</Image>
+  <OutputEncoding>UTF-8</OutputEncoding>
+  <Language>de</Language>
+  <InputEncoding>UTF-8</InputEncoding>
+  <moz:SearchForm>https://inflot.com/de</moz:SearchForm>
+</OpenSearchDescription>

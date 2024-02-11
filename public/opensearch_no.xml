@@ -1,0 +1,11 @@
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
+  xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>Inflot</ShortName>
+  <Description>Inflot spesialiserer seg på skipsagentur og maritim logistikk. Vi tilbyr havneagenttjenester, lasteoperasjoner og skreddersydde løsninger innen sjøtransport.</Description>
+  <Url type="text/html" template="https://inflot.com/no" method="GET"/>
+  <Image height="16" width="16" type="image/x-icon">https://inflot.com/favicon.ico</Image>
+  <OutputEncoding>UTF-8</OutputEncoding>
+  <Language>no</Language>
+  <InputEncoding>UTF-8</InputEncoding>
+  <moz:SearchForm>https://inflot.com/no</moz:SearchForm>
+</OpenSearchDescription>

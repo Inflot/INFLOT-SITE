@@ -3,7 +3,7 @@ import { useTranslations } from 'next-intl';
 
 export default function HeaderLinks() {
   const l = useTranslations('lang');
-  const h = useTranslations('header');
+  const h = useTranslations('navigation');
 
   const langs = {
     RU: l('russian'),

@@ -3,29 +3,25 @@ import Footer from '../components/footer/footer';
 import GoBack from '../components/go-back-btn/go-back-btn';
 import HeaderSection from '../components/header-section/header-section';
 import LibsLoader from '../components/libs-loader/libs-loader';
-import MainInformationSection from '../components/main-info/main-info.section';
+import MissionSection from '../components/mission/mission.section';
+import ServicesSection from '../components/services/services.section';
+import StaffSection from '../components/staff/staff.section';
+import SurveysSection from '../components/surveys/surveys.section';
 import WelcomeSection from '../components/welcome-section/welcome-section';
-import Image from 'next/image';
 
 export default function Page() {
   return (
     <>
       <LibsLoader />
       <HeaderSection />
-      <div className='image-wrapper h-[700px] md:h-[100vh]'>
-        <Image
-          className='image__main background-filter'
-          src='/images/header/background.webp'
-          fill
-          quality={100}
-          alt='Maritime Scene'
-        />
+      <main className='main select-none'>
         <WelcomeSection />
-      </div>
-      <main className='main'>
         <AboutSection />
-        <MainInformationSection />
-        <GoBack/>
+        <MissionSection />
+        <StaffSection />
+        <ServicesSection />
+        <SurveysSection />
+        <GoBack />
       </main>
       <Footer />
     </>

@@ -13,6 +13,6 @@ module.exports = withNextIntl({
     ];
   },
   images: {
-    formats: ["image/webp"],
+    formats: ['image/webp'],
   }
 });

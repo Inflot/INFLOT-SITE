@@ -2,9 +2,61 @@ import './welcome-section.css';
 
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
+import Link from 'next/link';
+import { useLocale } from 'next-intl';
 
 export default function WelcomeSection() {
   const t = useTranslations('welcome');
+  const locale = useLocale();
+
+  const getLocalePath = () =>
+    locale === 'GB' ? 'en' : locale.toLocaleLowerCase();
+
+  const leftLinks = [
+    {
+      link: `${getLocalePath()}/#mission`,
+      title: t('1_l'),
+      classes: 'pr-0',
+    },
+    {
+      link: `${getLocalePath()}/#services`,
+      title: t('2_l'),
+      classes: 'lg:pr-2 pr-0',
+    },
+    {
+      link: `${getLocalePath()}/#services`,
+      title: t('3_l'),
+      classes: 'lg:pr-4 pr-0',
+    },
+    {
+      link: `${getLocalePath()}/#surveys`,
+      title: t('4_l'),
+      classes: 'lg:pr-2 pr-0',
+    },
+  ];
+
+  const rightLinks = [
+    {
+      link: `${getLocalePath()}/#services`,
+      title: t('1_r'),
+      classes: 'pl-0',
+    },
+    {
+      link: `${getLocalePath()}/#services`,
+      title: t('2_r'),
+      classes: 'pr-0 lg:pl-2',
+    },
+    {
+      link: `${getLocalePath()}/#contacts`,
+      title: t('3_r'),
+      classes: 'pr-0 lg:pl-4',
+    },
+    {
+      link: `${getLocalePath()}/#contacts`,
+      title: t('4_r'),
+      classes: 'pr-0 lg:pl-2',
+    },
+  ];
 
   return (
     <div className='image-wrapper h-[700px] md:h-[100vh]'>
@@ -31,12 +83,13 @@ export default function WelcomeSection() {
               data-aos='fade-right'
               data-aos-duration='700'
               className='w-auto list-none text-center lg:text-right lg:text-right 
-              pl-0 pr-0 md:pr-2 md:w-[500px] w-full leading-6 md:leading-7 pointer-events-none select-none text-sm md:text-base'
+              pl-0 pr-0 md:pr-2 md:w-[500px] w-full leading-6 md:leading-7 select-none text-sm md:text-base'
             >
-              <li className='pr-0'>{t('1_l')}</li>
-              <li className='lg:pr-2 pr-0'>{t('2_l')}</li>
-              <li className='lg:pr-4 pr-0'>{t('3_l')}</li>
-              <li className='lg:pr-2 pr-0'>{t('4_l')}</li>
+              {leftLinks.map(({ link, title, classes }) => (
+                <li key={link} className={classes}>
+                  <Link href={link} className='text-lg no-underline hover:underline text-white'>{title}</Link>
+                </li>
+              ))}
             </ul>
             <Image
               data-aos='flip-left'
@@ -52,20 +105,21 @@ export default function WelcomeSection() {
             <ul
               data-aos='fade-left'
               data-aos-duration='700'
-              className='w-auto list-none text-center lg:text-left lg:text-left pl-0 md:pl-2 lg:w-[500px] w-full leading-6 md:leading-7 pointer-events-none select-none text-sm md:text-base'
+              className='w-auto list-none text-center lg:text-left lg:text-left pl-0 md:pl-2 lg:w-[500px] w-full leading-6 md:leading-7 select-none text-sm md:text-base mb-2'
             >
-              <li className='pl-0'>{t('1_r')}</li>
-              <li className='pr-0 lg:pl-2'>{t('2_r')}</li>
-              <li className='pr-0 lg:pl-4'>{t('3_r')}</li>
-              <li className='pr-0 lg:pl-2'>{t('4_r')}</li>
+              {rightLinks.map(({ link, title, classes }) => (
+                <li key={link} className={classes}>
+                  <Link href={link} className='text-lg no-underline hover:underline text-white'>{title}</Link>
+                </li>
+              ))}
             </ul>
           </div>
-
           <h1
             data-aos='zoom-in'
             data-aos-duration='700'
-            className='font-["PlayBold"] my-1 tracking-wider uppercase text-2xl md:text-4xl lg:text-6xl 
-            select-none pointer-events-none my-1 lg:my-8'
+            className='font-["PlayBold"] tracking-wider uppercase text-4xl md:text-4xl lg:text-6xl 
+            select-none pointer-events-none my-4 lg:my-8 pb-2
+            drop-shadow-[0_0_1rem_#A8C8EA]'
           >
             {t('name')}
           </h1>
@@ -80,7 +134,7 @@ export default function WelcomeSection() {
             data-aos='zoom-in'
             data-aos-duration='700'
             href='#about'
-            className='mt-8 md:mt-6 lg:mt-12 no-underline text-white ring-2 ring-white 
+            className='mt-8 md:mt-6 lg:mt-12 no-underline text-white
             focus:bg-[#ffffff70] hover:bg-[#ffffff30] rounded-lg px-5 py-1 lg:py-2.5 select-none 
             focus:outline-none text-lg md:text-2xl lg:text-3xl'
           >

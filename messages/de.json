@@ -13,7 +13,7 @@
     "links": "Links",
     "mobile": "Mobil",
     "whatsapp": "Whatsapp",
-    "telephone": "Telefon",
+    "telephone": "Büro",
     "fax": "Fax",
     "mail": "Mail"
   },
@@ -35,17 +35,17 @@
     "subtitle": "Das Vertrauen basierend auf Erfahrung, Kompetenz und Professionalität",
     "about": "Über uns",
     "1_l": "Schiffsagenturdienste",
-    "2_l": "Abwicklung von Ein-/Ausreise-Transitvisa",
+    "2_l": "Alle Arten von Lieferungen und Organisation von Schiffsreparaturen",
     "3_l": "Analyse von Süßwasser-, Treibstoff- und Ladungsproben",
-    "4_l": "Speditionsdienstleistungen",
+    "4_l": "Alle Arten von Surveyor-Dienstleistungen",
     "1_r": "Transportdienstleistungen",
-    "2_r": "Alle Arten von Surveyor-Dienstleistungen",
-    "3_r": "Organisation von Unterwasserinspektionen von Schiffen",
-    "4_r": "Alle Arten von Schiffszulieferungen und -reparaturen"
+    "2_r": "Speditionsdienstleistungen",
+    "3_r": "Abwicklung von Ein-/Ausreise-Transit Visa",
+    "4_r": "Organisation von Unterwasserinspektionen von Schiffen"
   },
   "about": {
     "title": "Über uns",
-    "description1": "Die Schifffahrtsagentur „Inflot“ wurde am 17. Oktober 1934 im Auftrag der Regierung der UdSSR bei Reedereien in den Seehäfen der UdSSR gegründet, um Anläufe ausländischer Schiffe in den Häfen der UdSSR zu bedienen. Die Seeagentur “Inflot”, einschließlich der mit der Murmansk Shipping Company verbundenen Unternehmen, bietet seit mehr als 80 Jahren Agenturdienstleistungen und umfassende Unterstützung für Schiffe im Hafen von Murmansk an.",
+    "description1": "Die Schifffahrtsagentur „Inflot“ wurde am 17. Oktober 1934 im Auftrag der Regierung der UdSSR bei Reedereien in den Seehäfen der UdSSR gegründet, um Anläufe ausländischer Schiffe in den Häfen der UdSSR zu bedienen. Die Seeagentur “Inflot”, einschließlich der mit der Murmansk Shipping Company verbundenen Unternehmen, bietet seit 90 Jahren Agenturdienstleistungen und umfassende Unterstützung für Schiffe im Hafen von Murmansk an.",
     "description2": "Das Unternehmen verfügt über fast ein Jahrhundert Erfahrung in der Arbeit an fast allen Terminals im Wassergebiet des Hafens von Murmansk und weiß auch, wie man mit allen Arten von Fracht umgeht, die jemals im Hafen umgeschlagen wurden. Die Schifffahrtsagentur „Inflot“ kann auch als Subagent, Husbandry Agent und Protective Agent fungieren und ist seit mehr als 20 Jahren offizieller Subagent von Wilhelmsen Ships Service im Hafen von Murmansk.",
     "imgTitle": "Ihr zuverlässiger Partner auf See und im Hafen",
     "imgSubTitle": "Erfahrung und Qualität, durch die Zeit bewährt"

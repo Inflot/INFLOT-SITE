@@ -6,12 +6,12 @@
   height: 100%;
   background-size: cover;
   background-position: center;
-  animation: changeBackground 10s linear infinite;
+  animation: changeBackground 20s linear infinite;
   opacity: 0;
 }
 
 .background-image:nth-child(1) {
-  animation-delay: 5s;
+  animation-delay: 10s;
   opacity: 1;
 }
 

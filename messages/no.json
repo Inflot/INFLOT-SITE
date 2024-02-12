@@ -13,7 +13,7 @@
     "links": "Linker",
     "mobile": "Mobil",
     "whatsapp": "Whatsapp",
-    "telephone": "Telefon",
+    "telephone": "Kontor",
     "fax": "Faks",
     "mail": "E-post"
   },
@@ -35,17 +35,17 @@
     "subtitle": "tillit som er basert på erfaring, kompetanse og profesjonalitet",
     "about": "Om oss",
     "1_l": "Skipsagenturtjenester",
-    "2_l": "Alle typer skipsforsyning og reparasjon",
-    "3_l": "Tilrettelegging av inn-/utreise transittvisum",
+    "2_l": "Alle typer forsyninger og organisering av skipsreparasjoner",
+    "3_l": "Analyser av vann, drivstoff, last",
     "4_l": "Alle typer surveyortjenester",
     "1_r": "Transporttjenester",
     "2_r": "Spedisjonstjenester",
-    "3_r": "Organisering av undervannsinspeksjoner av skip",
-    "4_r": "Analyser av vann, drivstoff, last"
+    "3_r": "Tilrettelegging av inn-/utreise transittvisum",
+    "4_r": "Organisering av undervannsinspeksjoner av skip"
   },
   "about": {
     "title": "Om oss",
-    "description1": "Det maritime byrået «Inflot» ble dannet den 17. oktober 1934  etter ordre av USSR-regjeringen for å betjene anløp av utenlandske fartøyer til havnene i USSR. Det maritime byrået «Inflot» har levert agenttjenester og omfattende service til fartøyer i Murmansk havn i mer enn 80 år, blant annet i samarbeid med Murmanskrederiet, Murmansk Shipping Company.",
+    "description1": "Det maritime byrået «Inflot» ble dannet den 17. oktober 1934  etter ordre av USSR-regjeringen for å betjene anløp av utenlandske fartøyer til havnene i USSR. Det maritime byrået «Inflot» har levert agenttjenester og omfattende service til fartøyer i Murmansk havn i 90 år, blant annet i samarbeid med Murmanskrederiet, Murmansk Shipping Company.",
     "description2": "Selskapet har et knapt århundres erfaring med å jobbe på nesten alle terminaler i hele Murmansk havn og kan jobbe med alle typer last som håndteres i havnen. «Inflot» kan også ta oppdrag  som underagent Husbandry Agent eller Protective Agent. Det kan I denne forbindelse nevnes at «Inflot» har vært offisiell underagent for Wilhelmsen Ships Service i Murmansk havn i mer enn 20 år.",
     "imgTitle": "Din pålitelige partner til sjøs og i havn",
     "imgSubTitle": "Erfaring og kvalitet, tidstestet"

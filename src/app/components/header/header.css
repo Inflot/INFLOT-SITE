@@ -9,6 +9,10 @@
   background: linear-gradient(0deg, rgba(253, 187, 45, 0) 0%, rgba(53, 80, 96, 0) 0%, rgba(53, 80, 96, 1) 84%);
 }
 
+.header-gradient--small {
+  height: 80px;
+}
+
 .image-wrapper {
   overflow: hidden;
   min-height: 600px;
@@ -65,9 +69,9 @@
 
 .burger-content {
   background: transparent;
-  height: 500px;
+  height: auto;
   overflow: hidden;
-  width: 500px;
+  width: 100%;
 }
 
 .burger-content nav {

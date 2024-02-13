@@ -93,7 +93,7 @@ export default function Header({
           width='220'
           height='100'
           className={`
-            ${isPageOnTop ? 'spin h-32' : 'h-10 hidden'}
+            ${isPageOnTop ? 'spin h-20 sm:h-24 md:h-28 lg:h-32' : 'h-10 hidden'}
             mx-0 lg:ml-20 lg:mr-5 z-50 mb-4 md:mb-0 logo--shadow pointer-events-none select-none block w-auto
             transition-all duration-500
           `}

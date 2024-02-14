@@ -22,14 +22,15 @@ export default function GoBack() {
         fixed bottom-10 right-10 
         bg-cyan-800 hover:bg-cyan-950 text-white font-bold 
         py-2 px-2 rounded-full opacity-75 hover:opacity-100 transition-opacity
-        ${
-          isPageOnTop || !(scrollDirection && scrollDirection === 'up')
-            ? 'hidden'
-            : ''
-        }
       `}
     >
       <FaCaretUp size='40px' />
     </Link>
   );
 }
+
+// ${
+//   isPageOnTop || !(scrollDirection && scrollDirection === 'up')
+//     ? 'hidden'
+//     : ''
+// }

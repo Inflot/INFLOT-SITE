@@ -74,11 +74,12 @@ export default function Header({
     },
   ];
 
+  // ${scrollDirection && scrollDirection === 'down' ? '-top-60' : 'top-0'}
+
   return (
     <header
       className={`
       fixed 
-      ${scrollDirection && scrollDirection === 'down' ? '-top-60' : 'top-0'}
       ${isPageOnTop ? 'header-gradient' : 'header-gradient header-gradient--small'}
       ${isPageOnTop ? 'md:h-[150px]' : 'md:h-[60px]'}
       transition-all duration-500

@@ -8,6 +8,7 @@
     "mission": "Our Mission",
     "contacts": "Contacts",
     "company": "Maritime agency «Inflot»",
+    "marineLinks": "Marine links",
     "ourContacts": "Our Contacts",
     "ourAddress": "Our Address",
     "links": "Links",
@@ -71,7 +72,7 @@
     "description2": "The management of the company are professional seafarers who backed up their experience with legal education, knowing internal work of the fleet, understanding an exclusive role of the agent for the vessel and crew as the agent is the first person who provides assistance to masters and crew in ports and whose help can be relied on around the clock.",
     "description3": "We aim at fruitful cooperation and guarantee efficiency and result.",
     "description4": "Working at sea is not only the allure but also unpredictable difficulties emerging on a regular basis. After many years of providing ship agent’s services, we are capable of answering any questions, sharing priceless experience, unique and useful skills, which allows us to overcome any obstacles and save time, money and health to our colleagues, customers and principals!",
-    "imgTitle": "Our Team: Professionalism at All Levels",
+    "imgTitle": "Our Team \n Professionalism at All Levels",
     "imgSubTitle": "Traditions of Craftsmanship Passed Through Generations"
   },
   "services": {
@@ -105,5 +106,12 @@
     "listItem8": "Pre-entry survey",
     "listItem9": "Cargo survey",
     "listItem10": "General cargo lashing inspection"
+  },
+  "marineLinks": {
+    "title": "Marine links",
+    "noticesToMariners": "Notices to Mariners",
+    "murmanskNavigationalWarnings": "Murmansk Navigational warnings",
+    "arkhangelskNavigationalWarnings": "Arkhangelsk Navigational warnings",
+    "navigationalWarningsWest": "Navigational warnings West"
   }
 }

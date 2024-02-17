@@ -8,6 +8,7 @@
     "mission": "Unsere Aufgabe",
     "contacts": "Kontakt",
     "company": "Maritime Agency «Inflot»",
+    "marineLinks": "Maritime Links",
     "ourContacts": "Unsere Kontakte",
     "ourAddress": "Unsere Adresse",
     "links": "Links",
@@ -71,7 +72,7 @@
     "description2": "Das Management des Unternehmens besteht aus professionellen Seglern, die ihre maritime Erfahrung durch eine juristische Ausbildung untermauert haben, die die Arbeit der Flotte von innen kennen und die ausschließliche Rolle eines Agenten für das Schiff und die Besatzung verstehen, da der Agent der erste Assistent ist für den Kapitän und die Besatzung im Hafen, auf deren Hilfe sie 24 Stunden am Tag zählen können.",
     "description3": "Wir streben eine fruchtbare Zusammenarbeit an und garantieren Effizienz und Effektivität der Arbeit.",
     "description4": "Die Arbeitsbedingungen auf See sind nicht nur romantisch, sondern auch das ständige Auftauchen unvorhersehbarer Schwierigkeiten. Schiffsagentur werden wir in der Lage sein, Antworten auf alle Fragen zu geben, unschätzbare Erfahrungen sowie einzigartiges und nützliches Wissen weiterzugeben, das es uns ermöglicht, alle Hindernisse zu bewältigen und unseren Kollegen, Partnern und Auftraggebern Zeit, Geld und Gesundheit zu sparen.",
-    "imgTitle": "Unser Team: Professionalität auf allen Ebenen",
+    "imgTitle": "Unser Team \n Professionalität auf allen Ebenen",
     "imgSubTitle": "Handwerkstraditionen, die durch Generationen weitergegeben werden"
   },
   "services": {
@@ -105,5 +106,12 @@
     "listItem8": "Pre-entry survey",
     "listItem9": "Cargo survey",
     "listItem10": "General cargo lashing inspection"
+  },
+  "marineLinks": {
+    "title": "Maritime Links",
+    "noticesToMariners": "Mitteilungen für Seefahrer",
+    "murmanskNavigationalWarnings": "Murmansk Navigational warnings",
+    "arkhangelskNavigationalWarnings": "Arkhangelsk Navigational warnings",
+    "navigationalWarningsWest": "Navigational warnings West"
   }
 }

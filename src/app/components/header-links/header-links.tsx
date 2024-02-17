@@ -12,7 +12,10 @@ export default function HeaderLinks({ links }: HeaderLinksProps) {
         <Link
           key={link}
           href={link}
-          className="header-link font-['PlayBold'] text-center tracking-widest cursor-pointer uppercase text-white mx-4 no-underline rounded-md font-semibold"
+          className="header-link 
+            lg:text-sm xl:text-lg 
+            text-center tracking-widest cursor-pointer uppercase 
+            text-white mx-4 no-underline rounded-md font-normal"
         >
           {title}
         </Link>

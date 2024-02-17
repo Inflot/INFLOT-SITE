@@ -15,7 +15,7 @@ export default function AboutSection() {
           data-aos-duration='1000'
           className='lg:w-1/2 px-16 lg:px-24 my-10 lg:my-20'
         >
-          <h2 className='select-none text-[#1f3542] block mb-2 antialiased font-semibold leading-snug font-["PlayBold"] text-2xl lg:text-3xl lg:text-6xl tracking-wider mb-4 mt-0 text-center lg:text-right'>
+          <h2 className='select-none text-[#1f3542] block mb-2 antialiased font-semibold leading-snug font-["PlayBold"] text-2xl lg:text-3xl lg:text-6xl tracking-wider mb-4 mt-0 text-center'>
             {t('title')}
           </h2>
           <div className='text-[#1f3542] block mb-8 antialiased font-normal leading-relaxed text-blue-gray-700 text-l md:text-xl lg:text-2xl text-justify lg:text-right'>
@@ -54,8 +54,9 @@ export default function AboutSection() {
             ></div>
           </div>
           <figcaption
-            data-aos='zoom-in-right'
+            data-aos='zoom-in'
             data-aos-duration='700'
+            data-aos-delay='700'
             className='select-none absolute inset-0 flex items-end text-white px-4 md:px-12 w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] '
           >
             <h3 className='font-["PlayBold"] text-2xl lg:text-4xl font-bold text-center px-4 py-2 w-full'>

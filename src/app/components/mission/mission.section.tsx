@@ -34,9 +34,9 @@ export default function MissionSection() {
             key={item.id}
             className='flex items-center space-x-2 py-2'
           >
-            <div className='flex justify-center items-center w-10 h-10'>
+            <span className='flex justify-center items-center w-10 h-10'>
               <SlAnchor className='mr-[10px]' size='40px' />
-            </div>
+            </span>
             <span className='inline-block pr-2 leading-relaxed text-l md:text-xl lg:text-2xl hyphens-auto sm:hyphens-manual text-justify'>
               {item.text}
             </span>

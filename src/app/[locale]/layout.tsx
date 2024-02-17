@@ -5,6 +5,9 @@ import '../ui/globals.css';
 import { useTranslations } from 'next-intl';
 import Script from 'next/script';
 import { getTranslations } from 'next-intl/server';
+import Footer from '../components/footer/footer';
+import HeaderSection from '../components/header-section/header-section';
+import LibsLoader from '../components/libs-loader/libs-loader';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -51,7 +54,7 @@ export default function RootLayout({
         />
         <meta
           httpEquiv='Last-Modified'
-          content='Sun, 11 Feb 2024 12:45:26 GMT'
+          content='Sun, 18 Feb 2024 12:45:26 GMT'
         ></meta>
         {/* Twitter */}
         <meta name='twitter:card' content='summary_large_image' />
@@ -75,7 +78,10 @@ export default function RootLayout({
       </head>
 
       <body className={inter.className} suppressHydrationWarning={true}>
+        <LibsLoader />
+        <HeaderSection />
         {children}
+        <Footer />
       </body>
     </html>
   );

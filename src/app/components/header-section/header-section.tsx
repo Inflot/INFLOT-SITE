@@ -20,6 +20,7 @@ export default function HeaderLinks() {
     staff: h('staff'),
     services: h('services'),
     surveys: h('surveys'),
+    marineLinks: h('marineLinks'),
   };
 
   return <Header langs={langs} links={links} />;

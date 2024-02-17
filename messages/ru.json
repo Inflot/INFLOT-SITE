@@ -6,6 +6,7 @@
     "staff": "Сотрудники",
     "surveys": "Сюрвей",
     "mission": "Наша Миссия",
+    "marineLinks": "Морские ссылки",
     "contacts": "Контакты",
     "company": "Морское агентство «Инфлот»",
     "ourContacts": "Наши контакты",
@@ -105,5 +106,12 @@
     "listItem8": "Предстраховой сюрвей технического состояния судна",
     "listItem9": "Инспекция груза",
     "listItem10": "Инспекция крепления генерального груза"
+  },
+  "marineLinks": {
+    "title": "Морские ссылки",
+    "noticesToMariners": "Извещения мореплавателям",
+    "murmanskNavigationalWarnings": "ПРИП Мурманск",
+    "arkhangelskNavigationalWarnings": "ПРИП Архангельск",
+    "navigationalWarningsWest": "ПРИП Запад"
   }
 }

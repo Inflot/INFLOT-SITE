@@ -1,5 +1,21 @@
 User-Agent: *
-Allow: /
+Allow: /*.js
+Allow: /*.css
+Allow: *.jpg
+Allow: *.png
+Allow: *.jpeg
+Allow: *.svg
+Allow: *.gif
+Allow: /ru
+Allow: /en
+Allow: /fr
+Allow: /no
+Allow: /de
+Allow: /ru/marine_links
+Allow: /en/marine_links
+Allow: /fr/marine_links
+Allow: /no/marine_links
+Allow: /de/marine_links
 Disallow: /private/
 
 Sitemap: https://inflot.com/sitemap.xml

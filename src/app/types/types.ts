@@ -5,4 +5,5 @@ export type InflotLinks = {
   staff: string
   services: string;
   surveys: string;
+  marineLinks: string;
 };

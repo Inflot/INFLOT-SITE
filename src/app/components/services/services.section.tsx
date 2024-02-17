@@ -23,7 +23,7 @@ export default function ServicesSection() {
         >
           <h2
             className='mt-0 text-[#1f3542] block mb-2 antialiased font-semibold leading-snug tracking-normal 
-        font-["PlayBold"] tracking-wider mb-4 text-2xl lg:text-3xl lg:text-6xl text-center lg:text-right'
+        font-["PlayBold"] tracking-wider mb-4 text-2xl lg:text-3xl lg:text-6xl text-center'
           >
             {t('title')}
           </h2>
@@ -37,9 +37,9 @@ export default function ServicesSection() {
                   key={item.id}
                   className='flex items-center space-x-2 py-2'
                 >
-                  <div className='flex justify-center items-center w-10 h-10'>
+                  <span className='flex justify-center items-center w-10 h-10'>
                     <SlAnchor className='mr-[10px]' size='40px' />
-                  </div>
+                  </span>
                   <span className='inline-block hyphens-auto sm:hyphens-manual text-justify lg:text-left pr-2'>
                     {item.text}
                   </span>
@@ -65,8 +65,9 @@ export default function ServicesSection() {
             ></div>
           </div>
           <figcaption
-            data-aos='zoom-in-right'
+            data-aos='zoom-in'
             data-aos-duration='700'
+            data-aos-delay='700'
             className='absolute inset-0 flex items-end text-white px-12 w-full'
           >
             <h3 className='font-["PlayBold"] text-2xl lg:text-4xl font-bold text-center px-4 py-2 w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)] '>

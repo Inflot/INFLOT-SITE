@@ -18,7 +18,7 @@ const ContactItem = ({
   <a
     className='w-full h-full p-4 group p-1 text-white no-underline group-hover:text-white text-gray-300'
     data-aos='flip-left'
-    data-aos-delay={`${100 * index}`}
+    data-aos-delay={100 * index}
     data-aos-duration='1000'
     href={href}
     target={target}

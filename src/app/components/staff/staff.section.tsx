@@ -34,8 +34,9 @@ export default function StaffSection() {
             ></div>
           </div>
           <figcaption
-            data-aos='zoom-in-left'
+            data-aos='zoom-in'
             data-aos-duration='700'
+            data-aos-delay='700'
             className='absolute inset-0 flex items-end text-white px-12 top-20 w-full'
           >
             <h3
@@ -57,7 +58,7 @@ export default function StaffSection() {
         >
           <h2
             className='mt-0 text-[#1f3542] block antialiased font-semibold leading-snug tracking-normal font-["PlayBold"] 
-        tracking-wider mb-2 text-2xl lg:text-3xl lg:text-6xl text-center md:text-left'
+        tracking-wider mb-2 text-2xl lg:text-3xl lg:text-6xl text-center'
           >
             {t('title')}
           </h2>

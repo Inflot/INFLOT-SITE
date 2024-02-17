@@ -7,6 +7,7 @@
     "surveys": "Surveys",
     "mission": "Notre mission",
     "contacts": "Contacts",
+    "marineLinks": "LIENS MARITIMES",
     "company": "L'agence maritime «Inflot»",
     "ourContacts": "Nos Contacts",
     "ourAddress": "Notre Adresse",
@@ -71,7 +72,7 @@
     "description2": "La direction de l'agence est composée de marins professionnels qui ont renforcé leur expérience maritime avec une formation juridique, qui connaissent le travail de la flotte de l'intérieur, qui comprennent le rôle exclusif d'un agent du navire et de l'équipage, puisque l'agent est le premier assistant pour le capitaine et l'équipage dans le port, sur l'aide desquels ils peuvent compter 24 heures par jour.",
     "description3": "Nous visons une coopération fructueuse et garantissons l’efficience et l’efficacité du travail.",
     "description4": "Les conditions de travail en mer ne sont pas seulement romantiques, mais aussi l'émergence constante de difficultés imprévisibles. Après de nombreuses années de travail dans une agence maritime, nous serons en mesure de répondre à toutes vos questions, de partager une expérience inestimable, des connaissances uniques et utiles qui nous permettront de faire face à tous les obstacles et d'économiser du temps, de l'argent et de la santé à nos collègues, partenaires et principaux.",
-    "imgTitle": "Notre Équipe : Professionnalisme à Tous les Niveaux",
+    "imgTitle": "Notre Équipe \n Professionnalisme à Tous les Niveaux",
     "imgSubTitle": "Traditions de l'artisanat transmises à travers les générations"
   },
   "services": {
@@ -105,5 +106,12 @@
     "listItem8": "Pre-entry survey",
     "listItem9": "Cargo survey",
     "listItem10": "General cargo lashing inspection"
+  },
+  "marineLinks": {
+    "title": "LIENS MARITIMES",
+    "noticesToMariners": "Avis aux navigateurs",
+    "murmanskNavigationalWarnings": "Murmansk Navigational warnings",
+    "arkhangelskNavigationalWarnings": "Arkhangelsk Navigational warnings",
+    "navigationalWarningsWest": "Navigational warnings West"
   }
 }

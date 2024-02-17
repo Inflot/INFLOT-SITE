@@ -19,7 +19,7 @@ type HeaderProps = {
 
 export default function Header({
   langs,
-  links: { about, staff, services, surveys, contacts, mission },
+  links: { about, staff, services, surveys, contacts, mission, marineLinks },
 }: HeaderProps) {
   const { scrollDirection, isPageOnTop } = useScrollDirection();
 
@@ -50,27 +50,31 @@ export default function Header({
   const headerLinks = [
     {
       title: about,
-      link: `${getLocalePath()}/#about`,
+      link: `/${getLocalePath()}/#about`,
     },
     {
       title: mission,
-      link: `${getLocalePath()}/#mission`,
+      link: `/${getLocalePath()}/#mission`,
     },
     {
       title: staff,
-      link: `${getLocalePath()}/#staff`,
+      link: `/${getLocalePath()}/#staff`,
     },
     {
       title: services,
-      link: `${getLocalePath()}/#services`,
+      link: `/${getLocalePath()}/#services`,
     },
     {
       title: surveys,
-      link: `${getLocalePath()}/#surveys`,
+      link: `/${getLocalePath()}/#surveys`,
+    },
+    {
+      title: marineLinks,
+      link: `/${getLocalePath()}/marine_links`,
     },
     {
       title: contacts,
-      link: `${getLocalePath()}/#contacts`,
+      link: `/${getLocalePath()}/#contacts`,
     },
   ];
 
@@ -95,6 +99,7 @@ export default function Header({
           height='100'
           className={`
             ${isPageOnTop ? 'spin h-20 sm:h-24 md:h-28 lg:h-32' : 'h-10 hidden'}
+            mt-16 md:mt-0
             mx-0 lg:ml-20 lg:mr-5 z-50 mb-4 md:mb-0 logo--shadow pointer-events-none select-none block w-auto
             transition-all duration-500
           `}
@@ -104,7 +109,7 @@ export default function Header({
       </Link>
 
       <nav className='burger-content lg:hidden'>
-        <div className='burger-lang-switcher'>
+        <div className='burger-lang-switcher pr-0'>
           <LangSwitcher
             langs={langs}
             id='burger-flags-select'

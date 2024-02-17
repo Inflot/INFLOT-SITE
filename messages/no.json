@@ -7,6 +7,7 @@
     "surveys": "Surveys",
     "mission": "Vårt oppdrag",
     "contacts": "Kontakter",
+    "marineLinks": "Sjølinker",
     "company": "Maritime Agency «Inflot»",
     "ourContacts": "Våre kontakter",
     "ourAddress": "Vår adresse",
@@ -71,7 +72,7 @@
     "description2": "Rederiets ledelse består av profesjonelle sjømenn som har supplert sin maritime erfaring med juridisk utdannelse, som kjenner flåtens behov  fra innsiden, som forstår den særlige rollen og betydning en skipsagent har for skip og mannskap. Vår tilnærming er at skipsagenten er «førstestyrmann» til kaptein og havnemannskap. Og vårt utgangspunkt er at vi er beredt til å levere profesjonelle agenttjenester dag som natt når det er ønskelig.",
     "description3": "Vi er innstilt på fruktbart samarbeid og garanterer effektivitet og profesjonalitet i arbeidet.",
     "description4": "Arbeidsforholdene til sjøs kan by på uforutsette utfordringer. Etter mange års arbeid som skipsagenter har vi opparbeidet uvurderlig erfaring og kompetanse som vi kan tilby våresamarbeidspartnere og oppdragsgivere!",
-    "imgTitle": "Vårt Team: Profesjonalitet på Alle Nivåer",
+    "imgTitle": "Vårt Team \n Profesjonalitet på Alle Nivåer",
     "imgSubTitle": "Håndverkstradisjoner overført gjennom generasjoner"
   },
   "services": {
@@ -105,5 +106,12 @@
     "listItem8": "Forundersøkelser før anløp",
     "listItem9": "Inspeksjon av last",
     "listItem10": "Generell inspeksjon av forsvarlig lasting"
+  },
+  "marineLinks": {
+    "title": "Sjølinker",
+    "noticesToMariners": "Meldinger til sjøfolk",
+    "murmanskNavigationalWarnings": "Murmansk Navigational warnings",
+    "arkhangelskNavigationalWarnings": "Arkhangelsk Navigational warnings",
+    "navigationalWarningsWest": "Navigational warnings West"
   }
 }

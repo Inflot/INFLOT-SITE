@@ -73,7 +73,7 @@ export default function WelcomeSection() {
         <h2
           data-aos='fade-down'
           data-aos-duration='700'
-          className='font-["PlayBold"] tracking-wider my-0 lg:my-2 text-white text-center uppercase pointer-events-none select-none text-xl md:text-2xl'
+          className='font-normal tracking-wider my-0 lg:my-2 text-white text-center uppercase pointer-events-none select-none text-xl md:text-2xl'
         >
           {t('title')}
         </h2>
@@ -83,11 +83,11 @@ export default function WelcomeSection() {
               data-aos='fade-right'
               data-aos-duration='700'
               className='w-auto list-none text-center lg:text-right lg:text-right 
-              pl-0 pr-0 md:pr-2 md:w-[500px] w-full leading-6 md:leading-7 select-none text-sm md:text-base'
+              pl-0 pr-0 md:pr-2 md:w-[500px] w-full leading-6 md:leading-7 select-none text-sm md:text-base lg:text-lg'
             >
               {leftLinks.map(({ link, title, classes }) => (
                 <li key={link} className={classes}>
-                  <Link href={link} className='text-lg no-underline hover:underline text-white'>{title}</Link>
+                  <Link href={link} className='no-underline hover:underline text-white'>{title}</Link>
                 </li>
               ))}
             </ul>
@@ -105,11 +105,11 @@ export default function WelcomeSection() {
             <ul
               data-aos='fade-left'
               data-aos-duration='700'
-              className='w-auto list-none text-center lg:text-left lg:text-left pl-0 md:pl-2 lg:w-[500px] w-full leading-6 md:leading-7 select-none text-sm md:text-base mb-2'
+              className='w-auto list-none text-center lg:text-left lg:text-left pl-0 md:pl-2 lg:w-[500px] w-full leading-6 md:leading-7 select-none text-sm md:text-base lg:text-lg mb-2'
             >
               {rightLinks.map(({ link, title, classes }) => (
                 <li key={link} className={classes}>
-                  <Link href={link} className='text-lg no-underline hover:underline text-white'>{title}</Link>
+                  <Link href={link} className='no-underline hover:underline text-white'>{title}</Link>
                 </li>
               ))}
             </ul>

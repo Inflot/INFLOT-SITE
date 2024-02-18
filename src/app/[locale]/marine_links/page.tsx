@@ -9,6 +9,7 @@ export default function Page() {
   const links = [
     {
       img: '/images/flags/gb.png',
+      video: '/videos/gb.webm',
       links: [
         {
           title: `${t('noticesToMariners')} UK`,
@@ -18,6 +19,7 @@ export default function Page() {
     },
     {
       img: '/images/flags/ru.png',
+      video: '/videos/ru.webm',
       links: [
         {
           title: `${t('noticesToMariners')} RU`,
@@ -45,7 +47,7 @@ export default function Page() {
         <figure className='relative w-full m-0 overflow-hidden text-gray-700 bg-clip-border min-h-[400px] md:min-h-[500px] lg:min-h-[700px]'>
           <div className='inset-0 bg-cover bg-center opacity-75'>
             <div
-              className='background-image background-filter'
+              className='background-image'
               style={{
                 backgroundImage: "url('/images/marine-links/1.webp')",
                 backgroundPositionY: 'bottom',
@@ -72,6 +74,13 @@ export default function Page() {
               {t('title')}
             </h1>
           </figcaption>
+          <Image
+            width='2000'
+            height='100'
+            alt={t('title')}
+            className='absolute absolute inset-x-0 bottom-0 h-fit w-full'
+            src='/images/marine-links/wave.svg'
+          />
         </figure>
         <article className='my-16 max-w-[100%] md:max-w-[90%]'>
           <h2
@@ -85,23 +94,19 @@ export default function Page() {
             {t('noticesToMariners')}
           </h2>
           <div className='place-items-top grid gap-8 grid-cols-1 md:grid-cols-2 px-16 md:p-2 xl:p-5'>
-            {links.map(({ img, links }, i) => (
+            {links.map(({ img, video, links }, i) => (
               <div
                 key={i}
                 data-aos='fade-in'
                 data-aos-duration='1000'
                 data-aos-delay={500 * i}
-                className='w-full p-4 md:p-8 relative bg-white border rounded-lg shadow-md
+                className='w-full p-4 md:p-8 relative
                   transform transition duration-500 hover:scale-105'
               >
                 <div className='p-2 flex justify-center'>
-                  <Image
-                    width='350'
-                    height='175'
-                    alt='flag'
-                    className='rounded-lg drop-shadow-[0_0_0.75rem_rgba(53,80,96,0.5)] w-full md:w-[70%]'
-                    src={img}
-                  />
+                  <video autoPlay loop width='350' height='auto' className='border rounded-3xl shadow-2xl'>
+                    <source src={video} type='video/webm' />
+                  </video>
                 </div>
                 <div className='px-4'>
                   <ul className='mt-8 list-none pl-0 text-l md:text-xl lg:text-2xl'>

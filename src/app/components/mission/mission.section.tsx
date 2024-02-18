@@ -15,7 +15,7 @@ export default function MissionSection() {
       id='mission'
       className='flex flex-col h-full w-full place-items-center text-white bg-[#355060] py-4 lg:py-10 px-16 lg:px-24
         sm:bg-[url("/images/about/map.webp")]
-        bg-clip-border bg-cover bg-center'
+        bg-clip-border bg-cover bg-center mission-filter'
     >
       <h2
         data-aos='fade-up'

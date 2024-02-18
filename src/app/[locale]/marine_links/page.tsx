@@ -104,7 +104,7 @@ export default function Page() {
                   transform transition duration-500 hover:scale-105'
               >
                 <div className='p-2 flex justify-center'>
-                  <video autoPlay loop width='350' height='auto' className='border rounded-3xl shadow-2xl'>
+                  <video autoPlay muted loop width='350' height='auto' className='border rounded-3xl shadow-2xl'>
                     <source src={video} type='video/webm' />
                   </video>
                 </div>

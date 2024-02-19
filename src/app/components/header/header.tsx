@@ -11,6 +11,7 @@ import { useScrollDirection } from '../../hooks/use-scroll-direction';
 import { InflotLinks } from '../../types/types';
 import { useLocale } from 'next-intl';
 import { useEffect, useRef } from 'react';
+import { usePathname } from 'next/navigation';
 
 type HeaderProps = {
   langs: Record<string, string>;
@@ -24,6 +25,7 @@ export default function Header({
   const { scrollDirection, isPageOnTop } = useScrollDirection();
 
   const locale = useLocale();
+  const pathname = usePathname()
   const burgerRef = useRef<HTMLInputElement>(null);
 
   const check = () => burgerRef.current?.click();
@@ -74,9 +76,13 @@ export default function Header({
     },
     {
       title: contacts,
-      link: `/${getLocalePath()}/#contacts`,
+      link: `${pathname}/#contacts`,
     },
   ];
+
+  if (pathname.includes('marine_links')) {
+    headerLinks.splice(5, 1);
+  }
 
   // ${scrollDirection && scrollDirection === 'down' ? '-top-60' : 'top-0'}
 

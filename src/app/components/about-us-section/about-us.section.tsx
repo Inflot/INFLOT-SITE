@@ -39,7 +39,7 @@ export default function AboutSection() {
         </div>
 
         <figure className='relative w-full lg:w-4/5 m-0 overflow-hidden text-gray-700 bg-clip-border custom-grayscale min-h-[500px]'>
-          <div className='inset-0 bg-cover bg-center opacity-75'>
+          <div className='inset-0 bg-cover bg-center opacity-80'>
             <div
               className='background-image'
               style={{

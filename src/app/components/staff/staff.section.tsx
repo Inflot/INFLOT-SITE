@@ -19,7 +19,7 @@ export default function StaffSection() {
           className='relative m-0 overflow-hidden text-gray-700 bg-white shrink-0 bg-clip-border 
         custom-grayscale w-full lg:w-2/5 min-h-[500px]'
         >
-          <div className='inset-0 bg-cover bg-center opacity-85'>
+          <div className='inset-0 bg-cover bg-center opacity-90'>
             <div
               className='background-image'
               style={{

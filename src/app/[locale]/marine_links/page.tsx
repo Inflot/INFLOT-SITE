@@ -45,7 +45,7 @@ export default function Page() {
     <main className='main select-none'>
       <section className='flex flex-col w-full place-items-center bg-[#AABCC5] bg-clip-border text-gray-700'>
         <figure className='relative w-full m-0 overflow-hidden text-gray-700 bg-clip-border min-h-[400px] md:min-h-[500px] lg:min-h-[700px]'>
-          <div className='inset-0 bg-cover bg-center opacity-75'>
+          <div className='inset-0 bg-cover bg-center'>
             <div
               className='background-image'
               style={{

@@ -50,7 +50,7 @@ export default function ServicesSection() {
         </div>
 
         <figure className='relative w-full lg:w-2/5 min-h-[500px] m-0 overflow-hidden text-gray-700 shrink-0 bg-clip-border custom-grayscale'>
-          <div className='inset-0 bg-cover bg-center opacity-85'>
+          <div className='inset-0 bg-cover bg-center opacity-90'>
             <div
               className='background-image'
               style={{

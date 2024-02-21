@@ -46,6 +46,7 @@ export default function RootLayout({
           gtag('config', 'G-F8X0TZPMRL');
         `}
         </Script>
+        <meta name="google-site-verification" content="xHOU1GPAZTqSxhHcdukiA_c9PuwxFEpkNpWzm7anL-8" />
         <link
           rel='search'
           type='application/opensearchdescription+xml'

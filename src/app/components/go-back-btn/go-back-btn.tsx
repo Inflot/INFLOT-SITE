@@ -6,10 +6,12 @@ import { FaCaretUp } from 'react-icons/fa6';
 import { useLocale } from 'next-intl';
 import { useScrollDirection } from '../../hooks/use-scroll-direction';
 import useWindowDimensions from '../../hooks/use-window-dimensions';
+import { usePathname } from 'next/navigation';
 
 export default function GoBack() {
   const { scrollDirection, isPageOnTop } = useScrollDirection();
   const { width } = useWindowDimensions();
+  const pathname = usePathname();
 
   const locale = useLocale();
 
@@ -18,7 +20,7 @@ export default function GoBack() {
 
   return (
     <Link
-      href={getLocalePath()}
+      href={pathname}
       className={`
         z-50
         go-back-btn

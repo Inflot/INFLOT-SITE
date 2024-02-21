@@ -52,9 +52,10 @@ export default function RootLayout({
           href={`/opensearch_${t('lang')}.xml`}
           title={t('title')}
         />
+        <link rel="icon" href="/favicon.ico"></link>
         <meta
           httpEquiv='Last-Modified'
-          content='Sun, 18 Feb 2024 12:45:26 GMT'
+          content='Sun, 21 Feb 2024 11:25:20 GMT'
         ></meta>
         {/* Twitter */}
         <meta name='twitter:card' content='summary_large_image' />

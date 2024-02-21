@@ -2,6 +2,8 @@ import { useTranslations } from 'next-intl';
 import Image from 'next/image';
 import Link from 'next/link';
 import { SlAnchor } from 'react-icons/sl';
+import GoBack from '../../components/go-back-btn/go-back-btn';
+import './page.css';
 
 export default function Page() {
   const t = useTranslations('marineLinks');
@@ -9,7 +11,10 @@ export default function Page() {
   const links = [
     {
       img: '/images/flags/gb.png',
-      video: '/videos/gb.webm',
+      videos: [
+        { path: '/videos/gb.webm', type: 'video/webm' },
+        { path: '/videos/gb.mp4', type: 'video/mp4' },
+      ],
       links: [
         {
           title: `${t('noticesToMariners')} UK`,
@@ -19,7 +24,10 @@ export default function Page() {
     },
     {
       img: '/images/flags/ru.png',
-      video: '/videos/ru.webm',
+      videos: [
+        { path: '/videos/ru.webm', type: 'video/webm' },
+        { path: '/videos/ru.mp4', type: 'video/mp4' },
+      ],
       links: [
         {
           title: `${t('noticesToMariners')} RU`,
@@ -47,17 +55,15 @@ export default function Page() {
         <figure className='relative w-full m-0 overflow-hidden text-gray-700 bg-clip-border min-h-[400px] md:min-h-[500px] lg:min-h-[700px]'>
           <div className='inset-0 bg-cover bg-center'>
             <div
-              className='background-image'
+              className='marine-image-1 background-image'
               style={{
-                backgroundImage: "url('/images/marine-links/1.webp')",
                 backgroundPositionY: 'bottom',
                 backgroundPositionX: 'left',
               }}
             ></div>
             <div
-              className='background-image'
+              className='background-image marine-image-2'
               style={{
-                backgroundImage: "url('/images/marine-links/2.webp')",
                 backgroundPositionY: 'center',
               }}
             ></div>
@@ -94,7 +100,7 @@ export default function Page() {
             {t('noticesToMariners')}
           </h2>
           <div className='place-items-top grid gap-8 grid-cols-1 md:grid-cols-2 px-16 md:p-2 xl:p-5'>
-            {links.map(({ img, video, links }, i) => (
+            {links.map(({ img, videos, links }, i) => (
               <div
                 key={i}
                 data-aos='fade-in'
@@ -104,8 +110,20 @@ export default function Page() {
                   transform transition duration-500 hover:scale-105'
               >
                 <div className='p-2 flex justify-center'>
-                  <video autoPlay muted loop width='350' height='auto' className='border rounded-3xl shadow-2xl'>
-                    <source src={video} type='video/webm' />
+                  <video
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    controls={false}
+                    width='350'
+                    height='auto'
+                    className='border rounded-3xl shadow-2xl w-[200px] sm:w-[300px] md:w-[350px] h-auto'
+                    poster={img}
+                  >
+                    {videos.map(({ path, type }, id) => (
+                      <source src={path} key={id} type={type} />
+                    ))}
                   </video>
                 </div>
                 <div className='px-4'>
@@ -147,6 +165,7 @@ export default function Page() {
           </div>
         </article>
       </section>
+      <GoBack />
     </main>
   );
 }

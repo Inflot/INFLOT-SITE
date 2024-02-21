@@ -1,0 +1,13 @@
+.marine-image-1 {
+  background-image: -webkit-image-set(url('/images/marine-links/1.webp') type('image/webp'),
+      url('/images/marine-links/1.jpg') type('image/jpeg'));
+  background-image: image-set(url('/images/marine-links/1.webp') type('image/webp'),
+      url('/images/marine-links/1.jpg') type('image/jpeg'));
+}
+
+.marine-image-2 {
+  background-image: -webkit-image-set(url('/images/marine-links/2.webp') type('image/webp'),
+      url('/images/marine-links/1.jpg') type('image/jpeg'));
+  background-image: image-set(url('/images/marine-links/2.webp') type('image/webp'),
+      url('/images/marine-links/1.jpg') type('image/jpeg'));
+}

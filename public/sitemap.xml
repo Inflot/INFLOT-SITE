@@ -39,4 +39,34 @@
     <priority>0.80</priority>
   </url>
 
+    <url>
+    <loc>https://inflot.com/ru/marine_links</loc>
+    <lastmod>2024-02-21T11:29:13+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+    <url>
+    <loc>https://inflot.com/en/marine_links</loc>
+    <lastmod>2024-02-21T11:29:13+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+    <url>
+    <loc>https://inflot.com/de/marine_links</loc>
+    <lastmod>2024-02-21T11:29:13+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+    <url>
+    <loc>https://inflot.com/fr/marine_links</loc>
+    <lastmod>2024-02-21T11:29:13+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
+    <url>
+    <loc>https://inflot.com/no/marine_links</loc>
+    <lastmod>2024-02-21T11:29:13+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+
 </urlset>

@@ -53,11 +53,20 @@ export default function RootLayout({
           href={`/opensearch_${t('lang')}.xml`}
           title={t('title')}
         />
-        <link rel="icon" href="/favicon.ico"></link>
+
+        {/* favicons */}
+        <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png"/>
+        <link rel="icon" href="/icons/favicon.ico" sizes="any"/>
+        <link rel="icon" href="/icons/icon.svg" type="image/svg+xml"/> 
+        <link rel="manifest" href="/manifest.webmanifest"/>
+        <link rel="yandex-tableau-widget" href="/icons/tableau.json"/>
+
+        {/* Last-Modified */}
         <meta
           httpEquiv='Last-Modified'
-          content='Sun, 21 Feb 2024 11:25:20 GMT'
+          content='Sun, 22 Feb 2024 11:25:20 GMT'
         ></meta>
+
         {/* Twitter */}
         <meta name='twitter:card' content='summary_large_image' />
         <meta name='twitter:title' content={t('title')} />

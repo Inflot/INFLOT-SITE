@@ -100,10 +100,10 @@ export default function Footer() {
           <Image
             width='220'
             height='100'
-            className='spin h-24
+            className='footer-logo-animation h-24
             mx-0 lg:ml-20 lg:mr-5 z-50 logo--shadow pointer-events-none select-none block w-auto
             transition-all duration-500'
-            src='/logo.webp'
+            src='/footer-logo.png'
             alt='Logo'
           />
         </Link>

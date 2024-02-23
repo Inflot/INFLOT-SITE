@@ -47,6 +47,11 @@ export default function RootLayout({
         `}
         </Script>
         <meta name="google-site-verification" content="xHOU1GPAZTqSxhHcdukiA_c9PuwxFEpkNpWzm7anL-8" />
+        
+        {/* yandex */}
+        <meta name="yandex-verification" content="09a3cabb1b3a1047" />
+
+        {/* openSearch */}
         <link
           rel='search'
           type='application/opensearchdescription+xml'

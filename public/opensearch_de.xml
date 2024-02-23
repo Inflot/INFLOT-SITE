@@ -1,7 +1,7 @@
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
   xmlns:moz="http://www.mozilla.org/2006/browser/search/">
   <ShortName>Inflot</ShortName>
-  <Description>Inflot ist auf Schiffsagentur und maritime Logistik spezialisiert. Wir bieten Hafenagenturdienste, Frachtoperationen und individuelle Lösungen im Bereich der Seetransporte an.</Description>
+  <Description>Die Schifffahrtsagentur „Inflot“ wurde am 17. Oktober 1934 im Auftrag der Regierung der UdSSR bei Reedereien in den Seehäfen der UdSSR gegründet, um Anläufe ausländischer Schiffe in den Häfen der UdSSR zu bedienen. Die Seeagentur “Inflot”, einschließlich der mit der Murmansk Shipping Company verbundenen Unternehmen, bietet schon fast 90 Jahren Agenturdienstleistungen und umfassende Unterstützung für Schiffe im Hafen von Murmansk an.</Description>
   <Url type="text/html" template="https://inflot.com/de" method="GET"/>
   <Image height="16" width="16" type="image/x-icon">https://inflot.com/favicon.ico</Image>
   <OutputEncoding>UTF-8</OutputEncoding>

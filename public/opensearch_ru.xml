@@ -1,7 +1,7 @@
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
   xmlns:moz="http://www.mozilla.org/2006/browser/search/">
   <ShortName>Inflot</ShortName>
-  <Description>Инфлот специализируется на агентировании судов и морской логистике. Предлагаем портовое агентирование, грузовые операции и индивидуальные решения в сфере морских перевозок.</Description>
+  <Description>Морское агентство «Инфлот» уже 90 лет оказывает услуги по агентированию и комплексному сопровождению и судов в порту Мурманск. Компания имеет почти вековой опыт работы практически на всех терминалах акватории порта Мурманск.</Description>
   <Url type="text/html" template="https://inflot.com" method="GET"/>
   <Image height="16" width="16" type="image/x-icon">https://inflot.com/favicon.ico</Image>
   <OutputEncoding>UTF-8</OutputEncoding>

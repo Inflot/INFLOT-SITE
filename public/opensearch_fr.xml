@@ -1,7 +1,7 @@
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
   xmlns:moz="http://www.mozilla.org/2006/browser/search/">
   <ShortName>Inflot</ShortName>
-  <Description>Inflot est spécialisé dans l'agence maritime et la logistique maritime. Nous proposons des services d'agence portuaire, des opérations de fret et des solutions personnalisées dans le domaine du transport maritime.</Description>
+  <Description>L'agence maritime \"Inflot\" a été créée le 17 octobre 1934 par ordre du gouvernement de l'URSS auprès des compagnies maritimes des ports maritimes de l'URSS pour conduite les entrées des navires étrangers dans les ports de l'URSS. L'agence maritime \"Inflot\", y compris celles affiliées à la Murmansk Shipping Company, fournit des services d'agence depuis près de 90 ans et apport un soutien complet aux navires dans le port de Mourmansk.</Description>
   <Url type="text/html" template="https://inflot.com/fr" method="GET"/>
   <Image height="16" width="16" type="image/x-icon">https://inflot.com/favicon.ico</Image>
   <OutputEncoding>UTF-8</OutputEncoding>

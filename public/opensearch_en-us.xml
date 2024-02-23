@@ -1,7 +1,7 @@
 <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/"
   xmlns:moz="http://www.mozilla.org/2006/browser/search/">
   <ShortName>Inflot</ShortName>
-  <Description>Inflot specializes in ship agency and maritime logistics. We offer port agency services, cargo operations, and customized solutions in the field of maritime transportation.</Description>
+  <Description>The maritime agency INFLOT was founded on 17 October 1934 by the Order of the Government of the USSR within shipping lines in sea ports of the USSR to service calls in ports of USSR by foreign vessels. For 90 years, the marine agency INFLOT within Murmansk Shipping Company have provided agent’s and convoying services for vessels in port of Murmansk.</Description>
   <Url type="text/html" template="https://inflot.com/en" method="GET"/>
   <Image height="16" width="16" type="image/x-icon">https://inflot.com/favicon.ico</Image>
   <OutputEncoding>UTF-8</OutputEncoding>

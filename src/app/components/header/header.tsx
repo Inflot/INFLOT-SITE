@@ -104,7 +104,7 @@ export default function Header({
           width='220'
           height='100'
           className={`
-            ${isPageOnTop ? 'header-logo-animation h-32 sm:h-32 md:h-32 lg:h-36' : 'h-10 hidden'}
+            ${isPageOnTop ? 'h-32 sm:h-32 md:h-32 lg:h-36' : 'h-10 hidden'}
             mt-24 md:mt-0 lg:mt-4
             mx-0 lg:ml-20 lg:mr-5 z-50 mb-4 md:mb-0 logo--shadow pointer-events-none select-none block w-auto
             transition-all duration-500

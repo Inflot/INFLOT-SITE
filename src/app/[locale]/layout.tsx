@@ -69,7 +69,7 @@ export default function RootLayout({
         {/* Last-Modified */}
         <meta
           httpEquiv='Last-Modified'
-          content='Sun, 22 Feb 2024 11:25:20 GMT'
+          content='Fri, 01 Mar 2024 11:25:20 GMT'
         ></meta>
 
         {/* Twitter */}

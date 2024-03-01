@@ -6,6 +6,7 @@ Allow: *.png
 Allow: *.jpeg
 Allow: *.svg
 Allow: *.gif
+Allow: /
 Allow: /ru
 Allow: /en
 Allow: /fr

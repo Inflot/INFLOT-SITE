@@ -17,9 +17,9 @@ export default function SurveysSection() {
     >
       <div className='relative flex w-full max-w-full flex-col lg:flex-row bg-clip-border'>
         <figure className='relative w-full lg:w-2/5 min-h-[500px] m-0 overflow-hidden shrink-0 bg-clip-border custom-grayscale'>
-          <div className='inset-0 bg-cover bg-center opacity-90'>
+          <div className='inset-0 bg-cover bg-center'>
             <div
-              className='background-image'
+              className='background-image opacity-90'
               style={{
                 backgroundImage: "url('/images/photos/8.webp')",
               }}

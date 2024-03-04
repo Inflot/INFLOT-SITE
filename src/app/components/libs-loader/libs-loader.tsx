@@ -9,9 +9,17 @@ export default function LibsLoader() {
       AOS.init({
         once: true,
         initClassName: 'aos-init',
-        animatedClassName: 'aos-animate'
+        animatedClassName: 'aos-animate',
       });
     });
+
+    const timer = setTimeout(() => {
+      document
+        .getElementById('vibratingTextDamped')
+        ?.classList.add('text-vibrate');
+    }, 3700);
+
+    return () => clearTimeout(timer);
   }, []);
 
   return <></>;

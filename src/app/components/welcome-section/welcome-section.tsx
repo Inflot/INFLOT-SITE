@@ -71,8 +71,10 @@ export default function WelcomeSection() {
       />
       <div className='w-screen z-40 absolute bg-cover bg-center mt-32 lg:mt-[20vh] top-3 welcome-section'>
         <h2
-          data-aos='fade-down'
-          data-aos-duration='700'
+          id="vibratingTextDamped"
+          data-aos="fade-left" 
+          data-aos-delay="3000"
+          data-aos-duration='1000'
           className='font-normal tracking-wider my-0 lg:my-2 text-white text-center uppercase pointer-events-none select-none text-xl md:text-2xl'
         >
           {t('title')}

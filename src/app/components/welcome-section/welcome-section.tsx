@@ -72,10 +72,8 @@ export default function WelcomeSection() {
       <div className='w-screen z-40 absolute bg-cover bg-center mt-32 lg:mt-[20vh] top-3 welcome-section'>
         <h2
           id="vibratingTextDamped"
-          data-aos="fade-left" 
-          data-aos-delay="3000"
-          data-aos-duration='1000'
-          className='font-normal tracking-wider my-0 lg:my-2 text-white text-center uppercase pointer-events-none select-none text-xl md:text-2xl'
+          data-aos="custom-fade-left" 
+          className='opacity-0 font-normal tracking-wider my-0 lg:my-2 text-white text-center uppercase pointer-events-none select-none text-xl md:text-2xl'
         >
           {t('title')}
         </h2>
@@ -119,8 +117,8 @@ export default function WelcomeSection() {
           <h1
             data-aos='zoom-in'
             data-aos-duration='700'
-            className='font-["PlayBold"] tracking-wider uppercase text-4xl md:text-4xl lg:text-6xl 
-            select-none pointer-events-none my-4 lg:my-8 pb-2
+            className='font-["PlayBold"] text-center tracking-wider uppercase text-2xl md:text-2xl lg:text-4xl 
+            select-none pointer-events-none my-4 lg:my-8 pb-2 px-4
             drop-shadow-[0_0_1rem_#A8C8EA]'
           >
             {t('name')}

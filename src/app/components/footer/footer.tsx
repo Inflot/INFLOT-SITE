@@ -103,7 +103,7 @@ export default function Footer() {
             className='h-24
             mx-0 lg:ml-20 lg:mr-5 z-50 logo--shadow pointer-events-none select-none block w-auto
             transition-all duration-500'
-            src='/footer-logo.png'
+            src='/logo.png'
             alt='Logo'
           />
         </Link>

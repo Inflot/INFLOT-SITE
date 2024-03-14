@@ -101,7 +101,7 @@ export default function Footer() {
             width='220'
             height='100'
             className='h-24
-            mx-0 lg:ml-20 lg:mr-5 z-50 logo--shadow pointer-events-none select-none block w-auto
+            mx-0 lg:ml-20 lg:mr-5 z-50 pointer-events-none select-none block w-auto
             transition-all duration-500'
             src='/logo.png'
             alt='Logo'

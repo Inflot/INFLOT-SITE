@@ -13,13 +13,13 @@ export default function LibsLoader() {
       });
     });
 
-    const timer = setTimeout(() => {
-      document
-        .getElementById('vibratingTextDamped')
-        ?.classList.add('text-vibrate');
-    }, 3700);
+    // const timer = setTimeout(() => {
+    //   document
+    //     .getElementById('vibratingTextDamped')
+    //     ?.classList.add('text-vibrate');
+    // }, 3700);
 
-    return () => clearTimeout(timer);
+    // return () => clearTimeout(timer);
   }, []);
 
   return <></>;

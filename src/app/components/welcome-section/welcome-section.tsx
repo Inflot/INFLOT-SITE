@@ -71,7 +71,7 @@ export default function WelcomeSection() {
       />
       <div className='w-screen z-40 absolute bg-cover bg-center mt-32 lg:mt-[20vh] top-3 welcome-section'>
         <h2
-          id="vibratingTextDamped"
+          // id="vibratingTextDamped"
           data-aos="custom-fade-left" 
           className='opacity-0 font-normal tracking-wider my-0 lg:my-2 text-white text-center uppercase pointer-events-none select-none text-xl md:text-2xl'
         >

@@ -1,13 +1,18 @@
 @keyframes customFadeRightAnimation {
 
-  0%,
-  15% {
+  /* 0%,
+  15%  */
+  0% {
     opacity: 0;
     transform: translateX(30vw);
   }
 
-  50% {
+  15% {
     opacity: 1;
+  }
+
+  50% {
+    /* opacity: 1; */
     transform: translateX(0px);
   }
 
@@ -55,5 +60,5 @@
 
 [data-aos="custom-fade-left"].aos-animate {
   animation: customFadeRightAnimation 12s ease-out forwards;
-  animation-delay: 2s;
+  /* animation-delay: 2s; */
 }

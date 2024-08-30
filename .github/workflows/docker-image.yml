@@ -57,7 +57,7 @@ jobs:
           #          severity_threshold: HIGH
           severity: HIGH,CRITICAL
           annotations: true
-          image: ghcr.io/luminary-com/infot-landing:${{ github.ref_name }}
+          image: ghcr.io/inflot/infot-landing:${{ github.ref_name }}
 
 
 #  deploy_container:

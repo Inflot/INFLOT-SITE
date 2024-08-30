@@ -46,8 +46,8 @@ jobs:
       - name: Build and Push Docker Images
         run: |
             docker buildx build \
-              --tag "ghcr.io/INFLOT-SITE/infot-landing:${{ github.ref_name }}" \
-              --tag "ghcr.io/INFLOT-SITE/infot-landing:latest" \
+              --tag "ghcr.io/inflot/infot-landing:${{ github.ref_name }}" \
+              --tag "ghcr.io/inflot/infot-landing:latest" \
               --push .
         env:
           DOCKER_CLI: docker

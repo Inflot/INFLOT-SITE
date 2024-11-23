@@ -13,6 +13,7 @@ module.exports = withNextIntl({
     ];
   },
   images: {
+    unoptimized: true,
     formats: ['image/webp'],
   }
 });

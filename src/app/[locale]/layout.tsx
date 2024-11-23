@@ -31,6 +31,20 @@ export default function RootLayout({
 }) {
   const t = useTranslations('meta');
 
+  const JsonLd = ({ data }: { data: object }) => (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }}
+    />
+  );
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": `t('title')`,
+    "url": "https://inflot.com"
+  };
+
   return (
     <html lang={t('lang')} className='scroll-smooth'>
       <head>
@@ -57,11 +71,13 @@ export default function RootLayout({
         />
 
         {/* favicons */}
-        <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png"/>
-        <link rel="icon" href="/icons/favicon.ico" sizes="any"/>
-        <link rel="icon" href="/icons/icon.svg" type="image/svg+xml"/> 
-        <link rel="manifest" href="/manifest.webmanifest"/>
-        <link rel="yandex-tableau-widget" href="/icons/tableau.json"/>
+        <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
+        <link rel="icon" href="/icons/favicon.ico" sizes="any" />
+        <link rel="icon" href="/icons/icon.svg" type="image/svg+xml" />
+        <link rel="manifest" href="/manifest.webmanifest" />
+        <link rel="yandex-tableau-widget" href="/icons/tableau.json" />
+
+        <JsonLd data={jsonLd} />
 
         {/* Last-Modified */}
         <meta

@@ -1,13 +1,28 @@
+:root {
+    --wave-gap: -60px;
+}
+
 .marine-image-1 {
-  background-image: -webkit-image-set(url('/images/marine-links/1.webp') type('image/webp'),
-      url('/images/marine-links/1.jpg') type('image/jpeg'));
-  background-image: image-set(url('/images/marine-links/1.webp') type('image/webp'),
-      url('/images/marine-links/1.jpg') type('image/jpeg'));
+    background-image: -webkit-image-set(url('/images/marine-links/1.webp') type('image/webp'),
+            url('/images/marine-links/1.jpg') type('image/jpeg'));
+    background-image: image-set(url('/images/marine-links/1.webp') type('image/webp'),
+            url('/images/marine-links/1.jpg') type('image/jpeg'));
 }
 
 .marine-image-2 {
-  background-image: -webkit-image-set(url('/images/marine-links/2.webp') type('image/webp'),
-      url('/images/marine-links/1.jpg') type('image/jpeg'));
-  background-image: image-set(url('/images/marine-links/2.webp') type('image/webp'),
-      url('/images/marine-links/1.jpg') type('image/jpeg'));
+    background-image: -webkit-image-set(url('/images/marine-links/2.webp') type('image/webp'),
+            url('/images/marine-links/1.jpg') type('image/jpeg'));
+    background-image: image-set(url('/images/marine-links/2.webp') type('image/webp'),
+            url('/images/marine-links/1.jpg') type('image/jpeg'));
+}
+
+.cover {
+    position: relative;
+    top: var(--wave-gap);
+    background: url('/images/marine-links/map.png');
+    background-size: cover;
+}
+
+.links-section {
+    margin-bottom: var(--wave-gap);
 }

@@ -60,88 +60,91 @@ export default function WelcomeSection() {
 
   return (
     <div className='image-wrapper h-[700px] md:h-[100vh]'>
-      <Image
-        className='image__main background-filter'
-        src='/images/header/background.webp'
-        alt='Maritime Scene'
-        fill
-        priority={true}
-        quality={100}
-        loading={'eager'}
-      />
-      <div className='w-screen z-40 absolute bg-cover bg-center mt-32 lg:mt-[20vh] top-3 welcome-section'>
-        <h2
-          // id="vibratingTextDamped"
-          data-aos="custom-fade-left" 
-          className='opacity-0 font-normal tracking-wider my-0 lg:my-2 text-white text-center uppercase pointer-events-none select-none text-xl md:text-2xl'
+      <figure className='w-full m-0 overflow-hidden text-gray-700 bg-clip-border'>
+        <div className='inset-0 bg-cover bg-center'>
+          <div
+            className='welcome-image welcome-image-1 background-filter h-[700px] md:h-[100vh]'
+          ></div>
+          <div
+            className='welcome-image welcome-image-2 background-filter h-[700px] md:h-[100vh]'
+          ></div>
+        </div>
+        <figcaption
         >
-          {t('title')}
-        </h2>
-        <div className='text-white flex flex-col justify-center items-center'>
-          <div className='overflow-hidden w-full flex flex-col lg:flex-row items-center justify-center'>
-            <ul
-              data-aos='fade-right'
-              data-aos-duration='700'
-              className='w-auto list-none text-center lg:text-right lg:text-right 
+          <div className='w-screen z-40 absolute bg-cover bg-center mt-32 lg:mt-[20vh] top-3 welcome-section'>
+            <h2
+              data-aos="custom-fade-left"
+              className='opacity-0 font-normal tracking-wider my-0 lg:my-2 text-white text-center uppercase pointer-events-none select-none text-xl md:text-2xl'
+            >
+              {t('title')}
+            </h2>
+            <div className='text-white flex flex-col justify-center items-center'>
+              <div className='overflow-hidden w-full flex flex-col lg:flex-row items-center justify-center'>
+                <ul
+                  data-aos='fade-right'
+                  data-aos-duration='700'
+                  className='w-auto list-none text-center lg:text-right lg:text-right 
               pl-0 pr-0 md:pr-2 md:w-[500px] w-full leading-6 md:leading-7 select-none text-sm md:text-base lg:text-lg'
-            >
-              {leftLinks.map(({ link, title, classes }) => (
-                <li key={link} className={classes}>
-                  <Link href={link} className='no-underline hover:underline text-white'>{title}</Link>
-                </li>
-              ))}
-            </ul>
-            <Image
-              data-aos='flip-left'
-              data-aos-duration='700'
-              className='m-0 pointer-events-none select-none w-32 h-32 md:w-48 md:h-48 lg:w-64 lg:h-64'
-              src='/images/header/compass.svg'
-              alt='Compass'
-              priority={true}
-              loading={'eager'}
-              width={250}
-              height={250}
-            ></Image>
-            <ul
-              data-aos='fade-left'
-              data-aos-duration='700'
-              className='w-auto list-none text-center lg:text-left lg:text-left pl-0 md:pl-2 lg:w-[500px] w-full leading-6 md:leading-7 select-none text-sm md:text-base lg:text-lg mb-2'
-            >
-              {rightLinks.map(({ link, title, classes }) => (
-                <li key={link} className={classes}>
-                  <Link href={link} className='no-underline hover:underline text-white'>{title}</Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-          <h1
-            data-aos='zoom-in'
-            data-aos-duration='700'
-            className='font-["PlayBold"] text-center tracking-wider uppercase text-2xl md:text-2xl lg:text-4xl 
+                >
+                  {leftLinks.map(({ link, title, classes }) => (
+                    <li key={link} className={classes}>
+                      <Link href={link} className='no-underline hover:underline text-white'>{title}</Link>
+                    </li>
+                  ))}
+                </ul>
+                <Image
+                  data-aos='flip-left'
+                  data-aos-duration='700'
+                  className='m-0 pointer-events-none select-none w-32 h-32 md:w-48 md:h-48 lg:w-64 lg:h-64'
+                  src='/images/header/compass.svg'
+                  alt='Compass'
+                  priority={true}
+                  loading={'eager'}
+                  width={250}
+                  height={250}
+                ></Image>
+                <ul
+                  data-aos='fade-left'
+                  data-aos-duration='700'
+                  className='w-auto list-none text-center lg:text-left lg:text-left pl-0 md:pl-2 lg:w-[500px] w-full leading-6 md:leading-7 select-none text-sm md:text-base lg:text-lg mb-2'
+                >
+                  {rightLinks.map(({ link, title, classes }) => (
+                    <li key={link} className={classes}>
+                      <Link href={link} className='no-underline hover:underline text-white'>{title}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <h1
+                data-aos='zoom-in'
+                data-aos-duration='700'
+                className='font-["PlayBold"] text-center tracking-wider uppercase text-2xl md:text-2xl lg:text-4xl 
             select-none pointer-events-none my-4 lg:my-8 pb-2 px-4
             drop-shadow-[0_0_1rem_#A8C8EA]'
-          >
-            {t('name')}
-          </h1>
-          <p
-            data-aos='zoom-in'
-            data-aos-duration='700'
-            className='uppercase text-sm md:text-base lg:text-2xl w-3/4 md:w-1/2 text-center m-auto select-none pointer-events-none'
-          >
-            {t('subtitle')}
-          </p>
-          <a
-            data-aos='zoom-in'
-            data-aos-duration='700'
-            href='#about'
-            className='mt-8 md:mt-6 lg:mt-12 no-underline text-white
+              >
+                {t('name')}
+              </h1>
+              <p
+                data-aos='zoom-in'
+                data-aos-duration='700'
+                className='uppercase text-sm md:text-base lg:text-2xl w-3/4 md:w-1/2 text-center m-auto select-none pointer-events-none'
+              >
+                {t('subtitle')}
+              </p>
+              <a
+                data-aos='zoom-in'
+                data-aos-duration='700'
+                href='#about'
+                className='mt-8 md:mt-6 lg:mt-12 no-underline text-white
             focus:bg-[#ffffff70] hover:bg-[#ffffff30] rounded-lg px-5 py-1 lg:py-2.5 select-none 
             focus:outline-none text-lg md:text-2xl lg:text-3xl'
-          >
-            {t('about')}
-          </a>
-        </div>
-      </div>
+              >
+                {t('about')}
+              </a>
+            </div>
+          </div>
+        </figcaption>
+      </figure>
     </div>
   );
 }

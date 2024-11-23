@@ -34,16 +34,6 @@
   filter: brightness(75%) contrast(70%) hue-rotate(0deg) saturate(110%);
 }
 
-.image__main {
-  display: block;
-  position: relative !important;
-  height: 600px;
-  min-height: 600px;
-  width: fit-content;
-  inset: 0px;
-  object-fit: cover;
-}
-
 .logo--shadow {
   -webkit-filter: drop-shadow(1px 1px 5px #ffffff75);
   filter: drop-shadow(1px 1px 5px #ffffff75);

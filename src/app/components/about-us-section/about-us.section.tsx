@@ -41,15 +41,21 @@ export default function AboutSection() {
         <figure className='relative w-full lg:w-4/5 m-0 overflow-hidden text-gray-700 bg-clip-border custom-grayscale min-h-[500px]'>
           <div className='inset-0 bg-cover bg-center opacity-80'>
             <div
-              className='background-image'
+              className='background-image-3'
               style={{
                 backgroundImage: "url('/images/about/ships.webp')",
               }}
             ></div>
             <div
-              className='background-image'
+              className='background-image-3'
               style={{
                 backgroundImage: "url('/images/about/ships2.webp')",
+              }}
+            ></div>
+            <div
+              className='background-image-3'
+              style={{
+                backgroundImage: "url('/images/about/ships3.webp')",
               }}
             ></div>
           </div>

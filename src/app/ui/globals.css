@@ -99,31 +99,85 @@ body {
 	height: 100%;
 	background-size: cover;
 	background-position: center;
-	animation: changeBackground 20s linear infinite;
+	animation: changeBackground 60s linear infinite;
 	opacity: 0;
 }
 
 .background-image:nth-child(1) {
-	animation-delay: 10s;
+	animation-delay: 0;
 	opacity: 1;
+	animation: none;
+}
+
+.background-image:nth-child(2) {
+	animation-delay: 30s;
 }
 
 @keyframes changeBackground {
 
 	0%,
+	5% {
+		opacity: 0;
+	}
+
+	10%,
+	45% {
+		opacity: 1;
+	}
+
+	50%,
+	55% {
+		opacity: 0;
+	}
+
+	60%,
+	95% {
+		opacity: 1;
+	}
+
 	100% {
-		opacity: 0.0;
+		opacity: 0;
+	}
+}
+
+.background-image-3 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	animation: changeBackground-3 30s linear infinite;
+	opacity: 0;
+}
+
+.background-image-3:nth-child(1) {
+	animation-delay: 0s;
+}
+
+.background-image-3:nth-child(2) {
+	animation-delay: 10s;
+}
+
+.background-image-3:nth-child(3) {
+	animation-delay: 20s;
+}
+
+@keyframes changeBackground-3 {
+
+	0%,
+	5% {
+		opacity: 0;
 	}
 
-	10% {
-		opacity: 1.0;
+	10%,
+	40% {
+		opacity: 1;
 	}
 
+	45%,
 	50% {
-		opacity: 1.0;
-	}
-
-	60% {
-		opacity: 0.0;
+		opacity: 0;
 	}
 }

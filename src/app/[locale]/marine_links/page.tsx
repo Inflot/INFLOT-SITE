@@ -1,7 +1,6 @@
 import { useTranslations } from 'next-intl';
-import Image from 'next/image';
 import Link from 'next/link';
-import { SlAnchor } from 'react-icons/sl';
+import { FaAnchor } from "react-icons/fa";
 import GoBack from '../../components/go-back-btn/go-back-btn';
 import './page.css';
 
@@ -51,11 +50,11 @@ export default function Page() {
 
   return (
     <main className='main select-none'>
-      <section className='flex flex-col w-full place-items-center bg-[#AABCC5] bg-clip-border text-gray-700'>
+      <section className='links-section flex flex-col w-full place-items-center bg-[#AABCC5] bg-clip-border text-gray-700'>
         <figure className='relative w-full m-0 overflow-hidden text-gray-700 bg-clip-border min-h-[400px] md:min-h-[500px] lg:min-h-[700px]'>
           <div className='inset-0 bg-cover bg-center'>
             <div
-              className='marine-image-1 background-image'
+              className='background-image marine-image-1 '
               style={{
                 backgroundPositionY: 'bottom',
                 backgroundPositionX: 'left',
@@ -64,7 +63,8 @@ export default function Page() {
             <div
               className='background-image marine-image-2'
               style={{
-                backgroundPositionY: 'center',
+                backgroundPositionY: 'bottom',
+                backgroundPositionX: 'left',
               }}
             ></div>
           </div>
@@ -80,33 +80,26 @@ export default function Page() {
               {t('title')}
             </h1>
           </figcaption>
-          <Image
-            width='2000'
-            height='100'
-            alt={t('title')}
-            className='absolute absolute inset-x-0 bottom-0 h-fit w-full'
-            src='/images/marine-links/wave.svg'
-          />
         </figure>
-        <article className='my-16 max-w-[100%] md:max-w-[90%]'>
+        <article className='cover w-full'>
           <h2
             data-aos='zoom-in'
             data-aos-duration='700'
             data-aos-delay='700'
             className='text-[#1f3542] block antialiased font-semibold leading-snug tracking-normal 
-            font-["PlayBold"] tracking-wide mt-0 my-12 text-2xl lg:text-3xl lg:text-6xl text-center capitalize'
+            font-["PlayBold"] tracking-wide mt-0 pt-32 mb-12 text-2xl lg:text-3xl lg:text-6xl text-center capitalize'
             style={{ whiteSpace: 'pre-line' }}
           >
             {t('noticesToMariners')}
           </h2>
-          <div className='place-items-top grid gap-8 grid-cols-1 md:grid-cols-2 px-16 md:p-2 xl:p-5'>
+          <div className='place-items-top flex justify-center flex-col px-16 md:p-2 xl:p-5 lg:flex-row'>
             {links.map(({ img, videos, links }, i) => (
               <div
                 key={i}
                 data-aos='fade-in'
                 data-aos-duration='1000'
                 data-aos-delay={500 * i}
-                className='w-full p-4 md:p-8 relative
+                className='p-4 md:p-8 relative
                   transform transition duration-500 hover:scale-105'
               >
                 <div className='p-2 flex justify-center'>
@@ -116,9 +109,9 @@ export default function Page() {
                     loop
                     playsInline
                     controls={false}
-                    width='350'
+                    width='300'
                     height='auto'
-                    className='border rounded-3xl shadow-2xl w-[200px] sm:w-[300px] md:w-[350px] h-auto'
+                    className='border rounded-3xl shadow-2xl w-[200px] sm:w-[250px] md:w-[300px] h-auto'
                     poster={img}
                   >
                     {videos.map(({ path, type }, id) => (
@@ -140,6 +133,7 @@ export default function Page() {
                           href={link}
                           target='_blank'
                           className='
+                          font-semibold
                             text-l md:text-xl lg:text-2xl 
                             text-center tracking-widest cursor-pointer capitalize 
                             text-[#1f3542] no-underline rounded-md font-normal
@@ -149,7 +143,7 @@ export default function Page() {
                         '
                         >
                           <span>
-                            <SlAnchor
+                            <FaAnchor
                               size='15px'
                               className='h-full mr-[10px]'
                             />

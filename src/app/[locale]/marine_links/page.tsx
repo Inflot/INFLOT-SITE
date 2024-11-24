@@ -1,6 +1,6 @@
 import { useTranslations } from 'next-intl';
 import Link from 'next/link';
-import { FaAnchor } from "react-icons/fa";
+import { SlAnchor } from "react-icons/sl";
 import GoBack from '../../components/go-back-btn/go-back-btn';
 import './page.css';
 
@@ -86,7 +86,7 @@ export default function Page() {
             data-aos='zoom-in'
             data-aos-duration='700'
             data-aos-delay='700'
-            className='text-[#1f3542] block antialiased font-semibold leading-snug tracking-normal 
+            className='text-white block antialiased font-semibold leading-snug tracking-normal 
             font-["PlayBold"] tracking-wide mt-0 pt-32 mb-12 text-2xl lg:text-3xl lg:text-6xl text-center capitalize'
             style={{ whiteSpace: 'pre-line' }}
           >
@@ -136,14 +136,14 @@ export default function Page() {
                           font-semibold
                             text-l md:text-xl lg:text-2xl 
                             text-center tracking-widest cursor-pointer capitalize 
-                            text-[#1f3542] no-underline rounded-md font-normal
+                            text-white no-underline rounded-md font-normal
                             pr-2 
                             flex justify-center content-center py-2 md:py-0
                             hover:underline
                         '
                         >
                           <span>
-                            <FaAnchor
+                            <SlAnchor
                               size='15px'
                               className='h-full mr-[10px]'
                             />

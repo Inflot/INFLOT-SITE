@@ -41,7 +41,7 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": `t('title')`,
+    "name": `${t('title')}`,
     "url": "https://inflot.com"
   };
 
@@ -82,7 +82,7 @@ export default function RootLayout({
         {/* Last-Modified */}
         <meta
           httpEquiv='Last-Modified'
-          content='Fri, 01 Mar 2024 11:25:20 GMT'
+          content='Sun, 24 Nov 2024 11:25:20 GMT'
         ></meta>
 
         {/* Twitter */}

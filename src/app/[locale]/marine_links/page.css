@@ -22,7 +22,8 @@
     background: url('/images/marine-links/map.webp');
     background-size: cover;
     z-index: 1000;
-    padding-top: 5em;
+    padding-top: 7em;
+    padding-bottom: 7em;
 }
 
 .links-section {

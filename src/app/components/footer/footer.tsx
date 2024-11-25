@@ -104,7 +104,7 @@ export default function Footer() {
             mx-0 lg:ml-20 lg:mr-5 z-50 pointer-events-none select-none block w-auto
             transition-all duration-500'
             src='/logo-white.png'
-            alt='Logo'
+            alt={tMeta('title')}
           />
         </Link>
         <p className='select-none font-["PlayBold"] text-center tracking-widest uppercase text-md sm:text-lg md:text-xl px-2 py-3'>

@@ -1,5 +1,5 @@
 :root {
-    --wave-gap: -60px;
+    --wave-gap: -145px;
 }
 
 .marine-image-1 {
@@ -19,8 +19,11 @@
 .cover {
     position: relative;
     top: var(--wave-gap);
-    background: url('/images/marine-links/map.png');
+    background: url('/images/marine-links/map.webp');
     background-size: cover;
+    z-index: 1000;
+    padding-top: 7em;
+    padding-bottom: 7em;
 }
 
 .links-section {

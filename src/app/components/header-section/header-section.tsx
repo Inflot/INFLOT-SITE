@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl';
 export default function HeaderLinks() {
   const l = useTranslations('lang');
   const h = useTranslations('navigation');
+  const tMeta = useTranslations('meta');
 
   const langs = {
     RU: l('russian'),
@@ -23,5 +24,5 @@ export default function HeaderLinks() {
     marineLinks: h('marineLinks'),
   };
 
-  return <Header langs={langs} links={links} />;
+  return <Header langs={langs} links={links} title={tMeta('title')}/>;
 }

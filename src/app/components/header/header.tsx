@@ -16,16 +16,18 @@ import { usePathname } from 'next/navigation';
 type HeaderProps = {
   langs: Record<string, string>;
   links: InflotLinks;
+  title: string;
 };
 
 export default function Header({
   langs,
+  title,
   links: { about, staff, services, surveys, contacts, mission, marineLinks },
 }: HeaderProps) {
   const { scrollDirection, isPageOnTop } = useScrollDirection();
 
   const locale = useLocale();
-  const pathname = usePathname()
+  const pathname = usePathname();
   const burgerRef = useRef<HTMLInputElement>(null);
 
   const check = () => burgerRef.current?.click();
@@ -110,7 +112,7 @@ export default function Header({
             transition-all duration-500
           `}
           src='/logo.png'
-          alt='Logo'
+          alt={title}
         />
       </Link>
 

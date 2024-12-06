@@ -4,9 +4,10 @@ import { locales } from './config';
 export default createMiddleware({
   locales,
   defaultLocale: 'ru',
+  localeDetection: false,
+  localePrefix: 'as-needed',
 });
 
 export const config = {
-  // Match only internationalized pathnames
-  matcher: ['/', '/(ru|no|de|en|fr)/:path*'],
+  matcher: [`/((?!_next|static|public|fonts|icons|images|meta|videos|logo.png|logo-white.png|og.png|next.svg|manifest.webmanifest|robots.txt|.nojekyll|tableau.json|sitemap.xml).*)`],
 };

@@ -66,7 +66,7 @@ export default function RootLayout({
         <link
           rel='search'
           type='application/opensearchdescription+xml'
-          href={`/opensearch_${t('lang')}.xml`}
+          href={`/meta/opensearch_${t('lang')}.xml`}
           title={t('title')}
         />
 
@@ -82,7 +82,7 @@ export default function RootLayout({
         {/* Last-Modified */}
         <meta
           httpEquiv='Last-Modified'
-          content='Sun, 24 Nov 2024 11:25:20 GMT'
+          content='Sun, 06 Dec 2024 11:25:20 GMT'
         ></meta>
 
         {/* Twitter */}

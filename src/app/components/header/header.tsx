@@ -78,7 +78,7 @@ export default function Header({
     },
     {
       title: contacts,
-      link: `${pathname}/#contacts`,
+      link: pathname === '/' ? '#contacts' : `${pathname}/#contacts`,
     },
   ];
 

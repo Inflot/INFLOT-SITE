@@ -3,20 +3,12 @@
 import Link from 'next/link';
 import './go-back-btn.css';
 import { FaCaretUp } from 'react-icons/fa6';
-import { useLocale } from 'next-intl';
-import { useScrollDirection } from '../../hooks/use-scroll-direction';
 import useWindowDimensions from '../../hooks/use-window-dimensions';
 import { usePathname } from 'next/navigation';
 
 export default function GoBack() {
-  const { scrollDirection, isPageOnTop } = useScrollDirection();
   const { width } = useWindowDimensions();
   const pathname = usePathname();
-
-  const locale = useLocale();
-
-  const getLocalePath = () =>
-    locale === 'GB' ? 'en' : locale.toLocaleLowerCase();
 
   return (
     <Link

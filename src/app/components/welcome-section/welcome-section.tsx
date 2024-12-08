@@ -86,8 +86,8 @@ export default function WelcomeSection() {
                   className='w-auto list-none text-center lg:text-right lg:text-right 
               pl-0 pr-0 md:pr-2 md:w-[500px] w-full leading-6 md:leading-7 select-none text-sm md:text-base lg:text-lg'
                 >
-                  {leftLinks.map(({ link, title, classes }) => (
-                    <li key={link} className={classes}>
+                  {leftLinks.map(({ link, title, classes }, index) => (
+                    <li key={index} className={classes}>
                       <Link href={link} className='no-underline hover:underline text-white'>{title}</Link>
                     </li>
                   ))}
@@ -108,8 +108,8 @@ export default function WelcomeSection() {
                   data-aos-duration='700'
                   className='w-auto list-none text-center lg:text-left lg:text-left pl-0 md:pl-2 lg:w-[500px] w-full leading-6 md:leading-7 select-none text-sm md:text-base lg:text-lg mb-2'
                 >
-                  {rightLinks.map(({ link, title, classes }) => (
-                    <li key={link} className={classes}>
+                  {rightLinks.map(({ link, title, classes }, index) => (
+                    <li key={index} className={classes}>
                       <Link href={link} className='no-underline hover:underline text-white'>{title}</Link>
                     </li>
                   ))}

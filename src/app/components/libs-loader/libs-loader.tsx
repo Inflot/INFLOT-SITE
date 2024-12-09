@@ -12,6 +12,7 @@ export default function LibsLoader() {
   const isShowSnow = today >= start || today <= end;
 
   const [images, setImages] = useState<HTMLImageElement[]>([]);
+  const [snowflakeCount, setSnowflakeCount] = useState(200);
 
   useEffect(() => {
     import('aos').then((AOS) => {
@@ -27,6 +28,14 @@ export default function LibsLoader() {
     const snowflake = document.createElement('img');
     snowflake.src = '/images/snowflakes/snowflake-2.png';
     setImages([snowflake]);
+
+    const updateSnowflakeCount = () => {
+      const screenWidth = window.innerWidth;
+      const count = Math.min(75 + Math.floor((screenWidth - 400) / 1400 * 125), 200);
+      setSnowflakeCount(Math.max(count, 75));
+    };
+
+    updateSnowflakeCount();
   }, []);
 
   // useEffect(() => {
@@ -47,7 +56,7 @@ export default function LibsLoader() {
         height: '100vh',
         zIndex: '10000',
       }}
-      snowflakeCount={200}
+      snowflakeCount={snowflakeCount}
       speed={[0.3, 0.7]}
       opacity={[0.1, 0.4]}
       radius={[5, 20]}

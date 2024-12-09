@@ -99,7 +99,7 @@ export default function Header({
       content-center items-center`}
     >
       <Link
-        href='/'
+        href={`/${getLocalePath()}`}
         className='absolute lg:relative flex items-center justify-center w-full lg:w-auto'
       >
         <Image

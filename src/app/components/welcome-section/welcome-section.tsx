@@ -14,22 +14,22 @@ export default function WelcomeSection() {
 
   const leftLinks = [
     {
-      link: `${getLocalePath()}/#mission`,
+      link: `/${getLocalePath()}/#mission`,
       title: t('1_l'),
       classes: 'pr-0',
     },
     {
-      link: `${getLocalePath()}/#services`,
+      link: `/${getLocalePath()}/#services`,
       title: t('2_l'),
       classes: 'lg:pr-2 pr-0',
     },
     {
-      link: `${getLocalePath()}/#services`,
+      link: `/${getLocalePath()}/#services`,
       title: t('3_l'),
       classes: 'lg:pr-4 pr-0',
     },
     {
-      link: `${getLocalePath()}/#surveys`,
+      link: `/${getLocalePath()}/#surveys`,
       title: t('4_l'),
       classes: 'lg:pr-2 pr-0',
     },
@@ -37,22 +37,22 @@ export default function WelcomeSection() {
 
   const rightLinks = [
     {
-      link: `${getLocalePath()}/#services`,
+      link: `/${getLocalePath()}/#services`,
       title: t('1_r'),
       classes: 'pl-0',
     },
     {
-      link: `${getLocalePath()}/#services`,
+      link: `/${getLocalePath()}/#services`,
       title: t('2_r'),
       classes: 'pr-0 lg:pl-2',
     },
     {
-      link: `${getLocalePath()}/#contacts`,
+      link: `/${getLocalePath()}/#contacts`,
       title: t('3_r'),
       classes: 'pr-0 lg:pl-4',
     },
     {
-      link: `${getLocalePath()}/#contacts`,
+      link: `/${getLocalePath()}/#contacts`,
       title: t('4_r'),
       classes: 'pr-0 lg:pl-2',
     },
@@ -86,8 +86,8 @@ export default function WelcomeSection() {
                   className='w-auto list-none text-center lg:text-right lg:text-right 
               pl-0 pr-0 md:pr-2 md:w-[500px] w-full leading-6 md:leading-7 select-none text-sm md:text-base lg:text-lg'
                 >
-                  {leftLinks.map(({ link, title, classes }) => (
-                    <li key={link} className={classes}>
+                  {leftLinks.map(({ link, title, classes }, index) => (
+                    <li key={index} className={classes}>
                       <Link href={link} className='no-underline hover:underline text-white'>{title}</Link>
                     </li>
                   ))}
@@ -108,8 +108,8 @@ export default function WelcomeSection() {
                   data-aos-duration='700'
                   className='w-auto list-none text-center lg:text-left lg:text-left pl-0 md:pl-2 lg:w-[500px] w-full leading-6 md:leading-7 select-none text-sm md:text-base lg:text-lg mb-2'
                 >
-                  {rightLinks.map(({ link, title, classes }) => (
-                    <li key={link} className={classes}>
+                  {rightLinks.map(({ link, title, classes }, index) => (
+                    <li key={index} className={classes}>
                       <Link href={link} className='no-underline hover:underline text-white'>{title}</Link>
                     </li>
                   ))}

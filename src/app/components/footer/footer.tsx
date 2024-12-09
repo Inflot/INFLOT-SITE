@@ -1,17 +1,23 @@
 import { FaPhone, FaWhatsapp, FaEnvelope, FaFax } from 'react-icons/fa';
 import { ImMobile, ImLocation2 } from 'react-icons/im';
 import { useTranslations } from 'next-intl';
+import { useLocale } from 'next-intl';
 import ContactItem from '../contact-item/contact-item';
 import Link from 'next/link';
 import Image from 'next/image';
 import './footer.css';
 
 export default function Footer() {
+  const locale = useLocale();
+
   const t = useTranslations('navigation');
   const tMeta = useTranslations('meta');
 
   const year = new Date().getFullYear();
   const iconSize = '50px';
+
+  const getLocalePath = () =>
+    locale === 'GB' ? 'en' : locale.toLocaleLowerCase();
 
   const getAddressLink = () =>
     tMeta('lang') === 'ru'
@@ -94,7 +100,7 @@ export default function Footer() {
       </div>
       <div className='flex flex-col lg:flex-row justify-center bg-[#22333d] py-8'>
         <Link
-          href='/'
+          href={`/${getLocalePath()}`}
           className='flex items-center justify-center w-full lg:w-auto'
         >
           <Image

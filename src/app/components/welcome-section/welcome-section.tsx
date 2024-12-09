@@ -14,22 +14,22 @@ export default function WelcomeSection() {
 
   const leftLinks = [
     {
-      link: `${getLocalePath()}/#mission`,
+      link: `/${getLocalePath()}/#mission`,
       title: t('1_l'),
       classes: 'pr-0',
     },
     {
-      link: `${getLocalePath()}/#services`,
+      link: `/${getLocalePath()}/#services`,
       title: t('2_l'),
       classes: 'lg:pr-2 pr-0',
     },
     {
-      link: `${getLocalePath()}/#services`,
+      link: `/${getLocalePath()}/#services`,
       title: t('3_l'),
       classes: 'lg:pr-4 pr-0',
     },
     {
-      link: `${getLocalePath()}/#surveys`,
+      link: `/${getLocalePath()}/#surveys`,
       title: t('4_l'),
       classes: 'lg:pr-2 pr-0',
     },
@@ -37,22 +37,22 @@ export default function WelcomeSection() {
 
   const rightLinks = [
     {
-      link: `${getLocalePath()}/#services`,
+      link: `/${getLocalePath()}/#services`,
       title: t('1_r'),
       classes: 'pl-0',
     },
     {
-      link: `${getLocalePath()}/#services`,
+      link: `/${getLocalePath()}/#services`,
       title: t('2_r'),
       classes: 'pr-0 lg:pl-2',
     },
     {
-      link: `${getLocalePath()}/#contacts`,
+      link: `/${getLocalePath()}/#contacts`,
       title: t('3_r'),
       classes: 'pr-0 lg:pl-4',
     },
     {
-      link: `${getLocalePath()}/#contacts`,
+      link: `/${getLocalePath()}/#contacts`,
       title: t('4_r'),
       classes: 'pr-0 lg:pl-2',
     },

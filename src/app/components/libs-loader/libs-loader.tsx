@@ -5,11 +5,8 @@ import Snowfall from 'react-snowfall'
 import 'aos/dist/aos.css';
 
 export default function LibsLoader() {
-  const today = new Date();
-  const currentYear = today.getFullYear();
-  const start = new Date(currentYear, 11, 1);
-  const end = new Date(currentYear + 1, 2, 28);
-  const isShowSnow = today >= start || today <= end;
+  const { getMonth, getDate } = new Date();
+  const isShowSnow = [11, 0, 1].includes(getMonth()) || (getMonth() === 2 && getDate() <= 28);
 
   const [images, setImages] = useState<HTMLImageElement[]>([]);
   const [snowflakeCount, setSnowflakeCount] = useState(200);

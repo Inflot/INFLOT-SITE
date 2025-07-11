@@ -7,14 +7,14 @@
   "description": "The maritime agency INFLOT was founded on 17 October 1934 by the Order of the Government of the USSR within shipping lines in sea ports of the USSR to service calls in ports of USSR by foreign vessels. For 90 years, the marine agency INFLOT within Murmansk Shipping Company have provided agent’s and convoying services for vessels in port of Murmansk.",
   "icons": [
     {
-      "src": "/icons/icon-192.png",
-      "type": "image/png",
-      "sizes": "192x192"
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
     },
     {
-      "src": "/icons/icon-512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
   ]
 }

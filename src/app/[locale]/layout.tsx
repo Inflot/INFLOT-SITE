@@ -78,7 +78,6 @@ export default function RootLayout({
         <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png" />
         <link rel="icon" type="image/png" sizes="192x192" href="/icons/android-chrome-192x192.png" />
-        <link rel="icon" type="image/png" sizes="512x512" href="/icons/android-chrome-512x512" />
         <link rel="manifest" href="/manifest.webmanifest" />
         <link rel="yandex-tableau-widget" href="/icons/tableau.json" />
 

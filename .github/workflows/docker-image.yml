@@ -46,6 +46,7 @@ jobs:
       - name: Build and Push Docker Images
         run: |
             docker buildx build \
+              --no-cache \
               --tag "ghcr.io/inflot/infot-landing:${{ github.ref_name }}" \
               --tag "ghcr.io/inflot/infot-landing:latest" \
               --push .

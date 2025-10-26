@@ -1,4 +1,5 @@
 import AboutSection from '../components/about-us-section/about-us.section';
+import DesktopAutoplayAudio from '../components/audio/audio';
 import GoBack from '../components/go-back-btn/go-back-btn';
 import MissionSection from '../components/mission/mission.section';
 import ServicesSection from '../components/services/services.section';
@@ -16,6 +17,7 @@ export default function Page() {
       <ServicesSection />
       <SurveysSection />
       <GoBack />
+      <DesktopAutoplayAudio src="/audio/welcome.mp3" loop volume={0.5} />
     </main>
   );
 }

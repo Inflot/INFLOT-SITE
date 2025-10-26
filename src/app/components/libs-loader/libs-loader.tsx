@@ -8,7 +8,7 @@ export default function LibsLoader() {
   const date = new Date();
   const month = date.getMonth();
   const day = date.getDate();
-  const isShowSnow = [11, 0, 1].includes(month) || (month === 2 && day <= 28);
+  const isShowSnow = [10, 11, 0, 1, 2].includes(month) || (month === 3 && day <= 1);
 
   const [images, setImages] = useState<HTMLImageElement[]>([]);
   const [snowflakeCount, setSnowflakeCount] = useState(200);

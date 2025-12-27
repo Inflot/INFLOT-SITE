@@ -8,6 +8,7 @@ import { getTranslations } from 'next-intl/server';
 import Footer from '../components/footer/footer';
 import HeaderSection from '../components/header-section/header-section';
 import LibsLoader from '../components/libs-loader/libs-loader';
+import DesktopAutoplayAudio from '../components/audio/audio';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -128,6 +129,7 @@ export default function RootLayout({
         <LibsLoader />
         <HeaderSection />
         {children}
+        <DesktopAutoplayAudio src="/audio/welcome.mp3" loop volume={0.5} />
         <Footer />
       </body>
     </html>

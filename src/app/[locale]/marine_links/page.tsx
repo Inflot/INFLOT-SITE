@@ -50,49 +50,53 @@ export default function Page() {
 
   return (
     <main className='main select-none'>
-      <section className='links-section flex flex-col w-full place-items-center bg-[#AABCC5] bg-clip-border text-gray-700'>
-        <figure className='relative w-full m-0 overflow-hidden text-gray-700 bg-clip-border min-h-[400px] md:min-h-[500px] lg:min-h-[700px]'>
-          <div className='inset-0 bg-cover bg-center'>
+      <section className='links-section relative w-full min-h-[100vh] bg-[#AABCC5] bg-clip-border text-gray-700'>
+        <figure className='absolute inset-0 m-0 overflow-hidden text-gray-700 bg-clip-border'>
+          <div className='inset-0 bg-cover bg-center h-full w-full'>
             <div
-              className='background-image marine-image-1 '
+              className='background-image-3 marine-image-1 background-filter'
               style={{
                 backgroundPositionY: 'bottom',
                 backgroundPositionX: 'left',
               }}
             ></div>
             <div
-              className='background-image marine-image-2'
+              className='background-image-3 marine-image-2 background-filter'
+              style={{
+                backgroundPositionY: 'bottom',
+                backgroundPositionX: 'left',
+              }}
+            ></div>
+            <div
+              className='background-image-3 marine-image-3 background-filter'
               style={{
                 backgroundPositionY: 'bottom',
                 backgroundPositionX: 'left',
               }}
             ></div>
           </div>
-          <figcaption
-            data-aos='zoom-in'
-            data-aos-duration='700'
-            className='select-none absolute inset-0 flex items-center text-white px-4 md:px-12 w-full'
-          >
+          <div className='map-overlay'></div>
+        </figure>
+        <article className='relative z-10 w-full min-h-[100vh] flex flex-col items-center justify-start pt-24 md:pt-28 lg:pt-[20vh] pb-12'>
+          <header className='w-full flex flex-col items-center'>
             <h1
-              className='font-["PlayBold"] drop-shadow-[0_0_1rem_#A8C8EA] text-4xl sm:text-5xl lg:text-6xl 
-              font-normal text-center tracking-widest uppercase px-4 py-2 w-full'
+              data-aos='zoom-in'
+              data-aos-duration='700'
+              className='font-["PlayBold"] drop-shadow-[0_0_1rem_#A8C8EA] text-2xl md:text-2xl lg:text-4xl 
+              font-normal text-center tracking-widest uppercase px-4 py-2 w-full text-white'
             >
               {t('title')}
             </h1>
-          </figcaption>
-        </figure>
-        <article className='cover w-full'>
           <h2
             data-aos='zoom-in'
             data-aos-duration='700'
-            data-aos-delay='700'
-            className='text-white block antialiased font-semibold leading-snug tracking-normal 
-            font-["PlayBold"] tracking-wide mt-0 pt-32 mb-12 text-2xl lg:text-3xl lg:text-6xl text-center capitalize'
+            className='uppercase font-normal text-white text-sm md:text-base lg:text-2xl w-3/4 md:w-1/2 text-center m-auto select-none pointer-events-none'
             style={{ whiteSpace: 'pre-line' }}
           >
             {t('noticesToMariners')}
           </h2>
-          <div className='place-items-top flex justify-center flex-col px-16 md:p-2 xl:p-5 lg:flex-row'>
+          </header>
+          <div className='place-items-top flex justify-center flex-col px-16 md:p-2 xl:p-5 lg:flex-row mt-0'>
             {links.map(({ img, videos, links }, i) => (
               <div
                 key={i}
@@ -109,9 +113,9 @@ export default function Page() {
                     loop
                     playsInline
                     controls={false}
-                    width='300'
+                    width='165'
                     height='auto'
-                    className='border rounded-3xl shadow-2xl w-[200px] sm:w-[250px] md:w-[300px] h-auto'
+                    className='border rounded-3xl shadow-2xl w-[110px] sm:w-[140px] md:w-[165px] h-auto'
                     poster={img}
                   >
                     {videos.map(({ path, type }, id) => (
@@ -120,7 +124,7 @@ export default function Page() {
                   </video>
                 </div>
                 <div className='px-4'>
-                  <ul className='mt-8 list-none pl-0 text-l md:text-xl lg:text-2xl'>
+                  <ul className='mt-4 list-none pl-0 text-l md:text-xl lg:text-2xl'>
                     {links.map(({ link, title }, key) => (
                       <li
                         key={key}

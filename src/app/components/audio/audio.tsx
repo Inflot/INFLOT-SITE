@@ -128,7 +128,7 @@ export default function DesktopAutoplayAudio({ src, loop = true, volume = 1 }: P
             onKeyDown={(e) => { e.stopPropagation(); }}
             onTouchStart={(e) => { e.stopPropagation(); }}
             className={`
-                        z-100
+                        z-[9999]
                         fixed bottom-8 left-8 md:bottom-12 md:left-12
                         bg-cyan-800 hover:bg-cyan-950 text-white font-bold
                         py-2 px-2 rounded-full opacity-75 hover:opacity-90 transition-opacity border-none

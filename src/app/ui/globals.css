@@ -149,6 +149,8 @@ body {
 
 .background-image-3:nth-child(1) {
 	animation-delay: 0s;
+	opacity: 1;
+	animation: none;
 }
 
 .background-image-3:nth-child(2) {

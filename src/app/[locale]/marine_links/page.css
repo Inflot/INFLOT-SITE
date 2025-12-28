@@ -23,8 +23,15 @@
     position: absolute;
     inset: 0;
     background: url('/images/marine-links/map.webp');
-    background-size: 100% 59%;
+    background-size: 100% 60%;
     background-position: center -5%;
     background-repeat: no-repeat;
     pointer-events: none;
+}
+
+@media (max-width: 768px) {
+    .map-overlay {
+        background-size: 190% 50%;
+        background-position: 100% 0%;
+    }
 }

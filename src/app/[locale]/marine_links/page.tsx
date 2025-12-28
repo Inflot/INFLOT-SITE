@@ -96,7 +96,7 @@ export default function Page() {
             {t('noticesToMariners')}
           </h2>
           </header>
-          <div className='place-items-top flex justify-center flex-col px-16 md:p-2 xl:p-5 lg:flex-row mt-0'>
+          <div className='place-items-top flex justify-center flex-col px-16 md:p-2 xl:p-5 lg:flex-row mt-6 md:mt-10 lg:mt-0'>
             {links.map(({ img, videos, links }, i) => (
               <div
                 key={i}

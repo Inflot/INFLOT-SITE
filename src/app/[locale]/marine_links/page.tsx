@@ -75,14 +75,13 @@ export default function Page() {
               }}
             ></div>
           </div>
-          <div className='map-overlay'></div>
         </figure>
         <article className='relative z-10 w-full min-h-[100vh] flex flex-col items-center justify-start pt-24 md:pt-28 lg:pt-[20vh] pb-12'>
           <header className='w-full flex flex-col items-center'>
             <h1
               data-aos='zoom-in'
               data-aos-duration='700'
-              className='font-["PlayBold"] drop-shadow-[0_0_1rem_#A8C8EA] text-2xl md:text-2xl lg:text-4xl 
+              className='font-["PlayBold"] drop-shadow-[0_0_1rem_#A8C8EA] text-2xl md:text-2xl lg:text-4xl
               font-normal text-center tracking-widest uppercase px-4 py-2 w-full text-white'
             >
               {t('title')}
@@ -138,10 +137,10 @@ export default function Page() {
                           target='_blank'
                           className='
                           font-semibold
-                            text-l md:text-xl lg:text-2xl 
-                            text-center tracking-widest cursor-pointer capitalize 
+                            text-l md:text-xl lg:text-2xl
+                            text-center tracking-widest cursor-pointer capitalize
                             text-white no-underline rounded-md font-normal
-                            pr-2 
+                            pr-2
                             flex justify-center content-center py-2 md:py-0
                             hover:underline
                         '

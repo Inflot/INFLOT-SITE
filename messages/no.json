@@ -110,6 +110,7 @@
   "marineLinks": {
     "title": "Sjølinker",
     "noticesToMariners": "Meldinger til sjøfolk",
+    "iceCharts": "Iskart",
     "murmanskNavigationalWarnings": "Murmansk Navigational warnings",
     "arkhangelskNavigationalWarnings": "Arkhangelsk Navigational warnings",
     "navigationalWarningsWest": "Navigational warnings West"

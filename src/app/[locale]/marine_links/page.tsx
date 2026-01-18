@@ -46,6 +46,19 @@ export default function Page() {
         },
       ],
     },
+    {
+      img: '/images/flags/polar_view.png',
+      videos: [
+        { path: '/videos/ice_chart.webm', type: 'video/webm' },
+        { path: '/videos/ice_chart.mp4', type: 'video/mp4' },
+      ],
+      links: [
+        {
+          title: t('iceCharts'),
+          link: 'https://www.polarview.aq/arctic',
+        },
+      ],
+    },
   ];
 
   return (

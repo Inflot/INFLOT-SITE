@@ -108,14 +108,14 @@ export default function Page() {
             {t('noticesToMariners')}
           </h2>
           </header>
-          <div className='place-items-top flex justify-center flex-col px-16 md:p-2 xl:p-5 lg:flex-row mt-6 md:mt-10 lg:mt-0'>
+          <div className='place-items-top grid w-full grid-cols-1 gap-4 px-6 md:px-8 xl:px-10 mt-6 md:mt-10 lg:mt-0 lg:grid-cols-[repeat(auto-fit,minmax(260px,1fr))]'>
             {links.map(({ img, videos, links }, i) => (
               <div
                 key={i}
                 data-aos='fade-in'
                 data-aos-duration='1000'
                 data-aos-delay={500 * i}
-                className='p-4 md:p-8 relative
+                className='w-full p-4 md:p-8 relative
                   transform transition duration-500 hover:scale-105'
               >
                 <div className='p-2 flex justify-center'>
